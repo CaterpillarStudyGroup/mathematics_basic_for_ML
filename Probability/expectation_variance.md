@@ -1,6 +1,10 @@
 # 期望
 
-离散型变量期望：$$E_{x\sim P}[f(x)] = \sum_x P(x)f(x) \tag 1$$  
+离散型变量期望：  
+$$
+E_{x\sim P}[f(x)] = \sum_x P(x)f(x) \tag 1
+$$  
+
 连续型变量期望：$$E_{x\sim P}[f(x)] = \int p(x)f(x)dx$$
 
 # 方差
