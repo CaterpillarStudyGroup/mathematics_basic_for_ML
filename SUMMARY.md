@@ -15,3 +15,5 @@
    * [混合分布](Probability/mixture_distribution.md)
    * [常用函数](Probability/functions.md)
    * [有用的公式](Probability/formulas.md)
+* 信息论
+   * [熵](Information/entropy.md)
