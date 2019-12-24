@@ -8,6 +8,10 @@
 边缘概率 | $$\forall a \in x, P(x=a)=\sum_{b \in y}P(x=a, y=b)$$ | $$p(x)=\int p(x,y)dy$$
 条件概率 | $$P(y=b\mid x=a) = \frac {P(y=b, x=a)}{P(x=a)}$$ | $$P(A\mid B) = \frac{P(A,B)}{P(B)}$$<br>P()为连续型变量落入某一区间的概率
 
+# 一些术语
+
+**条件概率**：某个事件在给定其他事件发生时出现的概率。
+
 # 条件概率的链式法则
 
 $$
