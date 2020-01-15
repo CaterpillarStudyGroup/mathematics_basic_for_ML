@@ -8,6 +8,9 @@
    * [奇异值分解](LinearAlgebra/SVD.md)
    * [迹运算](LinearAlgebra/trace.md)
    * [行列式](LinearAlgebra/det.md)
+* 高等数学
+   * [距离](Mathematics/distance.md)
+   * [导数](Mathematics/derivative.md)
 * 概率论
    * [概率分布](Probability/probability_distribution.md)
    * [期望和方差](Probability/expectation_variance.md)
