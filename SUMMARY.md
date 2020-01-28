@@ -13,6 +13,7 @@
    * [距离](Mathematics/distance.md)
    * [导数](Mathematics/derivative.md)
 * 概率论
+   * [一些术语](Probability/norms.md)
    * [概率分布](Probability/probability_distribution.md)
    * [期望和方差](Probability/expectation_variance.md)
    * [常见分布](Probability/distribution.md)
