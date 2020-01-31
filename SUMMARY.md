@@ -11,7 +11,10 @@
    * [行列式](LinearAlgebra/det.md)
 * 高等数学
    * [距离](Mathematics/distance.md)
+   * [空间](Mathematics/space.md)
+   * [函数](Mathematics/function.md)
    * [导数](Mathematics/derivative.md)
+   * [凸优化问题](Mathematics/convex.md)
 * 概率论
    * [一些术语](Probability/norms.md)
    * [概率分布](Probability/probability_distribution.md)
