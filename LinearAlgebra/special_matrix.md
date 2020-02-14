@@ -17,3 +17,4 @@ $$
 x^TAx - 0 \Rightarrow x=0
 $$
 
+**Hessian Matrix**：是一个多元函数的二阶偏导数构成的方阵，描述了函数的局部曲率。
