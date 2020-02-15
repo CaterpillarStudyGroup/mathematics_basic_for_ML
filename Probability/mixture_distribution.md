@@ -21,3 +21,11 @@ $$
 $$
 此时$$P(y|\theta)$$为高斯混合分布。  
 每个组件分布都高斯分布，且有自己的$$\mu$$和$$\Sigma$$。  
+
+# F函数
+
+假设隐变量数据Z的概率分布为$$\hat P(Z)$$，定义分布$$\hat P$$与参数$$\theta$$的函数$$F(\hat P, \theta)$$如下：  
+$$
+F(\hat P, \theta) = E_{\hat P}[\log P(Y, Z|theta)] + H(\hat P)
+$$
+式中，$$H(\hat P) = -E_{\hat P}[\log \hat P(Z)]$$是分布$$\hat P(Z)$$的熵。  
