@@ -1,6 +1,6 @@
 # logistic sigmoid函数
 $$
-\sigma(x) = \frac{1}{1+exp(-x)}
+\sigma(x) = \frac{1}{1+\exp(-x)}
 $$
 
 ![](http://windmissing.github.io/images_for_gitbook/mathematics_basic_for_ML/2.png)   
@@ -12,7 +12,7 @@ $$
 # softplus函数
 
 $$
-\zeta(x) = \log(1+exp(x))
+\zeta(x) = \log(1+\exp(x))
 $$
 
 ![](http://windmissing.github.io/images_for_gitbook/mathematics_basic_for_ML/3.png)  
