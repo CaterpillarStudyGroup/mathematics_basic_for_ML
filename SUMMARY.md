@@ -25,5 +25,6 @@
    * [数据预处理](Probability/preprocess.md)
    * [常用函数](Probability/functions.md)
    * [有用的公式](Probability/formulas.md)
+   * [最大似然估计](Probability/likelihood.md)
 * 信息论
    * [熵](Information/entropy.md)
