@@ -31,6 +31,8 @@ $$
 \end{eqnarray}
 $$
 
+公式（2）称为最大对数似然估计  
+
 # 期望
 
 同理，$${\arg \max}_{\theta} \log P(X;\theta)$$和$${\arg \max}_{\theta} \frac{1}{m}\log P(X;\theta)$$是等价的
