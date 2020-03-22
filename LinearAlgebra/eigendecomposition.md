@@ -16,7 +16,7 @@ $$
 $$V$$是$$A$$的n个相互正交的特征向量连成的矩阵，即$$[v_1,v_2,...,v_n]$$
 $$diag(\lambda)$$是特征向量对应的特征值形成的对角矩阵，即$$ \begin{bmatrix} \lambda_1 &  \\  & \lambda_2 \\ & & \ddots \\ & & & \lambda_n\\ \end{bmatrix}  $$  
 
-对于任意的实对称矩阵A，有  
+对于任意的**实对称矩阵**A，有  
 $$
 A = Q\Lambda Q^T
 $$
