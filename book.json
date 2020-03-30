@@ -1,0 +1,55 @@
+{
+    "gitbook": "3.2.3",
+    "author": "windmissing",
+    "plugins": [
+        "katex",
+        "katex-plus",
+        "alerts",
+        "mygitalk",
+        "github",
+        "github-buttons",
+        "splitter",
+        "-sharing", "sharing-plus",
+        "donate",
+        "copy-code-button",
+        "anchor-navigation-ex",
+        "sectionx",
+        "click-reveal"
+    ],
+    "pluginsConfig": {
+        "mygitalk": {
+            "clientID": "8dba00657db99a95c9ee",
+            "clientSecret": "bbd984c252c33c1d22284f6520d7cdb97b38f018",
+            "repo": "mathematics_basic_for_ML",
+            "owner": "windmissing",
+            "admin": ["windmissing"],
+            "distractionFreeMode": false
+        },
+        "github": {
+            "url": "https://github.com/windmissing/mathematics_basic_for_ML"
+        },
+        "github-buttons": {
+            "repo": "windmissing/mathematics_basic_for_ML",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
+        },
+        "donate": {
+            "wechat": "http://windmissing.github.io/images/2020/weixin.jpg",
+            "alipay": "http://windmissing.github.io/images/2020/alipay.jpg",
+            "title": "",
+            "button": "赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
+        },
+        "anchor-navigation-ex": {
+            "isShowTocTitleIcon": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        }
+    }
+}
