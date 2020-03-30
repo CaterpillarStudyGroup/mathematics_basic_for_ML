@@ -1,9 +1,12 @@
 **凸优化问题**是指约束最优化问题：  
 $$
+\begin{aligned}
 min_w f(w)  \\
 s.t. g_i(w) \le 0, i = 1,2,\cdots,k   \\
 h_i(w) = 0, i = 1,2,\cdots,l
+\end{aligned}
 $$
+
 其中，  
 目标函数f(w)和约束函数g(w)都是Rn上连续可微的凸函数。    
 约束函数h(w)是Rn上的仿射函数。  

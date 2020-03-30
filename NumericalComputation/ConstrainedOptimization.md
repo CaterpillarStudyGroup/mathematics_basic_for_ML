@@ -12,10 +12,10 @@ L(x,\lambda,\alpha) = f(x) + \sum_i \lambda_i g^{(i)}(x) + \sum_j \alpha_j h^{(j
 $$
 4. 通过优化无约束的广义Lagrangian 解决约束最小化问题。以下两个公式具有相同的最优点集x。    
 $$
-\begin{eqnarray}
-\min_x\max_{\lambda}\max_{\alpha,\alpha>0}L(x,\lambda,\alpha) \tag {1}\\
-\min_{x\in S}f(x) \tag {2}
-\end{eqnarray}
+\begin{aligned}
+\min_x\max_{\lambda}\max_{\alpha,\alpha>0}L(x,\lambda,\alpha) && (1)\\
+\min_{x\in S}f(x) && (2)
+\end{aligned}
 $$
 在公式（1）中，保证可行点不是最佳，可行点范围内的最优点不变。  
 

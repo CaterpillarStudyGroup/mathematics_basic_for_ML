@@ -19,8 +19,10 @@ $$\phi(y|\theta_k)$$可以是概率分布密度。
 
 当$$\phi(y|\theta_k)$$为高斯分布密度，即  
 $$
+\begin{aligned}
 \phi(y|\theta_k) = \frac{1}{\sqrt {2\pi}\sigma_k}\exp(-\frac{(y-\mu_k)^2}{2\sigma_k^2})  \\
 \theta = (a1, a2, \cdots, a_k, \mu_1, \mu_2, \cdots, \mu_k, \sigma_1, \sigma_2, \cdots, \sigma_k)
+\end{aligned}
 $$
 此时$$P(y|\theta)$$为高斯混合分布。  
 每个组件分布都高斯分布，且有自己的$$\mu$$和$$\Sigma$$。  

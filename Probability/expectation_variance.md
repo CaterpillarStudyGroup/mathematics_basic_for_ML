@@ -2,7 +2,7 @@
 
 离散型变量期望：  
 $$
-E_{x\sim P}[f(x)] = \sum_x P(x)f(x) \tag 1
+E_{x\sim P}[f(x)] = \sum_x P(x)f(x)
 $$  
 
 连续型变量期望：$$E_{x\sim P}[f(x)] = \int p(x)f(x)dx$$
@@ -12,7 +12,7 @@ $$
 Var(f(x)) = E[(f(x) - E[f(x)])^2]
 $$
 
-标准差=$$\sqrt 方差$$
+标准差=$\sqrt \text{方差}$
 
 # 协方差
 
@@ -30,7 +30,9 @@ $$
 # 协方差矩阵
 
 $$
+\begin{aligned}
 x \in R^n\\
-Cov(X)_{i,j} = Cov(X_i, X_j)  方阵\\
+Cov(X)_{i,j} = Cov(X_i, X_j)  \text{方阵}\\
 Cov(X)_{i,i} = Var(X_i)
+\end{aligned}
 $$

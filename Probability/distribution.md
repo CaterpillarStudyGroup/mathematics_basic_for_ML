@@ -2,11 +2,13 @@
 单个二值随机变量的分布
 
 $$
+\begin{aligned}
 P(X=1) = \phi \\
 P(X=0) = 1 - \phi \\
 P(X=a) = \phi^a(a-\phi)^{(1-a)} \\
 E[x] = \phi \\
 Var(x) = \phi(1-\phi)
+\end{aligned}
 $$
 
 # Multinoulli 分布
@@ -14,8 +16,10 @@ $$
 分布由向量$$p \in [0,1]^{k-1}$$参数化  
 
 $$
-P(x = i) = p_i，i < k \\
+\begin{aligned}
+P(x = i) = p_i, i < k \\
 P(x = k) = 1 - \sum_{i}p_i
+\end{aligned}
 $$
 通常不计算方差和期望。  
 
@@ -27,11 +31,13 @@ $$
 $$
 F(x) = P(X \le x) = \frac{1}{1+e^{-(x-\mu)/\gamma}}
 $$
+
 ![](http://windmissing.github.io/images_for_gitbook/mathematics_basic_for_ML/6.png)  
 密度函数：  
 $$
 f(x) = F^{'}(x) = \frac{e^{-(x-\mu)/\gamma}}{\gamma(1+e^{-(x-\mu)/\gamma})^2}
 $$
+
 ![](http://windmissing.github.io/images_for_gitbook/mathematics_basic_for_ML/5.png)  
 其中：$$mu$$为位置参数，$$\gamma$$是形状参数
 
@@ -57,7 +63,7 @@ $$
 
 **各向同性(isotropic)高斯分布**：
 $$
-\Sigma = 标量 \times I
+\Sigma = \text{标量} \times I
 $$
 
 # 指数分布
@@ -65,10 +71,11 @@ $$
 $$
 p(x;\lambda)= 
 \begin {cases}
- \lambda exp(-\lambda), & \text {if $x \geq$ 0} \\
- 0, & \text{if $x \lt$ 0} 
+ \lambda exp(-\lambda), & \text {if x >= 0} \\
+ 0, & \text{if x <= 0} 
 \end{cases} 
 $$
+
 
 # Laplace分布
 
@@ -79,12 +86,14 @@ $$
 # Dirac分布
 
 $$
+\begin{aligned}
 p(x) = \delta(x-\mu) = 
 \begin {cases}
 \gt 0, & x = \mu \\
 = 0, & x \neq \mu
 \end {cases}    \\
 \int p(x) = 1
+\end{aligned}
 $$
 
 意义：只有在定义连续型随机变量的经验公布时，$$\delta(x)$$才有意义

@@ -25,10 +25,10 @@ $$
 由于$$P(X;\theta)$$和$$\log P(X;\theta)$$具有相同的趋势，$${\arg \max}_{\theta} P(X;\theta)$$和$${\arg \max}_{\theta} \log P(X;\theta)$$是等价的。  
 于是公式（2）转化为：  
 $$
-\begin{eqnarray}
+\begin{aligned}
 \theta & = & {\arg \max}_{\theta} \log P(X;\theta) \\
 & = & {\arg \max}_{\theta} \sum_{i=1}^m \log P(X^{(i)};\theta) \tag{3}
-\end{eqnarray}
+\end{aligned}
 $$
 
 公式（2）称为最大对数似然估计  
@@ -39,12 +39,12 @@ $$
 
 于是公式（3）又转化成：  
 $$
-\begin{eqnarray}
+\begin{aligned}
 \theta & = & {\arg \max}_{\theta} \sum_{i=1}^m \log P(X^{(i)};\theta) \\
 & = & {\arg \max}_{\theta} \frac{1}{m}\log P(X;\theta) \\
 & = & {\arg \max}_{\theta} \sum_{i=1}^m \hat p(x^{(i)};\theta) \log p(x^{(i)};\theta) \tag {4}  \\
 & = & {\arg \max}_{\theta} E_{X \sim \hat p_{data}} \log p_{model}(x;\theta) \tag {5}
-\end{eqnarray}  
+\end{aligned}  
 $$
 
 说明：  

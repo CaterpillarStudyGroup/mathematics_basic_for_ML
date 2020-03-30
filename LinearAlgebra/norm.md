@@ -9,9 +9,11 @@ $$
 性质：
 
 $$
+\begin{aligned}
 f(x) = 0 \Rightarrow  x = 0 \\
 f(x+y) \leq f(x) + f(y) \\
 \forall \alpha \in \Bbb R, f(\alpha x) = \alpha f(x)
+\end{aligned}
 $$
 
 # 常用范数
