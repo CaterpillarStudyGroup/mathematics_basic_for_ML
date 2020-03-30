@@ -42,5 +42,5 @@ $$
 
 # 泰勒公式二阶项的作用  
 
-1. 牛顿法  
+1. [牛顿法](https://windmissing.github.io/mathematics_basic_for_ML/NumericalComputation/Newton.html)
 2. 分析[临界点](https://windmissing.github.io/mathematics_basic_for_ML/Mathematics/derivative.html)的类型  

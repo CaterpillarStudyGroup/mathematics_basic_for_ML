@@ -20,7 +20,6 @@
      * [泰勒公式](Mathematics/Formula/taylor.md)
 * 数值计算
    * [牛顿法](NumericalComputation/Newton.md) 
-   * [判断临界点的类型](NumericalComputation/CriticalPoint.md)
    * [带约束的优化](NumericalComputation/ConstrainedOptimization.md)
 * 概率论
    * [一些术语](Probability/norms.md)
