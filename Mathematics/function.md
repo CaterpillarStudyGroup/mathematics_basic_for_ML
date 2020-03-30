@@ -1,5 +1,3 @@
-# 函数
-
 **实变函数**:以实数作为自变量的函数叫做实变函数。 
 
 **仿射函数**，即最高次数为1的多项式函数。常数项为零的仿射函数称为线性函数。
@@ -29,7 +27,7 @@ f(\theta) = f(\theta^0) + (\theta-\theta^0)g + \frac{1}{2}(\theta-\theta^0)^\top
 $$
 
 其中，g是f在$\theta^0$处的梯度向量，即$g_i = \frac{\partial f(\theta^0)}  {\partial \theta_i}$    
-H是Hessian矩阵，$H_{ij} = \frac{\partial^2}{\partial \theta_i \partial \theta_j}f(\theta^0) = \frac{\partial^2}{\partial \theta_j \partial \theta_i}f(\theta^0) = H_{ji}$，H是一个对称矩阵。  
+H是[Hessian矩阵](https://windmissing.github.io/mathematics_basic_for_ML/LinearAlgebra/special_matrix.html)，$H_{ij} = \frac{\partial^2}{\partial \theta_i \partial \theta_j}f(\theta^0) = \frac{\partial^2}{\partial \theta_j \partial \theta_i}f(\theta^0) = H_{ji}$，H是一个对称矩阵。  
 
 **闭式解（closed form solution）**：也叫解析解(analytical solution)，就是一些严格的公式,给出任意的自变量就可以求出其因变量,也就是问题的解, 他人可以利用这些公式计算各自的问题。**
 

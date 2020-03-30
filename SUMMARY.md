@@ -15,7 +15,9 @@
    * [函数](Mathematics/function.md)
    * [导数](Mathematics/derivative.md)
    * [凸优化问题](Mathematics/convex.md)
-   * [jensen不等式](Mathematics/jensen.md)
+   * 公式
+     * [jensen不等式](Mathematics/Formula/jensen.md)
+     * [泰勒公式](Mathematics/Formula/taylor.md)
 * 数值计算
    * [带约束的优化](NumericalComputation/ConstrainedOptimization.md)
 * 概率论

@@ -22,7 +22,7 @@ x^TAx - 0 \Rightarrow x=0
 $$
 
 **Hessian Matrix**：是一个多元函数的二阶偏导数构成的方阵，描述了函数的局部曲率。
-![](https://bkimg.cdn.bcebos.com/pic/bf096b63f6246b604c767a42e0f81a4c510fa288)  
+![](/assets/images/1.png)  
 性质一：H矩阵是对称矩阵。  
 性质二：  
 当H是正定时，f在x处是极小值点。  
