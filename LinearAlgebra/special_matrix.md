@@ -19,6 +19,12 @@ $$
 |对于任意非零向量x|$x\top Hx > 0$|$x\top Hx \ge 0$|$x\top Hx < 0$|$x\top Hx \le 0$|
 |所有特征值|正|非负|负|非正|
 
+**问：为什么所有特征值为正的对称矩阵一定是正定的？**  
+答：令v是H的一个特征向量且v是单位向量，$\lambda$是v对应的特征值，可以算出：$v^\top H v = \lambda$  
+令v1、v2是H的两个特征向量且v1、v2都是单位向量且v1、v2相互正交，并令x=a1v1+a2v2，可以算出$x^\top Hx = a_1^2\lambda_1 + a_2^2\lambda_2$   
+继续拓展，任意向量x可以用H的所有特征向量的某种线性组合。  
+假设$x=a_1v_1 + a_2v_2 + ... + a_n v_n$，则$x\top Hx = a_1^2\lambda_1 + a_2^2\lambda_2 + ... + a_n^2\lambda_n$
+
 **Hessian Matrix**：是一个多元函数的二阶偏导数构成的方阵，描述了函数的局部曲率。
 ![](/assets/images/1.png)  
 性质一：H矩阵是对称矩阵。  
