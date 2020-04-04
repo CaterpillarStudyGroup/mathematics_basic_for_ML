@@ -29,7 +29,9 @@ f(\theta) = f(\theta_0) + \frac{1}{2}x^\top Hx + ...
 $$
 
 H[正定](https://windmissing.github.io/mathematics_basic_for_ML/LinearAlgebra/special_matrix.html) $\Rightarrow x^\top Hx > 0 \Rightarrow f(\theta) > f(\theta_0) \Rightarrow \theta_0$是局部极小点。   
-
+H[负定](https://windmissing.github.io/mathematics_basic_for_ML/LinearAlgebra/special_matrix.html) $\Rightarrow x^\top Hx < 0 \Rightarrow f(\theta) < f(\theta_0) \Rightarrow \theta_0$是局部极大点。   
+H[不定] $\Rightarrow x^\top Hx < 0$和$x^\top Hx > 0$都存在 $\Rightarrow f(\theta)$ 和$f(\theta_0)$关系不确定 $\Rightarrow \theta_0$是鞍点。   
+H非正定或非负定 $\Rightarrow$ 存在$x^\top Hx = 0$的情况 $\Rightarrow f(\theta) $和$f(\theta_0)$关系不确定，取决于被省略的二阶以上的项 $\Rightarrow$ 无法判断$\theta_0$是什么类型的点。  
 
 **次导数**(subderivative)：  
 设f:I→R是一个实变量凸函数，定义在实数轴上的开区间内。这种函数不一定是处处可导的，例如最经典的例子就是f(x)=|x|，在x=0处不可导。但是，从下图的可以看出，对于定义域内的任何x0，我们总可以作出一条直线，它通过点(x0,f(x0))，并且要么接触f的图像，要么在它的下方。这条直线的斜率称为函数的次导数。

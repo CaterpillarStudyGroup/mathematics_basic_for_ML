@@ -71,7 +71,7 @@ $$
 $$
 p(x;\lambda)= 
 \begin {cases}
- \lambda exp(-\lambda), & \text {if x >= 0} \\
+ \lambda \exp(-\lambda), & \text{if } x \ge 0 \\
  0, & \text{if x <= 0} 
 \end{cases} 
 $$
