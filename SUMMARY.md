@@ -19,6 +19,7 @@
      * [jensen不等式](Mathematics/Formula/jensen.md)
      * [泰勒公式](Mathematics/Formula/taylor.md)
 * 数值计算
+   * [梯度下降法](NumericalComputation/GradientDescent.md)
    * [牛顿法](NumericalComputation/Newton.md) 
    * [带约束的优化](NumericalComputation/ConstrainedOptimization.md)
 * 概率论

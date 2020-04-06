@@ -43,3 +43,5 @@ $$
 \frac{\partial y_m}{\partial x_1} & \cdots & \frac{\partial y_m}{\partial x_n} \\
 \end{bmatrix}
 $$
+
+另一种解释为：n维的向量x对m维的向量y的偏导为m*n的Jacobian矩阵。  
