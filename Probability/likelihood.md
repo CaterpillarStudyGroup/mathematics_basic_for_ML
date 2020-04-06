@@ -4,7 +4,9 @@
 X服从概率分布$$p(x|\theta)$$，参数$$\theta$$未知。  
 那么似然为真实存在的数据X发生的概率。用带参数$$\theta$$的函数来表示这个概率为：  
 $$
-P(X;\theta) = P(x^{(1)}|\theta)P(x^{(2)}|\theta)\cdots P(x^{(m)}|\theta) \tag {1}
+\begin{aligned}
+P(X;\theta) = P(x^{(1)}|\theta)P(x^{(2)}|\theta)\cdots P(x^{(m)}|\theta) && {1}
+\end{aligned}
 $$
 
 # 最大似然估计
@@ -14,7 +16,9 @@ $$
 因此要找到一个合适的参数$$\theta$$，使得P(X;\theta)取到最大值。  
 即  
 $$
-\theta = {\arg \max}_{\theta} P(X;\theta) \tag{2}
+\begin{aligned}
+\theta = {\arg \max}_{\theta} P(X;\theta) &&{2}
+\end{aligned}
 $$
 
 公式（2）称为$$\theta$$的最大似然估计
@@ -27,7 +31,7 @@ $$
 $$
 \begin{aligned}
 \theta & = & {\arg \max}_{\theta} \log P(X;\theta) \\
-& = & {\arg \max}_{\theta} \sum_{i=1}^m \log P(X^{(i)};\theta) \tag{3}
+& = & {\arg \max}_{\theta} \sum_{i=1}^m \log P(X^{(i)};\theta) &&{3}
 \end{aligned}
 $$
 
@@ -42,8 +46,8 @@ $$
 \begin{aligned}
 \theta & = & {\arg \max}_{\theta} \sum_{i=1}^m \log P(X^{(i)};\theta) \\
 & = & {\arg \max}_{\theta} \frac{1}{m}\log P(X;\theta) \\
-& = & {\arg \max}_{\theta} \sum_{i=1}^m \hat p(x^{(i)};\theta) \log p(x^{(i)};\theta) \tag {4}  \\
-& = & {\arg \max}_{\theta} E_{X \sim \hat p_{data}} \log p_{model}(x;\theta) \tag {5}
+& = & {\arg \max}_{\theta} \sum_{i=1}^m \hat p(x^{(i)};\theta) \log p(x^{(i)};\theta) && {4}  \\
+& = & {\arg \max}_{\theta} E_{X \sim \hat p_{data}} \log p_{model}(x;\theta) && {5}
 \end{aligned}  
 $$
 

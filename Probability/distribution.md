@@ -71,8 +71,8 @@ $$
 $$
 p(x;\lambda)= 
 \begin {cases}
- \lambda \exp(-\lambda), & \text{if } x \ge 0 \\
- 0, & \text{if x <= 0} 
+ \lambda \exp(-\lambda), && \text{if } x \ge 0 \\
+ 0, && \text{if } x \le 0 
 \end{cases} 
 $$
 
@@ -80,7 +80,7 @@ $$
 # Laplace分布
 
 $$
-Laplace(x;\mu, r) = \frac{1}{2r}exp(-\frac{|x-\mu|}{r})
+\text{Laplace}(x;\mu, r) = \frac{1}{2r}\exp(-\frac{|x-\mu|}{r})
 $$
 
 # Dirac分布
