@@ -5,9 +5,15 @@
 
 一个函数在某个点上所有偏导都为0，这个点称为**临界点**(critical point)。  
 临界点有可能是：  
-- local/gobal minima  
-- local/global maxima  
+- 极小值点 local/gobal minima  
+- 极大值点 local/global maxima  
 - **鞍点**（saddle point）  
+
+|名字|name|附近的点|H矩阵的特征值|横截面|
+|---|---|---|---|---|
+|极小值点|local/gobal minima|所有点都比它大|全部为正|所有横截面上都是极小值点|
+|极大值点|local/global maxima|所有点都比它小|全部为负|所有横截面上都是极大值点|
+|鞍点|saddle point|某些点比它大，某些点比它小|有正有负|有的横截面上是极小值，有的横截面上是极大值|
 
 问：怎么区分一个临界点是什么类型？  
 答：Hessian矩阵。  
