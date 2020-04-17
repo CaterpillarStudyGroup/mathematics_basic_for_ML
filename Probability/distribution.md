@@ -39,7 +39,7 @@ f(x) = F^{'}(x) = \frac{e^{-(x-\mu)/\gamma}}{\gamma(1+e^{-(x-\mu)/\gamma})^2}
 $$
 
 ![](http://windmissing.github.io/images_for_gitbook/mathematics_basic_for_ML/5.png)  
-其中：$$mu$$为位置参数，$$\gamma$$是形状参数
+其中：$$\mu$$为位置参数，$$\gamma$$是形状参数
 
 # 正态分布（高斯分布）
 
