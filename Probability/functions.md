@@ -26,3 +26,34 @@ $$
 有用性质：  
 
 ![](http://windmissing.github.io/images_for_gitbook/mathematics_basic_for_ML/4.png)  
+
+# 径向基函数 Radial Basis Function
+
+将一个点到另一个点的距离映射成一个实值的函数。    
+这里面有三个未知：  
+（1）另一个点是什么点？默认是原点，也可以是指定点p。  
+（2）距离是什么距离？一般都使用欧氏距离  
+（3）对距离做怎样的操作？不同的RBF只要是这一点的不同。  
+
+## 欧氏径向基  
+
+距离为欧氏距离：  
+$$
+\begin{aligned}
+r(x) = ||x||_2  \\
+r(x, p) = ||x-p||_2
+\end{aligned}
+$$
+
+操作为线性操作：  
+$$
+\phi(r) = r
+$$
+
+## 高斯径向基  
+
+距离为欧氏距离  
+操作为高斯函数：  
+$$
+\phi(r) = \exp(-{r^2}{2\sigma^2})
+$$
