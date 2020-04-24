@@ -73,7 +73,7 @@ p(x;\lambda)=
 \begin {cases}
  \lambda \exp(-\lambda), && \text{if } x \ge 0 \\
  0, && \text{if } x \le 0 
-\end{aligned} 
+\end{cases} 
 $$
 
 
