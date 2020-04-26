@@ -10,6 +10,7 @@
    * [奇异值分解](LinearAlgebra/SVD.md)
    * [迹运算](LinearAlgebra/trace.md)
    * [行列式](LinearAlgebra/det.md)
+   * [病态矩阵](LinearAlgebra/IllConditioning.md)
 * 高等数学
    * [距离](Mathematics/distance.md)
    * [空间](Mathematics/space.md)
