@@ -5,6 +5,7 @@
    * [范数](LinearAlgebra/norm.md)
    * [向量](LinearAlgebra/vector.md)
    * [特殊类型的矩阵和向量](LinearAlgebra/special_matrix.md)
+      * [Hessian矩阵](LinearAlgebra/Hessian.md)
    * [正交](LinearAlgebra/orthogonal.md)
    * [特征分解](LinearAlgebra/eigendecomposition.md)
    * [奇异值分解](LinearAlgebra/SVD.md)
