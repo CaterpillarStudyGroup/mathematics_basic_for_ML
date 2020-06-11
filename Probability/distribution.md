@@ -1,4 +1,6 @@
-# Bernoulli 分布
+# 离散型变量的分布  
+
+## Bernoulli 分布
 单个二值随机变量的分布
 
 $$
@@ -11,7 +13,7 @@ Var(x) = \phi(1-\phi)
 \end{aligned}
 $$
 
-# Multinoulli 分布
+## Multinoulli 分布
 具有k个不同状态的单个离散型随机变量的分布。  
 分布由向量$$p \in [0,1]^{k-1}$$参数化  
 
@@ -23,7 +25,9 @@ P(x = k) = 1 - \sum_{i}p_i
 $$
 通常不计算方差和期望。  
 
-# Logistic分布
+# 连续型变量的分布 
+
+## Logistic分布
 
 定义：Logistic分布  
 设X是连续随机变量，X服从逻辑分布是指X具有下列函数和密度函数：  
@@ -41,7 +45,7 @@ $$
 ![](http://windmissing.github.io/images_for_gitbook/mathematics_basic_for_ML/5.png)  
 其中：$$\mu$$为位置参数，$$\gamma$$是形状参数
 
-# 正态分布（高斯分布）
+## 正态分布（高斯分布）
 
 $$
 \mathcal N(x; \mu,\sigma^2) = \sqrt{-\frac {1}{2\pi\sigma^2}}exp(-\frac {1}{2\sigma^2}(x-\mu)^2)
@@ -66,7 +70,7 @@ $$
 \Sigma = \text{标量} \times I
 $$
 
-# 指数分布
+## 指数分布
 
 $$
 p(x;\lambda)= 
@@ -77,13 +81,13 @@ p(x;\lambda)=
 $$
 
 
-# Laplace分布
+## Laplace分布
 
 $$
 \text{Laplace}(x;\mu, r) = \frac{1}{2r}\exp(-\frac{|x-\mu|}{r})
 $$
 
-# Dirac分布
+## Dirac分布
 
 $$
 \begin{aligned}
