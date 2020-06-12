@@ -40,4 +40,4 @@
    * [贝叶斯统计](Probability/bayes.md)
 * 信息论
    * [熵](Information/entropy.md)
-   * [KL离散度、交叉熵](Information/KL.md)
+   * [散度、交叉熵](Information/Divergence.md)

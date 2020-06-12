@@ -16,3 +16,21 @@ $$
 **闭式解（closed form solution）**：也叫解析解(analytical solution)，就是一些严格的公式,给出任意的自变量就可以求出其因变量,也就是问题的解, 他人可以利用这些公式计算各自的问题。**
 
 **凸优化（convex optimization）**，或叫做凸最优化，凸最小化，是数学最优化的一个子领域，研究定义于凸集中的凸函数最小化的问题。
+
+**Fenchel Conjugate**：  
+对每一个convex function f，都有一个共轭函数f*，满足：  
+$$
+\begin{cases}
+f^*(t) = \max_{x\in dom(f)}\{xt - f(x)\}   \\
+f(x) = \max_{x\in dom(f^*)}\{xt - f^*(t)\}
+\end{cases}
+$$
+
+公式中的dom(f)是指f的作用域。  
+如果f是convex，$f^*$一定也是convex。  
+
+f*的效果是这样的：  
+![](/assets/images/7.png)  
+
+例子：  
+$f(x) = x\log x$和$f^*(t) = \exp(t-1)$是共轭的。  
