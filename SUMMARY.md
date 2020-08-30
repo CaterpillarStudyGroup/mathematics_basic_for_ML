@@ -18,6 +18,7 @@
    * [空间](Mathematics/space.md)
    * [函数](Mathematics/function.md)
    * [导数](Mathematics/derivative.md)
+   * [微积分](Mathematics/calculus.md)
    * [凸优化问题](Mathematics/convex.md)
    * 公式
      * [jensen不等式](Mathematics/Formula/jensen.md)
