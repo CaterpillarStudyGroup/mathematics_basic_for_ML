@@ -19,10 +19,12 @@
    * [函数](Mathematics/function.md)
    * [导数](Mathematics/derivative.md)
    * [微积分](Mathematics/calculus.md)
+   * [复数](Mathematics/Complex.md)
    * [凸优化问题](Mathematics/convex.md)
    * 公式
      * [jensen不等式](Mathematics/Formula/jensen.md)
      * [泰勒公式](Mathematics/Formula/taylor.md)
+     * [欧拉公式](Mathematics/Formula/euler.md)
    * [指数衰减](Mathematics/ExponentialDecay.md)
 * 数值计算
    * [梯度下降法](NumericalComputation/GradientDescent.md)

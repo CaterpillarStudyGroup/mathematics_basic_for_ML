@@ -34,3 +34,10 @@ f*的效果是这样的：
 
 例子：  
 $f(x) = x\log x$和$f^*(t) = \exp(t-1)$是共轭的。  
+
+**指数函数**：  
+$$
+e^x = \lim_{n\rightarrow\infty} (1+\frac{1}{n})^n = \lim_{n\rightarrow\infty}\sum_{i=0}^n\frac{1}{i!}x^i
+$$
+
+当x为复数时，称为复指数函数
