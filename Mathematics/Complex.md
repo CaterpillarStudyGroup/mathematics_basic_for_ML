@@ -3,6 +3,8 @@
 复数也可以用
 ![](/assets/images/11.png)  
 
+虚数的单位：在数学领域用i，在工程领域用j  
+
 令$z = x + iy$，则  
 模：$|r| = \sqrt{x^2 + y^2}$  
 辐角：$\tan \theta = \frac{y}{x}$  
