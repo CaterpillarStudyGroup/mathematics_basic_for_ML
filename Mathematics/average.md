@@ -10,5 +10,20 @@ $$
 
 调和平均：更重视较小值  
 $$
-average = \frac{2ab}{a+b}
+\begin{aligned}
+average = \frac{2ab}{a+b}   \\
+\frac{1}{average} = \frac{1}{2}(\frac{1}{a} + \frac{1}{b})
+\end{aligned}
 $$
+
+加权调和平均：  
+$$
+\begin{aligned}
+average_\beta = \frac{(1+\beta^2)\times a \times b}{(\beta^2 \times a) + b}   \\
+\frac{1}{average_\beta} = \frac{1}{1+\beta^2}(\frac{1}{a} + \frac{\beta^2}{b})
+\end{aligned}
+$$
+
+$\beta < 1$：更注重a  
+$\beta = 1$：相当于调和平均  
+$\beta > 1$：更注重b  
