@@ -15,6 +15,7 @@
    * [共轭](LinearAlgebra/Conjugate.md)
 * 高等数学
    * [距离](Mathematics/distance.md)
+   * [平均值](Mathematics/average.md)
    * [空间](Mathematics/space.md)
    * [函数](Mathematics/function.md)
    * [导数](Mathematics/derivative.md)
