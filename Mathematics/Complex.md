@@ -22,4 +22,9 @@ $$
 
 复变函数：以复数为自变量的函数  
 [复指数函数](https://windmissing.github.io/mathematics_basic_for_ML/Mathematics/function.html)  
-[欧拉公式]()
+[欧拉公式](https://windmissing.github.io/mathematics_basic_for_ML/Mathematics/Formula/euler.html)  
+
+
+复变函数求导：  
+先把函数的结果用一个复数表达出来，实部和虚部都是关于变量的表达式，然后分别对实部和虚部求导  
+参考连接：https://zhuanlan.zhihu.com/p/108998452  
