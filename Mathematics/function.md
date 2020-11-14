@@ -41,3 +41,5 @@ e^x = \lim_{n\rightarrow\infty} (1+\frac{1}{n})^n = \lim_{n\rightarrow\infty}\su
 $$
 
 当x为复数时，称为复指数函数
+
+**高斯消元法**：https://windmissing.blog.csdn.net/article/details/7191074
