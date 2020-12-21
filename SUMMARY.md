@@ -32,6 +32,8 @@
      * [三角函数](Mathematics/Formula/trigonometric.md)
    * [指数衰减](Mathematics/ExponentialDecay.md)
 * 数值计算
+   * [归一化和标准化](NumericalComputation/Preprocessing.md)
+   * [分类标签数字化](NumericalComputation/Nominal.md)
    * [梯度下降法](NumericalComputation/GradientDescent.md)
    * [牛顿法](NumericalComputation/Newton.md) 
    * [带约束的优化](NumericalComputation/ConstrainedOptimization.md)
