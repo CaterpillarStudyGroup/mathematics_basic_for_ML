@@ -43,7 +43,6 @@
    * [期望和方差](Probability/expectation_variance.md)
    * [常见分布](Probability/distribution.md)
    * [混合分布](Probability/mixture_distribution.md)
-   * [数据预处理](Probability/preprocess.md)
    * [常用函数](Probability/functions.md)
    * [有用的公式](Probability/formulas.md)
    * [最大似然估计](Probability/likelihood.md)
