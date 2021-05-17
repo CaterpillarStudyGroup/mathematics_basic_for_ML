@@ -4,6 +4,7 @@
 * 数论
    * [数论](Numbers/SpecialNumbers.md)
    * [几何级数](Numbers/GeometricProgression.md)
+   * [傅利叶级数](Numbers/FFT.md)
 * 线性代数
    * [范数](LinearAlgebra/norm.md)
    * [向量](LinearAlgebra/vector.md)
