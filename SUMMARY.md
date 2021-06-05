@@ -51,3 +51,4 @@
 * 信息论
    * [熵](Information/entropy.md)
    * [散度、交叉熵](Information/Divergence.md)
+   * [傅利叶变换](Information/Fourier.md)
