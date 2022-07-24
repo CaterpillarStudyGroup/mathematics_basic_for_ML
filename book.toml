@@ -1,0 +1,24 @@
+[book]
+authors = ["windmissing"]
+language = "en"
+description = "The note of mathematics basic for ML"
+multilingual = false
+src = "src"
+title = "mathematics_basic_for_ML"
+
+[output.html]
+mathjax-support = true
+git-repository-url = "https://github.com/CaterpillarStudyGroup/mathematics_basic_for_ML"
+git-repository-icon = "fa-github"
+additional-css = ["theme/pagetoc.css"]
+additional-js  = ["theme/pagetoc.js"]
+
+[output.html.fold]
+
+[output.html.print]
+enable = true
+
+[output.html.search]
+enable = true
+
+# [output.pdf]
