@@ -142,9 +142,9 @@ $$
  $$ 
 
 >**[success]**  
-![](图片/注释11.jpg)  
+![](assets/注释11.jpg)  
 
- ![](图片/220px-Counterclockwise_rotation.png)
+ ![](assets/220px-Counterclockwise_rotation.png)
 
 >- A counterclockwise rotation of a vector through angle θ. The vector is initially aligned with the x-axis.
 向量逆时针旋转角度 θ。 该向量初始方向与 x 轴对齐。
@@ -193,7 +193,7 @@ The two-dimensional case is the only non-trivial (i.e. not one-dimensional) case
 
 有关可能改变旋转矩阵产生的旋转方向的其他替代约定，请参见下文。
 
-![](图片/220px-Clockwise_rotation.png)
+![](assets/220px-Clockwise_rotation.png)
 
 > A rotation through angle θ with non-standard axes.
 非标准轴中角度 θ 的旋转
@@ -208,7 +208,7 @@ $$
 
 用于逆时针旋转 90°、180° 和 270°。
 
-![](图片/Square_permutation_1_1.svg.png)![](图片/Square_permutation_3_0.svg.png)![](图片/Square_permutation_2_1.svg.png)
+![](assets/Square_permutation_1_1.svg.png)![](assets/Square_permutation_3_0.svg.png)![](assets/Square_permutation_2_1.svg.png)
 
 > A 180° rotation (middle) followed by a positive 90° rotation (left) is equivalent to a single negative 90° (positive 270°) rotation (right). Each of these figures depicts the result of a rotation relative to an upright starting position (bottom left) and includes the matrix representation of the permutation applied by the rotation (center right), as well as other related diagrams. See "Permutation notation" on Wikiversity for details.
 180° 旋转（中）后跟 90° 正旋转（左）等效于单个负 90°（正 270°）旋转（右）。 这些图中的每一个都描绘了相对于直立起始位置（左下）的旋转结果，并包括由旋转（右中）应用的排列的矩阵表示，以及其他相关图表。 有关详细信息，请参阅 Wikiversity 上的“排列符号”。
@@ -264,7 +264,7 @@ $$
 
 *另请参阅：三个维度的旋转形式*
 
-![](图片/180px-Cube_permutation_4_5.svg.png)![](图片/Cube_permutation_1_1.svg.png)![](图片/Cube_permutation_0_4.svg.png)
+![](assets/180px-Cube_permutation_4_5.svg.png)![](assets/Cube_permutation_1_1.svg.png)![](assets/Cube_permutation_0_4.svg.png)
 
 > A positive 90° rotation around the y-axis (left) after one around the z-axis (middle) gives a 120° rotation around the main diagonal (right).
 In the top left corner are the rotation matrices, in the bottom right corner are the corresponding permutations of the cube with the origin in its center.
@@ -324,7 +324,7 @@ represents an extrinsic rotation whose (improper) Euler angles are α, β, γ, a
 
 ### Determining the axis 确定轴
 
-![](图片/220px-Rotation_decomposition.png)
+![](assets/220px-Rotation_decomposition.png)
 
 > A rotation R around axis **u** can be decomposed using 3 endomorphisms P, (I − P), and Q (click to enlarge).
 可以使用 3 个自同态 P、(I-P) 和 Q 来分解围绕轴 **u** 的旋转 R（点击放大）。  
@@ -403,7 +403,7 @@ Therefore, if 因此，如果
  {\displaystyle R={\begin{bmatrix}a&b&c\\d&e&f\\g&h&i\\\end{bmatrix}},} 
  $$
 
-![](图片/注释2.jpg)  
+![](assets/注释2.jpg)  
 
 then 然后
 
@@ -447,7 +447,7 @@ $$
 >**[success]**  
 要确定θ的符号
 
-![](图片/注释3.jpg)
+![](assets/注释3.jpg)
 
 ### Rotation matrix from axis and angle 从轴和角度计算旋转矩阵
 
@@ -761,7 +761,7 @@ Noting that any identity matrix is a rotation matrix, and that matrix multiplica
 
 # Ambiguities 歧义
 
-![](图片/Alias_and_alibi_rotations.png)
+![](assets/Alias_and_alibi_rotations.png)
 
 >- Alias and alibi rotations 
 Alias旋转和alibi旋转
@@ -794,7 +794,7 @@ The same point $$P$$ can be represented either by a column vector **v** or a row
 **为了获得完全相同的旋转（即点 P 的相同最终坐标）**：即向量与坐标系的相对关系一致
 
 >**[success]**  
-![](图片/注释4.jpg)
+![](assets/注释4.jpg)
 
 ## Right- or left-handed coordinates 右手或左手坐标
 
@@ -816,7 +816,7 @@ The vector space has a dual space of linear forms, and the matrix can act on eit
 **对偶空间**：什么是对偶空间？
 
 >**[success]**  
-![](图片/注释5.jpg)
+![](assets/注释5.jpg)
 
 # Decompositions 分解
 
