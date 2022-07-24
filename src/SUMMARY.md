@@ -52,3 +52,6 @@
    * [散度、交叉熵](Information/Divergence.md)
 *  [几何]()
 	* [维基百科 - 欧拉角](Geometry/EulerAngle.md)
+	* [维基百科 - 四元数](Geometry/Quaternion.md)
+	* [维基百科 - 旋转矩阵](Geometry/RotationMatrix.md)
+	* [维基百科 - 万象节死锁](Geometry/Gimbal%20lock.md)
