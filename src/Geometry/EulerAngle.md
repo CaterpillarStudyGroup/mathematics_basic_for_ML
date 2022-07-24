@@ -4,7 +4,7 @@
 
 它们还可以表示物理学中移动参考系的方向，或三维线性代数中一般基的方向。后来，彼得·古思里·泰特（Peter Guthrie Tait）和乔治·H·布莱恩（George H.Bryan）引入了另一种形式，用于航空和工程领域。
 
-> &#x2705;   
+> &#x1F504;   
 frame of reference：参考坐标系  
 basis：基  
 
@@ -13,7 +13,7 @@ basis：基
 ![](assets/170px-Euler2a.gif)
 ![](assets/150px-Intermediateframes.svg.png)
 
-> &#x1F4CC; 从已知参考方向开始，使用特定的内旋序列，可以达到任何目标方向，其大小为目标方向的欧拉角。本例使用z-x′-z〃序列。
+> &#x1F446; 从已知参考方向开始，使用特定的内旋序列，可以达到任何目标方向，其大小为目标方向的欧拉角。本例使用z-x′-z〃序列。
 
 
 欧拉角可以通过基本几何或旋转组合来定义。几何定义表明，三个组合元素旋转（围绕坐标系的轴旋转）足以到达任何目标坐标系。
@@ -22,7 +22,7 @@ basis：基
 
 三个元素旋转可以是外旋（围绕原始坐标系的轴xyz旋转，假设其保持不变），也可以是内旋（围绕旋转坐标系的轴XYZ旋转，与运动物体保持一致，在每次元素旋转后改变其方向）。
 
-> &#x2705;  
+> &#x1F504;  
 extrinsic rotations：外旋  
 intrinsic rotations：内旋  
 
@@ -39,16 +39,13 @@ Tait–Bryan角也称为**卡丹角**、**航海角**、**行进方向，高度�
 
 ![](assets/Eulerangles.svg.png)
 
-> Proper欧拉角几何定义  
-  固定坐标系（x、y、z）  
-  旋转坐标系（X、Y、Z）  
-  交点线（N）
+> &#x1F446; Proper欧拉角几何定义：固定坐标系（x、y、z）、旋转坐标系（X、Y、Z）、交点线（N）
 
 
 ![](assets/Gimbaleuler.svg.png)
 ![](assets/160px-Gimbaleuler2.svg.png)
 
-> **左**：万向节组，显示z-x-z旋转序列。底座为外部坐标第。内部轴为红色。**右图**：一个简单的图，在图显示相似的欧拉角。
+> &#x1F446; **左**：万向节组，显示z-x-z旋转序列。底座为外部坐标第。内部轴为红色。**右图**：一个简单的图，在图显示相似的欧拉角。
 
 
 >  &#x1F4CC; 以下内容全部假设旋转顺序为z-x-z
@@ -177,7 +174,7 @@ Proper欧拉角的旋转轴有六种可能的序列。在所有这些轴中，�
 
 ![](assets/170px-Praezession.svg.png)
 
->- Euler basic motions of the Earth. Intrinsic (green), Precession (blue) and Nutation (red)
+> &#x1F446; Euler basic motions of the Earth. Intrinsic (green), Precession (blue) and Nutation (red)
 地球的基本运动。内旋（绿色）、进动（蓝色）和章动（红色）
 
 Precession, nutation, and intrinsic rotation (spin) are defined as the movements obtained by changing one of the Euler angles while leaving the other two constant. These motions are not expressed in terms of the external frame, or in terms of the co-moving rotated body frame, but in a mixture. They constitute a **mixed axes of rotation** system, where the first angle moves the line of nodes around the external axis z, the second rotates around the line of nodes N and the third one is an intrinsic rotation around Z, an axis fixed in the body that moves.
@@ -208,14 +205,14 @@ These movements also behave as a gimbal set. If we suppose a set of frames, able
 
 ![](assets/200px-Taitbrianzyx.svg.png)
 
->- 泰特-布莱恩角。z-y′-x〃序列（内旋；N与y′重合）。角度旋转序列为ψ，θ，φ。注意，在这种情况下，ψ>90°，θ为负角度。
+> &#x1F446; 泰特-布莱恩角。z-y′-x〃序列（内旋；N与y′重合）。角度旋转序列为ψ，θ，φ。注意，在这种情况下，ψ>90°，θ为负角度。
 
 第二种形式被称为**泰特-布莱恩角**，以Peter Guthrie Tait 和George H. Bryan命名。这是通常用于航空航天应用的惯例，因此零度仰角表示水平姿态。Tait–Bryan角表示飞机相对于世界坐标系的方向。在处理其他车辆时，可以使用不同的轴约定。
 
 ## 定义
 ![](assets/325px-Taitbrianangles.svg.png)
 
->- 泰特-布莱恩角。z-x′-y〃序列（内旋；N与x′重合）
+> &#x1F446; 泰特-布莱恩角。z-x′-y〃序列（内旋；N与x′重合）
 
 Tait–Bryan角使用的定义和符号与上述适用于Euler角的定义和符号类似（几何定义、内旋定义、外旋定义）。唯一的区别是，Tait–Bryan角表示围绕三个不同轴（例如x-y-z或x-y′-z〃）的旋转，而Proper Euler角对第一个和第三个元素旋转（例如z-x-z或z-x′-z〃）使用相同的轴。
 
@@ -230,7 +227,7 @@ Tait–Bryan角使用的定义和符号与上述适用于Euler角的定义和符
 ##  约定
 ![](assets/100px-Plane_with_ENU_embedded_axes.svg.png)
 
->- 飞机的机载和地面跟踪站的机载ENS轴的Heading, elevation and bank（Z-Y′-X〃）。固定参考坐标系x-y-z表示跟踪站。机载轴Y和Z未显示。X以绿色显示。此图不符合RHS规则：y轴必须反转为正角度符合RHS。
+> &#x1F446; 飞机的机载和地面跟踪站的机载ENS轴的Heading, elevation and bank（Z-Y′-X〃）。固定参考坐标系x-y-z表示跟踪站。机载轴Y和Z未显示。X以绿色显示。此图不符合RHS规则：y轴必须反转为正角度符合RHS。
 
 > &#x1F4CC;  
 RHS:右手坐标系法则
@@ -257,7 +254,7 @@ Tait–Bryan角度的旋转轴序列有六种选择。六种可能的顺序是�
 ##  符号和范围
 ![](assets/Yaw_Axis_Corrected.svg.png)
 
->- 根据航空标准DIN 9300定义的飞机主轴。请注意，零度角时，固定坐标系和移动坐标系必须重合。因此，该规范还将强制定义了参考系统中的兼容轴约定
+> &#x1F446; 根据航空标准DIN 9300定义的飞机主轴。请注意，零度角时，固定坐标系和移动坐标系必须重合。因此，该规范还将强制定义了参考系统中的兼容轴约定
 
 泰特-布莱恩公约广泛应用于工程中，有着不同的目的。在选择移动轴和固定轴的应用中，有几种轴约定，这些约定决定了角度的符号。因此，必须仔细研究每种情况下的角度符号。
 
@@ -277,7 +274,7 @@ These angles are normally taken as one in the external reference frame (heading,
 
 ![](assets/Roll_pitch_yaw_mnemonic.svg.png)
 
->- 记住角度名称的助记符
+> &#x1F446; 记住角度名称的助记符
 
 对于飞机来说，如果按照正确的顺序绕其主轴旋转三次就可以得到特定角度的坐标系。偏航将获得轴承，俯仰将产生仰角，滚转将产生倾斜角度。因此，在航空航天中，它们有时被称为**偏航、俯仰和滚转**。请注意，如果以任何其他顺序旋转，或者旋转前飞机轴处于不与参考坐标系相等的其它任何位置，则这套名称不适用。
 
@@ -299,11 +296,11 @@ A common problem is to find the Euler angles of a given frame. The fastest way t
 ## Proper欧拉角
 ![](assets/200px-EulerProjections.svg.png)
 
->- Z向量的投影
+> &#x1F446; Z向量的投影
 
 ![](assets/200px-EulerProjections2.svg.png)
 
->- Y向量的投影
+> &#x1F446; Y向量的投影
 
 假设一个坐标系的单位向量（X，Y，Z）由其坐标给出，如主图所示，可以看出：
 
@@ -358,7 +355,7 @@ $$
 ##  泰特-布赖恩角
 ![](assets/Projections_of_Tait-Bryan_angles.svg.png)
 
->- 三次泰特-布莱恩旋转后的x轴投影。请注意，θ是绕y′轴的负旋转。
+> &#x1F446; 三次泰特-布莱恩旋转后的x轴投影。请注意，θ是绕y′轴的负旋转。
 
 ![](assets/IMG_20220204_174331.jpg)
 
@@ -595,7 +592,7 @@ The angular velocity of a rigid body takes a simple form using Euler angles in t
 ## Crystallographic texture 晶体结构
 ![](assets/MAUD-MTEX-TiAl-hasylab-2003-Liss.png)
 
->- Pole figures displaying crystallographic texture of gamma-TiAl in an alpha2-gamma alloy, as measured by high energy X-rays.[8]
+> &#x1F446; Pole figures displaying crystallographic texture of gamma-TiAl in an alpha2-gamma alloy, as measured by high energy X-rays.[8]
 极图显示了通过高能X射线测量的alpha2γ合金中γTiAl的晶体结构。[8]
 
 In materials science, crystallographic texture (or preferred orientation) can be described using Euler angles. In texture analysis, the Euler angles provide a mathematical depiction of the orientation of individual crystallites within a polycrystalline material, allowing for the quantitative description of the macroscopic material.[9] The most common definition of the angles is due to Bunge and corresponds to the ZXZ convention. It is important to note, however, that the application generally involves axis transformations of tensor quantities, i.e. passive rotations. Thus the matrix that corresponds to the Bunge Euler angles is the transpose of that shown in the table above.[10]
@@ -605,7 +602,7 @@ In materials science, crystallographic texture (or preferred orientation) can be
 ## Others 其他
 ![](assets/220px-Automation_of_foundry_with_robot.jpg)
 
->- Industrial robot operating in a foundry
+> &#x1F446; Industrial robot operating in a foundry
 在铸造厂工作的工业机器人
 
 Euler angles, normally in the Tait–Bryan convention, are also used in robotics for speaking about the degrees of freedom of a wrist. They are also used in electronic stability control in a similar way.
