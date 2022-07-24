@@ -1,10 +1,10 @@
 # Summary
 
 * [Introduction](README.md)
-* 数论
+* [数论]()
    * [数论](Numbers/SpecialNumbers.md)
    * [几何级数](Numbers/GeometricProgression.md)
-* 线性代数
+* [线性代数]()
    * [范数](LinearAlgebra/norm.md)
    * [向量](LinearAlgebra/vector.md)
    * [特殊类型的矩阵和向量](LinearAlgebra/special_matrix.md)
@@ -16,7 +16,7 @@
    * [行列式](LinearAlgebra/det.md)
    * [病态矩阵](LinearAlgebra/IllConditioning.md)
    * [共轭](LinearAlgebra/Conjugate.md)
-* 高等数学
+* [高等数学]()
    * [距离](Mathematics/distance.md)
    * [平均值](Mathematics/average.md)
    * [空间](Mathematics/space.md)
@@ -25,19 +25,19 @@
    * [微积分](Mathematics/calculus.md)
    * [复数](Mathematics/Complex.md)
    * [凸优化问题](Mathematics/convex.md)
-   * 公式
+   * [公式]()
      * [jensen不等式](Mathematics/Formula/jensen.md)
      * [泰勒公式](Mathematics/Formula/taylor.md)
      * [欧拉公式](Mathematics/Formula/euler.md)
      * [三角函数](Mathematics/Formula/trigonometric.md)
    * [指数衰减](Mathematics/ExponentialDecay.md)
-* 数值计算
+* [数值计算]()
    * [归一化和标准化](NumericalComputation/Preprocessing.md)
    * [分类标签数字化](NumericalComputation/Nominal.md)
    * [梯度下降法](NumericalComputation/GradientDescent.md)
    * [牛顿法](NumericalComputation/Newton.md) 
    * [带约束的优化](NumericalComputation/ConstrainedOptimization.md)
-* 概率论
+* [概率论]()
    * [一些术语](Probability/norms.md)
    * [概率分布](Probability/probability_distribution.md)
    * [期望和方差](Probability/expectation_variance.md)
@@ -47,8 +47,8 @@
    * [有用的公式](Probability/formulas.md)
    * [最大似然估计](Probability/likelihood.md)
    * [贝叶斯统计](Probability/bayes.md)
-* 信息论
+* [信息论]()
    * [熵](Information/entropy.md)
    * [散度、交叉熵](Information/Divergence.md)
-*  几何()
+*  [几何]()
 	* [维基百科 - 欧拉角](Geometry/EulerAngle.md)
