@@ -533,9 +533,9 @@ A similar three angle decomposition applies to SU(2), the special unitary group 
 
 类似的三角分解适用于SU（2），复杂二维空间中特殊的酉旋转群，不同之处在于β的范围为0到2π。这些也被称为欧拉角。
 
-The Haar measure for SO(3) in Euler angles is given by the Hopf angle parametrisation of SO(3), \\(\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma },[5] where {\displaystyle (\beta ,\alpha )}\\) parametrise \\(S^{{2}}\\), the space of rotation axes.
+The Haar measure for SO(3) in Euler angles is given by the Hopf angle parametrisation of SO(3), \\(\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma }\\),[5] where \\({\displaystyle (\beta ,\alpha )}\\) parametrise \\(S^{{2}}\\), the space of rotation axes.
 
-欧拉角中SO（3）的Haar度量由SO（3）的Hopf角参数化给出，\\(\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma },[5] where {\displaystyle (\beta ,\alpha )\\) parametrise \\(S^{{2}}\\), 旋转轴的空间。
+欧拉角中SO（3）的Haar度量由SO（3）的Hopf角参数化给出，\\(\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma }\\),[5] where \\({\displaystyle (\beta ,\alpha )\\) parametrise \\(S^{{2}}\\), 旋转轴的空间。
 
 For example, to generate uniformly randomized orientations, let α and γ be uniform from 0 to 2π, let z be uniform from −1 to 1, and let β = arccos(z).
 
