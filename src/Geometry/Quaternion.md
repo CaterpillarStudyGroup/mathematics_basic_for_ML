@@ -11,7 +11,7 @@
 |j|	j|	−k|	−1|	i|
 |k|	k|	j|	−i|	−1|
 
-![](图片/11.jpg)
+![](assets/11.jpg)
 
 >- "Julia Quaternion 3" by Aiekick  
 Aiekick的“Julia Quaternion 3”
@@ -47,7 +47,7 @@ The unit quaternions can be thought of as a choice of a group structure on the 3
 
 单位四元数可以被认为是 3 球体 S3 上的一个群结构的选择，它给出了群 Spin(3)，它与 SU(2) 和 SO(3) 的全覆盖同构。
 
-![](图片/12.png)
+![](assets/12.png)
 
 Graphical representation of products of quaternion units as 90° rotations in the planes of 4-dimensional space spanned by two of {1, i, j, k}. The left factor can be viewed as being rotated by the right factor to arrive at the product. Visually i ⋅ j = −(j ⋅ i).
 
@@ -75,7 +75,7 @@ quaternion unit:基本四元数，即i,j,k
 
 *主条目：四元数的历史*
 
-![](图片/3.jpg)
+![](assets/3.jpg)
 
 都柏林布鲁厄姆（布鲁姆）桥上的四元数牌匾，上面写着：
 
@@ -451,7 +451,7 @@ $$
 {\displaystyle q^{-1}={\frac {q^{*}}{\lVert q\rVert ^{2}}}.}.
 $$
 
-![](图片/注释1.jpg)
+![](assets/注释1.jpg)
 
 This makes it possible to divide two quaternions p and q in two different ways (when q is non-zero). That is, their quotient can be either p q−1 or q−1p ; in general, those products are different, depending on the order of multiplication, except for the special case that p and q are scalar multiples of each other (which includes the case where p = 0). Hence, the notation 
 p
@@ -467,7 +467,7 @@ q
 
 # Algebraic properties  代数性质
 
-![](图片/14.png)
+![](assets/14.png)
 
 >- Cayley graph of Q8. The red arrows represent multiplication on the right by i, and the green arrows represent multiplication on the right by j.  
 Q8的凯莱图。 红色箭头代表右边乘以 i，绿色箭头代表右边乘以 j。
@@ -480,7 +480,7 @@ Because it is possible to divide quaternions, they form a division algebra. This
 
 因为四元数可以相除，所以它们形成了一个除法代数。 这是一个类似于域的结构，除了乘法的不可交换性。 实数上的有限维关联除法代数非常罕见。 Frobenius 定理指出正好有三个：$${\displaystyle \mathbb {R} }$$ 、$${\displaystyle \mathbb {C} }$$ 和 $${\displaystyle \mathbb {H} } $$ 。 范数使四元数成为范数代数，实数上的范数除法也非常罕见：赫尔维茨定理说只有四个： $${\displaystyle \mathbb {R} }$$ , $${\ displaystyle \mathbb {C} }$$ 、 $${\displaystyle \mathbb {H} }$$ 和 $${\displaystyle \mathbb {O} }$$ （八元数）。 四元数也是合成代数和单位巴拿赫代数的一个例子。
 
-![](图片/15.png)
+![](assets/15.png)
 
 Three-dimensional graph of Q8. Red, green and blue arrows represent multiplication by i, j, and k, respectively. Multiplication by negative numbers are omitted for clarity.
 
@@ -809,7 +809,7 @@ Therefore, non-zero, non-scalar quaternions, or positive scalar quaternions, hav
 
 *主条目：四元离子分析*
 
-![](图片/16.jpg)
+![](assets/16.jpg)
 
 >- The Julia sets and Mandelbrot sets can be extended to the Quaternions, but they must use cross sections to be rendered visually in 3 dimensions. This Julia set is cross sectioned at the x y plane.  
 Julia 集和 Mandelbrot 集可以扩展到四元数，但它们必须使用横截面才能在 3 维视觉上呈现。 这个 Julia 集在 x y 平面上进行横截面。
