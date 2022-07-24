@@ -57,22 +57,22 @@ Tait–Bryan角也称为**卡丹角**、**航海角**、**行进方向，高度�
 
 The axes of the original frame are denoted as x, y, z and the axes of the rotated frame as X, Y, Z. The **geometrical** **definition** (sometimes referred to as static) begins by defining the line of nodes (N) as the intersection of the planes xy and XY (it can also be defined as the common perpendicular to the axes z and Z and then written as the vector product N = z \times  Z). Using it, the three **Euler angles** can be defined as follows:
 
-原始坐标系的轴表示为x，y，z，旋转框架的轴表示为X，Y，Z.**几何定义**（有时称为静态）首先将交点线（N）定义为平面xy和XY的相交的线（也可以定义为同时与轴z轴和Z轴垂直的线，因此写为向量积 $$N=z \times Z$$）。使用它，三个**欧拉角**可以定义如下：
+原始坐标系的轴表示为x，y，z，旋转框架的轴表示为X，Y，Z.**几何定义**（有时称为静态）首先将交点线（N）定义为平面xy和XY的相交的线（也可以定义为同时与轴z轴和Z轴垂直的线，因此写为向量积 \\(N=z \times Z\\)）。使用它，三个**欧拉角**可以定义如下：
 
 > **[info]** line of nodes：交点线
 
--  $$\alpha$$（或$$\varphi$$）是x轴和N轴之间的有符号角度（x约定–也可以在y和N之间定义，称为y约定）。  
+-  \\(\alpha\\)（或\\(\varphi\\)）是x轴和N轴之间的有符号角度（x约定–也可以在y和N之间定义，称为y约定）。  
 
 > **[success]**  
-A轴与B轴之间的夹角，另一种表达方式是，以$$A\times B$$为轴，从A到B的旋转角度  
+A轴与B轴之间的夹角，另一种表达方式是，以\\(A\times B\\)为轴，从A到B的旋转角度  
 N在xy平面上，因此x与N的夹角可以看作是以z为轴在xy平面上的转动  
 
-- $$\beta$$（或$$\theta$$）是z轴和Z轴之间的角度。  
+- \\(\beta\\)（或\\(\theta\\)）是z轴和Z轴之间的角度。  
 
 > **[success]**  
 只有第二次旋转会导致z->Z  
 
-- $$\gamma$$（或$$\psi$$）是N轴和X轴之间的有符号角度（X约定）。  
+- \\(\gamma\\)（或\\(\psi\\)）是N轴和X轴之间的有符号角度（X约定）。  
 
 > **[success]**  
 N在XY平面上，因此N与X的夹角可以看作是以Z为轴在XY平面上的转动  
@@ -106,14 +106,14 @@ For the above-listed sequence of rotations, the line of nodes N can be simply de
 **N可以简单地表示为x′**:
 ![](assets/IMG_20220204_182724.jpg)
 
-- α（或$$\varphi$$）表示绕z轴旋转，
+- α（或\\(\varphi\\)）表示绕z轴旋转，
 
 >**[success]**  
 ![](assets/IMG_20220204_182743.jpg)
 
-- β（或$$\theta$$）表示绕x′轴旋转，
+- β（或\\(\theta\\)）表示绕x′轴旋转，
 
-- γ（或$$\psi$$）表示绕z〃轴旋转。
+- γ（或\\(\psi\\)）表示绕z〃轴旋转。
 
 >**[success]**  
 同理，z是γ的旋转轴，Z=z''
@@ -317,15 +317,15 @@ $$
 \sin ^{2}x=1-\cos ^{2}x,
 $$
 
-定义$${\displaystyle 0<x<\pi }$$  我们得出
+定义\\(\displaystyle 0<x<\pi \\)  我们得出
 
 $$
 \sin(\beta )={\sqrt {1-Z_{3}^{2}}}.
 $$
 
-As $$Z_{2}$$ is the double projection of a unitary vector,
+As \\(Z_{2}\\) is the double projection of a unitary vector,
 
-因为$$Z_{2}$$是酉向量的双重投影，
+因为\\(Z_{2}\\)是酉向量的双重投影，
 
 >**[warning]**  
 酉向量？
@@ -337,9 +337,9 @@ $$
 
 ![](assets/IMG_20220204_174235.jpg)
 
-There is a similar construction for $$Y_{3}$$, projecting it first over the plane defined by the axis z and the line of nodes. As the angle between the planes is $$\pi /2-\beta$$  and $$\cos(\pi /2-\beta )=\sin(\beta )$$, this leads to:
+There is a similar construction for \\(Y_{3}\\), projecting it first over the plane defined by the axis z and the line of nodes. As the angle between the planes is \\(\pi /2-\beta\\)  and \\(\cos(\pi /2-\beta )=\sin(\beta )\\), this leads to:
 
-$$Y_{3}$$也有类似的构造，首先将其投影到由z轴和交点线定义的平面上。由于平面之间的角度为$$\pi/2-\beta$$，又$$\cos（\pi/2-\beta）=\sin（\beta）$$，得出：
+\\(Y_{3}\\)也有类似的构造，首先将其投影到由z轴和交点线定义的平面上。由于平面之间的角度为\\(\pi/2-\beta\\)，又\\(\cos（\pi/2-\beta）=\sin（\beta）\\)，得出：
 
 
 $$
@@ -457,7 +457,7 @@ $$
 **绕z、y、x轴（按该顺序）**：每一次外旋用矩阵左乘表示，所以看上去顺序是反的  
 **绕x-y′-z〃轴（按该顺序）**：内旋用矩阵右乘表示
 
-1. 每个矩阵都要通过左乘列向量$${\textstyle{\begin{bmatrix}x\\y\\z\end{bmatrix}}}$$进行操作（请参见旋转矩阵定义中的歧义）
+1. 每个矩阵都要通过左乘列向量\\(\textstyle{\begin{bmatrix}x\\y\\z\end{bmatrix}}}\\)进行操作（请参见旋转矩阵定义中的歧义）
 
 >**[success]**  
 ![](assets/1.jpg)
@@ -533,9 +533,9 @@ A similar three angle decomposition applies to SU(2), the special unitary group 
 
 类似的三角分解适用于SU（2），复杂二维空间中特殊的酉旋转群，不同之处在于β的范围为0到2π。这些也被称为欧拉角。
 
-The Haar measure for SO(3) in Euler angles is given by the Hopf angle parametrisation of SO(3), $${\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma },[5] where {\displaystyle (\beta ,\alpha )}$$ parametrise $$S^{{2}}$$, the space of rotation axes.
+The Haar measure for SO(3) in Euler angles is given by the Hopf angle parametrisation of SO(3), \\(\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma },[5] where {\displaystyle (\beta ,\alpha )}\\) parametrise \\(S^{{2}}\\), the space of rotation axes.
 
-欧拉角中SO（3）的Haar度量由SO（3）的Hopf角参数化给出，$${\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma },[5] where {\displaystyle (\beta ,\alpha )}$$ parametrise $$S^{{2}}$$, 旋转轴的空间。
+欧拉角中SO（3）的Haar度量由SO（3）的Hopf角参数化给出，\\(\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma },[5] where {\displaystyle (\beta ,\alpha )\\) parametrise \\(S^{{2}}\\), 旋转轴的空间。
 
 For example, to generate uniformly randomized orientations, let α and γ be uniform from 0 to 2π, let z be uniform from −1 to 1, and let β = arccos(z).
 
@@ -543,9 +543,9 @@ For example, to generate uniformly randomized orientations, let α and γ be uni
 
 ## Geometric algebra 几何代数
 
-Other properties of Euler angles and rotations in general can be found from the geometric algebra, a higher level abstraction, in which the quaternions are an even subalgebra. The principal tool in geometric algebra is the rotor $${\displaystyle \mathbf {\mathbb {R} } =[\cos(\theta /2)-Iu\sin(\theta /2)]}$$ where $${\displaystyle \mathbf {\theta } =}angle of rotation, {\displaystyle \mathbf {(} u)=}rotation axis (unitary vector) and {\displaystyle \mathbf {(} I)=}pseudoscalar (trivector in \mathbb {R} ^{3})$$
+Other properties of Euler angles and rotations in general can be found from the geometric algebra, a higher level abstraction, in which the quaternions are an even subalgebra. The principal tool in geometric algebra is the rotor \\(\displaystyle \mathbf {\mathbb {R} } =[\cos(\theta /2)-Iu\sin(\theta /2)]\\) where \\(\displaystyle \mathbf {\theta } =}angle of rotation, {\displaystyle \mathbf {(} u)=}rotation axis (unitary vector) and {\displaystyle \mathbf {(} I)=}pseudoscalar (trivector in \mathbb {R} ^{3})\\)
 
-一般来说，欧拉角和旋转的其他性质可以从几何代数中找到，这是一种更高层次的抽象，其中四元数是偶数子代数。几何代数中的主要工具是转子$${\displaystyle \mathbf {\mathbb {R} } =[\cos(\theta /2)-Iu\sin(\theta /2)]}$$ where $${\displaystyle \mathbf {\theta } =}angle of rotation, {\displaystyle \mathbf {(} u)=}rotation axis (unitary vector) and {\displaystyle \mathbf {(} I)=}pseudoscalar (trivector in \mathbb {R} ^{3})$$
+一般来说，欧拉角和旋转的其他性质可以从几何代数中找到，这是一种更高层次的抽象，其中四元数是偶数子代数。几何代数中的主要工具是转子\\(\displaystyle \mathbf {\mathbb {R} } =[\cos(\theta /2)-Iu\sin(\theta /2)]\\) where \\(\displaystyle \mathbf {\theta } =}angle of rotation, {\displaystyle \mathbf {(} u)=}rotation axis (unitary vector) and {\displaystyle \mathbf {(} I)=}pseudoscalar (trivector in \mathbb {R} ^{3})\\)
 
 ## Higher dimensions 更高维度
 
@@ -565,9 +565,9 @@ Any set of 6 parameters that define the rotation matrix could be considered an e
 
 定义旋转矩阵的任何一组6个参数可被视为Euler角到尺寸4的延伸。
 
-In general, the number of Euler angles in dimension D is quadratic in D; since any one rotation consists of choosing two dimensions to rotate between, the total number of rotations available in dimension D is $${\displaystyle N_{\text{rot}}={\binom {D}{2}}=D(D-1)/2}, which for D=2,3,4 yields {\displaystyle N_{\text{rot}}=1,3,6}$$.
+In general, the number of Euler angles in dimension D is quadratic in D; since any one rotation consists of choosing two dimensions to rotate between, the total number of rotations available in dimension D is \\(\displaystyle N_{\text{rot}}={\binom {D}{2}}=D(D-1)/2}, which for D=2,3,4 yields {\displaystyle N_{\text{rot}}=1,3,6\\).
 
-一般来说，D维的欧拉角的个数是D的二次方； 因为任何一次旋转都包括选择两个维度进行旋转，所以维度 D 中可用的总旋转次数为 $${\displaystyle N_{\text{rot}}={\binom {D}{2}}=D( D-1)/2}，对于 D=2,3,4 产生 {\displaystyle N_{\text{rot}}=1,3,6}$$。
+一般来说，D维的欧拉角的个数是D的二次方； 因为任何一次旋转都包括选择两个维度进行旋转，所以维度 D 中可用的总旋转次数为 \\(\displaystyle N_{\text{rot}}={\binom {D}{2}}=D( D-1)/2}，对于 D=2,3,4 产生 {\displaystyle N_{\text{rot}}=1,3,6\\)。
 
 # Applications 应用程序
 
