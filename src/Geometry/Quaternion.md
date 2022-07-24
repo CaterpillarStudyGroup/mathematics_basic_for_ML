@@ -437,6 +437,8 @@ Every quaternion has a polar decomposition \\({\displaystyle q=\lVert q\rVert \c
 
 每个四元数都有一个极分解 \\({\displaystyle q=\lVert q\rVert \cdot \mathbf {U} q}\\)
 
+> &#x1F4CC; 分解为长度和方向
+
 Using conjugation and the norm makes it possible to define the reciprocal of a non-zero quaternion. The product of a quaternion with its reciprocal should equal 1, and the considerations above imply that the product of \\({\displaystyle q} $$and \\({\displaystyle q^{*}/\left\Vert q\right\|^{2}}\\) is 1 (for either order of multiplication). So the reciprocal of q is defined to be
 
 使用共轭和范数可以定义非零四元数的倒数。 四元数与其倒数的乘积应该等于 1，上述考虑意味着 \\({\displaystyle q} $$和 \\({\displaystyle q^{*}/\left\Vert q\right\|^{2}}\\)的乘积 为 1（对于任一乘法顺序）。 所以q的倒数定义为
@@ -448,7 +450,10 @@ $$
 {\displaystyle q^{-1}={\frac {q^{*}}{\lVert q\rVert ^{2}}}.}.
 $$
 
-![](assets/注释1.jpg)
+> &#x1F4CC;  
+> ![](assets/注释1.jpg)
+> &#x2753;
+\\(qq = ||q||^2\\)，是不是也可以推出\\(q^{-1}=\frac{q}{||q||^2}\\)，那\\(q^{-1}\\)的定义就有歧义了？  
 
 This makes it possible to divide two quaternions p and q in two different ways (when q is non-zero). That is, their quotient can be either p q−1 or q−1p ; in general, those products are different, depending on the order of multiplication, except for the special case that p and q are scalar multiples of each other (which includes the case where p = 0). Hence, the notation 
 p
@@ -456,13 +461,13 @@ p
 q
  is ambiguous because it does not specify whether q divides on the left or the right (whether  q−1 multiplies p on its left or its right).
 
- 这使得可以以两种不同的方式划分两个四元数 p 和 q（当 q 非零时）。 也就是说，它们的商可以是 p q−1 或 q−1p ； 一般来说，这些乘积是不同的，具体取决于乘法的顺序，除了 p 和 q 是彼此的标量倍数的特殊情况（包括 p = 0 的情况）。 因此，符号
+ 这使得可以以两种不同的方式做两个四元数 p 和 q（当 q 非零时）的除法。 也就是说，它们的商可以是 p q−1 或 q−1p ； 一般来说，这些乘积是不同的，具体取决于乘法的顺序，除了 p 和 q 是彼此的标量倍数的特殊情况（包括 p = 0 的情况）。 因此，符号
 p
 /
 q
-  是模棱两可的，因为它没有指定 q 是在左边还是右边除（ q−1 是在它的左边还是右边乘以 p）。
+  是模棱两可的，因为它没有指定 q 是在左除还是右除（ q−1 是从左边还是右边乘以 p）。
 
-# Algebraic properties  代数性质
+# 代数性质
 
 ![](assets/14.png)
 
@@ -472,6 +477,9 @@ Q8的凯莱图。 红色箭头代表右边乘以 i，绿色箭头代表右边乘
 The set \\({\displaystyle \mathbb {H} }\\)  of all quaternions is a vector space over the real numbers with dimension 4.[c] Multiplication of quaternions is associative and distributes over vector addition, but with the exception of the scalar subset, it is not commutative. Therefore, the quaternions \\({\displaystyle \mathbb {H} }\\)  are a non-commutative, associative algebra over the real numbers. Even though \\({\displaystyle \mathbb {H} }\\)  contains copies of the complex numbers, it is not an associative algebra over the complex numbers.
 
 所有四元数的集合 \\({\displaystyle \mathbb {H} }\\) 是维数为 4 的实数上的向量空间。[c] 四元数满足乘法结合律和加法分配律，不满足交换律（除了其标量子集可交换—）。 因此，四元数 \\({\displaystyle \mathbb {H} }\\) 是实数上的非交换结合代数。 尽管 \\({\displaystyle \mathbb {H} }\\) 包含复数的副本，但它不是复数上的结合代数。
+
+> &#x2753;
+四元数与复数的计算不满足结合律？
 
 Because it is possible to divide quaternions, they form a division algebra. This is a structure similar to a field except for the non-commutativity of multiplication. Finite-dimensional associative division algebras over the real numbers are very rare. The Frobenius theorem states that there are exactly three: \\({\displaystyle \mathbb {R} }\\) , \\({\displaystyle \mathbb {C} }\\) , and \\({\displaystyle \mathbb {H} }\\) . The norm makes the quaternions into a normed algebra, and normed division algebras over the real numbers are also very rare: Hurwitz's theorem says that there are only four: \\({\displaystyle \mathbb {R} }\\) , \\({\displaystyle \mathbb {C} }\\) , \\({\displaystyle \mathbb {H} }\\) , and \\({\displaystyle \mathbb {O} }\\)  (the octonions). The quaternions are also an example of a composition algebra and of a unital Banach algebra.
 
@@ -487,7 +495,7 @@ Because the product of any two basis vectors is plus or minus another basis vect
 
 因为任何两个基向量的乘积是正负另一个基向量，所以集合{±1，±i，±j，±k}在乘法下形成一个群。 这个非阿贝尔群称为四元数群，记为 Q8。 [29] Q8 的实群环是一个环 \\({\displaystyle \mathbb {R} [\mathrm {Q} _{8}]}\\) 也是 \\({\displaystyle \mathbb 上的一个八维向量空间 {R} .}\\)。 \\({\displaystyle \mathrm {Q} _{8}.}\\) 的每个元素都有一个基向量。四元数同构于 \\({\displaystyle \mathbb {R} [\mathrm { Q} _{8}]}\\) 由元素 1 + (−1)、i + (−i)、j + (−j) 和 k + (−k) 生成的理想。 这里每个差的第一项是基元素 1、i、j 和 k 之一，第二项是基元素 -1、-i、-j 和 -k 之一，而不是加法逆元 1、i、j 和 k。
 
-# Quaternions and the space geometry  四元数和空间几何
+# 四元数和空间几何
 
 The vector part of a quaternion can be interpreted as a coordinate vector in \\({\displaystyle \mathbb {R} ^{3};}\\) therefore, the algebraic operations of the quaternions reflect the geometry of \\({\displaystyle \mathbb {R} ^{3}.}\\) Operations such as the vector dot and cross products can be defined in terms of quaternions, and this makes it possible to apply quaternion techniques wherever spatial vectors arise. A useful application of quaternions has been to interpolate the orientations of key-frames in computer graphics.[14]
 
@@ -495,7 +503,12 @@ The vector part of a quaternion can be interpreted as a coordinate vector in \\(
 
 For the remainder of this section, i, j, and k will denote both the three imaginary[30] basis vectors of \\({\displaystyle \mathbb {H} }\\)  and a basis for \\({\displaystyle \mathbb {R} ^{3}.}\\) Replacing i by −i, j by −j, and k by −k sends a vector to its additive inverse, so the additive inverse of a vector is the same as its conjugate as a quaternion. For this reason, conjugation is sometimes called the spatial inverse.
 
-对于本节的接下来部分，i、j 和 k 既表示 \\({\displaystyle \mathbb {H} }\\) 的三个虚数[30] 基向量，同时也表示 \\({\displaystyle \mathbb { R} ^{3}.}\\) 将 i 替换为 -i，j 替换为 -j，k 替换为 -k 就是向量的加法逆，因此向量的加法逆与它作为四元数的共轭相同 . 因此，共轭有时被称为空间逆。
+对于本节的接下来部分，i、j 和 k 既表示 \\({\displaystyle \mathbb {H} }\\) 的三个虚数[30] 基向量，同时也表示 \\({\displaystyle \mathbb { R} ^{3}.}\\) 将 i 替换为 -i，j 替换为 -j，k 替换为 -k 就是向量的加法逆，因此向量的加法逆与它作为四元数的共轭相同 . 
+
+> &#x2753;
+> 为什么加法逆的实部不需要取反？
+
+因此，共轭有时被称为空间逆。
 
 For two vector quaternions p = b1i + c1j + d1k and q = b2i + c2j + d2k their dot product, by analogy to vectors in \\({\displaystyle \mathbb {R} ^{3},}\\) is
 
@@ -505,6 +518,9 @@ $$
 {\displaystyle p\cdot q=b_{1}b_{2}+c_{1}c_{2}+d_{1}d_{2}~.}
 $$
 
+> &#x1F4CC;
+> 向量四元数的点积是实数
+
 It can also be expressed in a component-free manner as
 
 它也可以用无分量的方式表示为
@@ -513,17 +529,24 @@ $$
 {\displaystyle p\cdot q=\textstyle {\frac {1}{2}}(p^{*}q+q^{*}p)=\textstyle {\frac {1}{2}}(pq^{*}+qp^{*}).}
 $$
 
+> &#x1F4CC;
+> 点积和乘法是两个不同的定义。  
+> pq* 和 qp* 的标量相同，失量相反，用这种方式提取它们的标量部分
+
 This is equal to the scalar parts of the products pq∗, qp∗, p∗q, and q∗p. Note that their vector parts are different.
 
 这等于乘积 pq∗、qp∗、p∗q 和 q∗p 的标量部分。 请注意，它们的矢量部分是不同的。
 
 The cross product of p and q relative to the orientation determined by the ordered basis i, j, and k is
 
-p 和 q 相对于由有序基 i、j 和 k 确定的方向的叉积是
+p 和 q 的叉积方向由有序基 i、j 和 k 确定
 
 $$
 {\displaystyle p\times q=(c_{1}d_{2}-d_{1}c_{2})\mathbf {i} +(d_{1}b_{2}-b_{1}d_{2})\mathbf {j} +(b_{1}c_{2}-c_{1}b_{2})\mathbf {k} \,.}
 $$
+
+> &#x1F4CC;
+> p和q是向量四元数，不考虑a
 
 (Recall that the orientation is necessary to determine the sign.) This is equal to the vector part of the product pq (as quaternions), as well as the vector part of −q∗p∗. It also has the formula
 
@@ -533,12 +556,9 @@ $$
 {\displaystyle p\times q=\textstyle {\tfrac {1}{2}}(pq-qp).}
 $$
 
-> &#x1F4CC;  
-经核实，原文章公式中就为qp，而不是-q* p*
-
 For the commutator, [p, q] = pq − qp, of two vector quaternions one obtains
 
-对于交换子，[p, q] = pq - qp，两个向量四元数之一得到
+对于交换子，[p, q] = pq - qp，得到
 
 $$
 {\displaystyle [p,q]=2p\times q.}
@@ -546,7 +566,7 @@ $$
 
 In general, let p and q be quaternions and write
 
-一般来说，设 p 和 q 是四元数并写
+一般来说，设 p 和 q 是四元数，写作
 
 $$
 {\displaystyle p=p_{\text{s}}+p_{\text{v}},}
@@ -564,9 +584,16 @@ $$
 {\displaystyle pq=(pq)_{\text{s}}+(pq)_{\text{v}}=(p_{\text{s}}q_{\text{s}}-p_{\text{v}}\cdot q_{\text{v}})+(p_{\text{s}}q_{\text{v}}+q_{\text{s}}p_{\text{v}}+p_{\text{v}}\times q_{\text{v}}).}
 $$
 
+> &#x1F4CC;
+> \\(p_{\text{v}}\times q_{\text{v}}\\)不可交换
+
 This shows that the noncommutativity of quaternion multiplication comes from the multiplication of vector quaternions. It also shows that two quaternions commute if and only if their vector parts are collinear. Hamilton[31] showed that this product computes the third vertex of a spherical triangle from two given vertices and their associated arc-lengths, which is also an algebra of points in Elliptic geometry.
 
 这说明四元数乘法的不可交换性来自向量四元数的乘法。 它还表明，当且仅当它们的向量部分共线时，两个四元数可以交换。 Hamilton[31] 表明，该乘积从两个给定顶点及其相关的弧长计算球面三角形的第三个顶点，这也是椭圆几何中的点代数。
+
+> &#x1F4CC;
+> 给定的顶点：pv和qv  
+> 相关的弧长：ps和qs
 
 Unit quaternions can be identified with rotations in \\({\displaystyle \mathbb {R} ^{3}}\\) and were called versors by Hamilton.[31] Also see Quaternions and spatial rotation for more information about modeling three-dimensional rotations using quaternions.
 
@@ -576,11 +603,18 @@ See Hanson (2005)[32] for visualization of quaternions.
 
 有关四元数的可视化，请参见 Hanson (2005)[32]。
 
-# Matrix representations  矩阵表示
+# 矩阵表示
 
 Just as complex numbers can be represented as matrices, so can quaternions. There are at least two ways of representing quaternions as matrices in such a way that quaternion addition and multiplication correspond to matrix addition and matrix multiplication. One is to use 2 × 2 complex matrices, and the other is to use 4 × 4 real matrices. In each case, the representation given is one of a family of linearly related representations. In the terminology of abstract algebra, these are injective homomorphisms from \\({\displaystyle \mathbb {H} }\\)  to the matrix rings M(2,ℂ) and M(4,ℝ), respectively.
 
-正如复数可以表示为矩阵一样，四元数也可以。 至少有两种将四元数表示为矩阵的方式，即四元数加法和乘法对应于矩阵加法和矩阵乘法。 一种是使用 2 × 2 复矩阵，另一种是使用 4 × 4 实矩阵。 在每种情况下，给定的表示是一系列线性相关的表示之一。 在抽象代数的术语中，这些是从 \\({\displaystyle \mathbb {H} }\\) 到矩阵环 M(2,ℂ) 和 M(4,ℝ) 的单射同态。
+正如复数可以表示为矩阵一样，四元数也可以。 至少有两种将四元数表示为矩阵的方式，使得四元数加法和乘法对应于矩阵加法和矩阵乘法。 一种是使用 2 × 2 复矩阵，另一种是使用 4 × 4 实矩阵。 在每种情况下，给定的表示是一系列线性相关的表示之一。 
+
+> &#x2753;
+> **在每种情况下，给定的表示是一系列线性相关的表示之一。**?
+
+在抽象代数的术语中，这些是从 \\({\displaystyle \mathbb {H} }\\) 到矩阵环 M(2,ℂ) 和 M(4,ℝ) 的单射同态。
+
+## 使用 2 × 2 复矩阵
 
 Using 2 × 2 complex matrices, the quaternion a + bi + cj + dk can be represented as
 
@@ -601,20 +635,26 @@ This representation has the following properties:
 - Constraining any two of b, c and d to zero produces a representation of complex numbers. For example, setting c = d = 0 produces a diagonal complex matrix representation of complex numbers, and setting b = d = 0 produces a real matrix representation.  
 将 b、c 和 d 中的任意两个约束为零会产生复数的表示。 例如，设置 c = d = 0 生成复数的对角复矩阵表示，设置 b = d = 0 生成实矩阵表示。
 
+> &#x2753; 复数的表示？
+
 - The norm of a quaternion (the square root of the product with its conjugate, as with complex numbers) is the square root of the determinant of the corresponding matrix.[33]  
 四元数的范数（乘积与其共轭的平方根，与复数一样）是相应矩阵行列式的平方根。 [33]
 
 - The conjugate of a quaternion corresponds to the conjugate transpose of the matrix.  
 四元数的共轭对应于矩阵的共轭转置。
 
+> &#x2753; 矩阵的共轭转置？
+
 - By restriction this representation yields an isomorphism between the subgroup of unit quaternions and their image SU(2). Topologically, the unit quaternions are the 3-sphere, so the underlying space of SU(2) is also a 3-sphere. The group SU(2) is important for describing spin in quantum mechanics; see Pauli matrices.  
-通过限制，这种表示在单位四元数的子群和它们的图像 SU(2) 之间产生了同构。 拓扑上，单位四元数是 3 球体，所以 SU(2) 的底层空间也是 3 球体。 SU(2) 群对于描述量子力学中的自旋很重要； 参见泡利矩阵。
+通过限制，这种表示在单位四元数的子群和它们的图像 SU(2) 之间产生了同构。 拓扑上，单位四元数是 3 球体，所以 SU(2) 的底层空间也是 3 球体。 SU(2) 群对于描述量子力学中的自旋很重要； 参见Pauli矩阵。
 
 - There is a strong relation between quaternion units and Pauli matrices. Obtain the eight quaternion unit matrices by taking a, b, c and d, set three of them at zero and the fourth at 1 or −1. Multiplying any two Pauli matrices always yields a quaternion unit matrix, all of them except for −1. One obtains −1 via i2 = j2 = k2 = i j k = −1; e.g. the last equality is
 \\({\displaystyle {\begin{aligned}ijk=\sigma _{1}\sigma _{2}\sigma _{3}\sigma _{1}\sigma _{2}\sigma _{3}=-1\end{aligned}}}\\)  
 
-四元数单元和Pauli矩阵之间存在很强的关系。 通过取 a、b、c 和 d 获得八个四元数单位矩阵，将其中三个设置为零，第四个设置为 1 或 -1。 将任何两个泡利矩阵相乘总是会产生一个四元数单位矩阵，除了 -1 之外的所有矩阵。 一个通过 i2 = j2 = k2 = i j k = -1 获得 -1； 例如 最后一个等式是
+四元数单元和Pauli矩阵之间存在很强的关系。 通过取 a、b、c 和 d 获得八个四元数单位矩阵，将其中三个设置为零，第四个设置为 1 或 -1。 将任何两个Pauli矩阵相乘总是会产生一个四元数单位矩阵，除了 -1 之外的所有矩阵。 一个通过 i2 = j2 = k2 = i j k = -1 获得 -1； 例如 最后一个等式是
 \\({\displaystyle {\begin{aligned}ijk=\sigma _{1}\sigma _{2}\sigma _{3}\sigma _{1}\sigma _{2}\sigma _{3}=-1\end{aligned}}}\\)  
+
+## 使用 4 × 4 实矩阵
 
 Using 4 × 4 real matrices, that same quaternion can be written as
 
@@ -954,7 +994,7 @@ Let A be the set of quaternions of the form a + b i + c j + d k where a, b, c, a
 
 令 A 为 a + b i + c j + d k 形式的四元数集合，其中 a、b、c 和 d 要么全是整数，要么全是半整数。 集合 A 是一个环（实际上是一个域）和一个格，称为 Hurwitz 四元数环。 该环中有 24 个单位四元数，它们是具有 Schläfli 符号 {3,4,3} 的常规 24 单元的顶点。 它们对应于正四面体的旋转对称群的双覆盖。 类似地，具有 Schläfli 符号 {3,3,5} 的规则 600 单元的顶点可以作为单位 icosians，对应于规则二十面体的旋转对称群的双覆盖。 正八面体的旋转对称群的双覆盖对应于代表二蝶形 288 单元顶点的四元数。
 
-# Quaternion algebras  四元数代数
+# 四元数代数
 
 *Main article: Quaternion algebra*
 
@@ -1142,7 +1182,7 @@ Neither matrices nor quaternions and ordinary vectors were banished from these t
 Lénárt 球体
 
 - Pauli matrices  
-泡利矩阵
+Pauli矩阵
 
 - Quaternionic matrix  
 四元离子矩阵
