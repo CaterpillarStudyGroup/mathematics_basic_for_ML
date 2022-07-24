@@ -1,7 +1,5 @@
 # Quaternion  四元数
 
-此条目介绍的是数学中的四元数。 关于其他用法，请见“四元数（消歧义）”。
-
 四元数乘法表
 
 ||1|	i|	j|	k|
@@ -13,12 +11,11 @@
 
 ![](assets/11.jpg)
 
->- "Julia Quaternion 3" by Aiekick  
-Aiekick的“Julia Quaternion 3”
+> &#x1F446; Aiekick的“Julia Quaternion 3”
 
 在数学中，四元数系统扩展了复数。 四元数由爱尔兰数学家威廉·罗文·Hamilton于 1843 年[1][2] 首次描述，并应用于三维空间的力学。 Hamilton将四元数定义为三维空间中两条有向线的商，[3] 或者等效地，定义为两个向量的商。 [4] 四元数的乘法是不可交换的。
 
->**[success]**  
+> &#x1F4CC;  
 **两个向量的商**：最初引入四元数是为了定义向量的除法
 
 四元数一般用以下形式表示
@@ -31,17 +28,17 @@ $$
 
 四元数用于纯数学，但在应用数学中也有实际用途，特别是用于涉及三维旋转的计算，例如三维计算机图形学、计算机视觉和晶体纹理分析。 [5] 它们可以与其他旋转方法一起使用，例如欧拉角和旋转矩阵，或者作为它们的替代方法，具体取决于应用程序。
 
-In modern mathematical language, quaternions form a four-dimensional associative normed division algebra over the real numbers, and therefore also a domain. The algebra of quaternions is often denoted by H (for Hamilton), or in blackboard bold by $${\displaystyle \mathbb {H} .}$$ It can also be given by the Clifford algebra classifications $${\displaystyle \operatorname {Cl} _{0,2}(\mathbb {R} )\cong \operatorname {Cl} _{3,0}^{+}(\mathbb {R} ).}$$ In fact, it was the first noncommutative division algebra to be discovered.
+In modern mathematical language, quaternions form a four-dimensional associative normed division algebra over the real numbers, and therefore also a domain. The algebra of quaternions is often denoted by H (for Hamilton), or in blackboard bold by \\({\displaystyle \mathbb {H} .}\\) It can also be given by the Clifford algebra classifications \\({\displaystyle \operatorname {Cl} _{0,2}(\mathbb {R} )\cong \operatorname {Cl} _{3,0}^{+}(\mathbb {R} ).}\\) In fact, it was the first noncommutative division algebra to be discovered.
 
-在现代数学语言中，四元数在实数上**形成一个四维关联范数除法代数，因此也是一个域**。 四元数的代数通常用 H（代表 Hamilton）来表示，或者用黑板粗体表示为 $${\displaystyle \mathbb {H} .}$$ 它也可以由 Clifford 代数分类给出 $${\displaystyle \operatorname {Cl} _{0,2}(\mathbb {R} )\cong \operatorname {Cl} _{3,0}^{+}(\mathbb {R} ).}$$ 其实就是 第一个非交换除法代数被发现。
+在现代数学语言中，四元数在实数上**形成一个四维关联范数除法代数，因此也是一个域**。 四元数的代数通常用 H（代表 Hamilton）来表示，或者用黑板粗体表示为 \\({\displaystyle \mathbb {H} .}\\) 它也可以由 Clifford 代数分类给出 \\({\displaystyle \operatorname {Cl} _{0,2}(\mathbb {R} )\cong \operatorname {Cl} _{3,0}^{+}(\mathbb {R} ).}\\) 其实就是 第一个非交换除法代数被发现。
 
->**[warning]**  
+> &#x2753;  
 **关联范数**：？  
 **除法代数**：？
 
-According to the Frobenius theorem, the algebra $${\displaystyle \mathbb {H} }$$  is one of only two finite-dimensional division rings containing a proper subring isomorphic to the real numbers; the other being the complex numbers. These rings are also Euclidean Hurwitz algebras, of which quaternions are the largest associative algebra. Further extending the quaternions yields the non-associative octonions, which is the last normed division algebra over the real numbers. (The sedenions, the extension of the octonions, have zero divisors and so cannot be a normed division algebra.)[6]
+According to the Frobenius theorem, the algebra \\({\displaystyle \mathbb {H} }\\)  is one of only two finite-dimensional division rings containing a proper subring isomorphic to the real numbers; the other being the complex numbers. These rings are also Euclidean Hurwitz algebras, of which quaternions are the largest associative algebra. Further extending the quaternions yields the non-associative octonions, which is the last normed division algebra over the real numbers. (The sedenions, the extension of the octonions, have zero divisors and so cannot be a normed division algebra.)[6]
 
-根据 Frobenius 定理，代数 $${\displaystyle \mathbb {H} }$$ 是仅有的两个包含与实数同构的适当子环的有限维除环之一； 另一个是复数。 这些环也是欧几里得赫维茨代数，其中四元数是最大的结合代数。 进一步扩展四元数产生非结合八元数，这是实数上的最后一个范数除法代数。 （sedenions，八元数的扩展，有零除数，因此不能是规范的除法代数。）[6]
+根据 Frobenius 定理，代数 \\({\displaystyle \mathbb {H} }\\) 是仅有的两个包含与实数同构的适当子环的有限维除环之一； 另一个是复数。 这些环也是欧几里得赫维茨代数，其中四元数是最大的结合代数。 进一步扩展四元数产生非结合八元数，这是实数上的最后一个范数除法代数。 （sedenions，八元数的扩展，有零除数，因此不能是规范的除法代数。）[6]
 
 The unit quaternions can be thought of as a choice of a group structure on the 3-sphere S3 that gives the group Spin(3), which is isomorphic to SU(2) and also to the universal cover of SO(3).
 
@@ -51,31 +48,27 @@ The unit quaternions can be thought of as a choice of a group structure on the 3
 
 Graphical representation of products of quaternion units as 90° rotations in the planes of 4-dimensional space spanned by two of {1, i, j, k}. The left factor can be viewed as being rotated by the right factor to arrive at the product. Visually i ⋅ j = −(j ⋅ i).
 
-四元数单元乘积的图形表示为在4D空间中跨越 {1, i, j, k} 中的两个轴的平面上旋转 90°。 可以看作是左边的因子被右边的因子旋转后得到乘积。 视觉上 i ⋅ j = -(j ⋅ i)。
+基本四元数乘积的图形表示，为在4D空间中跨越 {1, i, j, k} 中的两个轴的平面上旋转 90°。 可以看作是左边的因子被右边的因子旋转后得到乘积。 视觉上 i ⋅ j = -(j ⋅ i)。
 
->**[success]**  
-**四元数单元**：unit quaternion：单位四元数，即norm为1的四元数  
-quaternion unit:基本四元数，即i,j,k 
+> &#x1F4CC;  
+unit quaternion：单位四元数，即norm为1的四元数  
+quaternion unit：基本四元数，即i,j,k 
 
-- In blue:  蓝色
+- 蓝色
 
   -  1 ⋅ i = i (1/i 平面)
 
   -  i ⋅ j = k (i/k 平面)
 
-- In red:  红色
+- 红色
 
   -  1 ⋅ j = j (1/j 平面)
 
   -  j ⋅ i = -k (j/k 平面)
 
-# History  历史
+# 历史
 
-*Main article: History of quaternions*
-
-*主条目：四元数的历史*
-
-![](assets/3.jpg)
+![](assets/13.jpg)
 
 都柏林布鲁厄姆（布鲁姆）桥上的四元数牌匾，上面写着：
 
@@ -90,21 +83,15 @@ i2 = j2 = k2 = i j k = −1
 
 四元数由Hamilton于 1843 年引入。 [7] 这项工作的重要前身包括欧拉的四平方恒等式 (1748) 和奥林德罗德里格斯 (Olinde Rodrigues) 通过四个参数对一般旋转进行参数化 (1840)，但这些作者都没有将四参数旋转视为代数。 [8] [9] 卡尔·弗里德里希·高斯也在 1819 年发现了四元数，但这项工作直到 1900 年才发表。[10][11]
 
-Hamilton知道复数可以解释为平面上的点，他正在寻找一种方法来对三维空间中的点做同样的事情。 空间中的点可以用它们的坐标来表示，坐标是三元组的数字，而且多年来他一直知道如何加减三元组的数字。 然而，很长一段时间，他一直被困在乘除法的问题上。 他不知道如何计算空间中两点坐标的商。 事实上，Ferdinand Georg Frobenius 后来在 1877 年证明，实数上的除法代数是有限维和结合的，它不可能是三维的，并且只有三个这样的除法代数： $${\displaystyle \mathbb {R,C} }$$（复数）和 $${\displaystyle \mathbb {H} }$$（四元数），它们的维数分别为 1、2 和 4。
+Hamilton知道复数可以解释为平面上的点，他正在寻找一种方法来对三维空间中的点做同样的事情。 空间中的点可以用它们的坐标来表示，坐标是三元组的数字，而且多年来他一直知道如何加减三元组的数字。 然而，很长一段时间，他一直被困在乘除法的问题上。 他不知道如何计算空间中两点坐标的商。 事实上，Ferdinand Georg Frobenius 后来在 1877 年证明，实数上的除法代数是有限维和结合的，它不可能是三维的，并且只有三个这样的除法代数： \\({\displaystyle \mathbb {R,C} }\\)（复数）和 \\({\displaystyle \mathbb {H} }\\)（四元数），它们的维数分别为 1、2 和 4。
 
-The great breakthrough in quaternions finally came on Monday 16 October 1843 in Dublin, when Hamilton was on his way to the Royal Irish Academy where he was going to preside at a council meeting. As he walked along the towpath of the Royal Canal with his wife, the concepts behind quaternions were taking shape in his mind. When the answer dawned on him, Hamilton could not resist the urge to carve the formula for the quaternions,
-
-四元数的重大突破终于在 1843 年 10 月 16 日星期一在都柏林出现，当时Hamilton正在前往爱尔兰皇家学院的路上，他将在那里主持一次理事会会议。 当他和妻子沿着皇家运河的纤道行走时，四元数背后的概念正在他的脑海中形成。当答案浮出水面时，Hamilton忍不住想写出四元数的公式
+四元数的重大突破终于在 1843 年 10 月 16 日星期一在都柏林出现，当时Hamilton正在前往爱尔兰皇家学院的路上，他将在那里主持一次理事会会议。 当他和妻子沿着皇家运河的纤道行走时，四元数背后的概念正在他的脑海中形成。当答案浮出水面时，Hamilton忍不住把四元数的公式
 
 $$
 {\displaystyle \mathbf {i} ^{2}=\mathbf {j} ^{2}=\mathbf {k} ^{2}=\mathbf {i\,j\,k} =-1}
 $$
 
-into the stone of Brougham Bridge as he paused on it. Although the carving has since faded away, there has been an annual pilgrimage since 1989 called the Hamilton Walk for scientists and mathematicians who walk from Dunsink Observatory to the Royal Canal bridge in remembrance of Hamilton's discovery.
-
-进入布鲁厄姆桥的石头，他停在上面。尽管雕刻已经消失，但自 1989 年以来，每年都会举行一次名为“Hamilton步行”的朝圣活动，供科学家和数学家从邓辛克天文台步行到皇家运河桥，以纪念Hamilton的发现。
-
-On the following day, Hamilton wrote a letter to his friend and fellow mathematician, John T. Graves, describing the train of thought that led to his discovery. This letter was later published in a letter to the London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science;[12] Hamilton states:
+刻在布鲁厄姆桥的石头上他所站立的位置。尽管雕刻已经消失，但自 1989 年以来，每年都会举行一次名为“Hamilton步行”的朝圣活动，供科学家和数学家从邓辛克天文台步行到皇家运河桥，以纪念Hamilton的发现。
 
 第二天，Hamilton给他的朋友兼数学家约翰·格雷夫斯写了一封信，描述了导致他发现的思路。 这封信后来发表在给伦敦、爱丁堡和都柏林哲学杂志和科学杂志上。在信中；[12] Hamilton说：
 
@@ -112,10 +99,7 @@ And here there dawned on me the notion that we must admit, in some sense, a four
 
 在这里，我突然想到，在某种意义上，我们必须承认空间的第四维度，以便用三元组进行计算……电路似乎闭合了，火花闪现。 [12]
 
->**[success]**  
-**必须承认空间的第四维度，以便用三元组进行计算**：通过人为地增加一个维度，来解决原本在低维空间中无法解决的问题，这是一个很好的解题思路，其次坐标系也是这样的原理。
-
-Hamilton called a quadruple with these rules of multiplication a quaternion, and he devoted most of the remainder of his life to studying and teaching them. Hamilton's treatment is more geometric than the modern approach, which emphasizes quaternions' algebraic properties. He founded a school of "quaternionists", and he tried to popularize quaternions in several books. The last and longest of his books, Elements of Quaternions,[13] was 800 pages long; it was edited by his son and published shortly after his death.
+> &#x1F4A1; 通过人为地增加一个维度，来解决原本在低维空间中无法解决的问题，这是一个很好的解题思路，其次坐标系也是这样的原理。
 
 Hamilton将具有这些乘法规则的四元数称为四元数，他将余生的大部分时间都用于研究和教授它们。 Hamilton的处理比现代方法更几何，后者强调四元数的代数性质。 他创立了“四元数论者quaternionists”学派，并试图在几本书中普及四元数。 他的最后一部也是最长的一本书《四元数的元素》[13] 长达 800 页； 它由他的儿子编辑，并在他去世后不久出版。
 
@@ -125,12 +109,12 @@ Hamilton去世后，苏格兰数学物理学家彼得·泰特成为四元数的�
 
 然而，自 20 世纪后期以来，四元数得到了复兴，这主要是由于它们在**描述空间旋转**方面的实用性。 四元数的旋转表示比矩阵的表示更紧凑，计算速度更快。 此外，与欧拉角不同，它们不易受到“万向节死锁”的影响。 因此，四元数被用于计算机图形学、[14][15] 计算机视觉、机器人学、[16] 控制理论、信号处理、姿态控制、物理学、生物信息学、[17][18] 分子动力学、计算机模拟、 和轨道力学。 例如，航天器的姿态控制系统通常以四元数来控制。 由于四元数与二次形式的关系，四元数从数论中得到了另一个推动。 [19]
 
->**[success]**  
-用四元数表示旋转的优势：①比矩阵的表示更紧凑，计算速度更快  
+> &#x1F4CC; **用四元数表示旋转的优势**：  
+> ①比矩阵的表示更紧凑，计算速度更快  
 ②不易受到“万向节死锁”的影响  
 ③插值结果更稳定
 
-## Quaternions in physics  物理学中的四元数
+## 物理学中的四元数
 
 P.R. Girard's 1984 essay The quaternion group and modern physics[20] discusses some roles of quaternions in physics. The essay shows how various physical covariance groups, namely SO(3), the Lorentz group, the general theory of relativity group, the Clifford algebra SU(2) and the conformal group, can easily be related to the quaternion group in modern algebra. Girard began by discussing group representations and by representing some space groups of crystallography. He proceeded to kinematics of rigid body motion. Next he used complex quaternions (biquaternions) to represent the Lorentz group of special relativity, including the Thomas precession. He cited five authors, beginning with Ludwik Silberstein, who used a potential function of one quaternion variable to express Maxwell's equations in a single differential equation. Concerning general relativity, he expressed the Runge–Lenz vector. He mentioned the Clifford biquaternions (split-biquaternions) as an instance of Clifford algebra. Finally, invoking the reciprocal of a biquaternion, Girard described conformal maps on spacetime. Among the fifty references, Girard included Alexander Macfarlane and his Bulletin of the Quaternion Society. In 1999 he showed how Einstein's equations of general relativity could be formulated within a Clifford algebra that is directly linked to quaternions.[21]
 
@@ -140,9 +124,7 @@ The finding of 1924 that in quantum mechanics the spin of an electron and other 
 
 1924 年发现，在量子力学中，电子和其他物质粒子（称为自旋量）的自旋可以用四元数来描述，这进一步激发了他们的兴趣。 四元数有助于理解电子旋转 360° 与 720° 旋转的区别（“板技巧”）。[22][23] 截至 2018 年，它们的使用尚未超过轮换组。[a]
 
-# Definition  定义
-
-A quaternion is an expression of the form
+# 定义
 
 四元数的表达形式为
 
@@ -152,46 +134,49 @@ $$
 
 其中 a、b、c、d 是实数，i、j、k 是可以解释为指向三个空间轴的单位向量的符号。 在实际应用中，如果a、b、c、d之一为0，则省略对应项； 如果a、b、c、d都为零，则该四元数是零四元数，记为0； 如果 b、c、d 中的一个等于 1，则相应的项只写为 i、j 或 k。
 
-Hamilton 将四元数 $${\displaystyle q=a+b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} }$$ 描述为由一个标量部分和 向量部分。 四元数 $${\displaystyle b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} }$$ 称为 q 的向量部分（有时是虚部），并且 a 是 q 的标量部分（有时是实部）。 等于其实部（即其向量部分为零）的四元数称为标量或实数四元数，并用相应的实数标识。 也就是说，实数嵌入在四元数中。 （更准确地说，实数域同构于四元数的一个子集。复数域也同构于三个四元数子集。）[24] 等于其向量部分的四元数称为向量四元数。
+Hamilton 将四元数 \\({\displaystyle q=a+b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} }\\) 描述为由一个标量部分和 向量部分。 四元数 \\({\displaystyle b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} }\\) 称为 q 的向量部分（有时是虚部），并且 a 是 q 的标量部分（有时是实部）。 等于其实部（即其向量部分为零）的四元数称为标量或实数四元数，并用相应的实数标识。 也就是说，实数嵌入在四元数中。 （更准确地说，实数域同构于四元数的一个子集。复数域也同构于三个四元数子集。）[24] 等于其向量部分的四元数称为向量四元数。
 
-The set of quaternions is made a 4-dimensional vector space over the real numbers, with $${\displaystyle \left\{1,\mathbf {i} ,\mathbf {j} ,\mathbf {k} \right\}}{\displaystyle \left\{1,\mathbf {i} ,\mathbf {j} ,\mathbf {k} \right\}}$$ as a basis, by the componentwise addition
+四元数集在实数上构成一个 4 维向量空间，以\\({\displaystyle \left\{1,\mathbf {i} ,\mathbf {j} ,\mathbf {k} \right\} }{\displaystyle \left\{1,\mathbf {i} ,\mathbf {j} ,\mathbf {k} \right\}}\\) 作为基，使用逐分量的加法
 
-四元数集在实数上构成一个 4 维向量空间，以$${\displaystyle \left\{1,\mathbf {i} ,\mathbf {j} ,\mathbf {k} \right\} }{\displaystyle \left\{1,\mathbf {i} ,\mathbf {j} ,\mathbf {k} \right\}}$$ 作为基，使用逐分量的加法
-
->**[success]**  
+> &#x1F4CC;  
 逐分量加法：依次对每前分量前的系数做加法操作
 
 $$
 {\displaystyle (a_{1}+b_{1}\,\mathbf {i} +c_{1}\,\mathbf {j} +d_{1}\,\mathbf {k} )+(a_{2}+b_{2}\,\mathbf {i} +c_{2}\,\mathbf {j} +d_{2}\,\mathbf {k} )=(a_{1}+a_{2})+(b_{1}+b_{2})\,\mathbf {i} +(c_{1}+c_{2})\,\mathbf {j} +(d_{1}+d_{2})\,\mathbf {k} \,,}
 $$
 
-and the componentwise scalar multiplication
-
 和分量标量乘法
 
->**[success]**  
-分量标量乘：依次让每个分量的系数与一个标量相乘  
+> &#x1F4CC;  
+分量标量乘：依次让每个分量的系数与一个标量相乘。  
 标量即0维数字
 
 $$
 {\displaystyle \lambda (a+b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} )=\lambda a+(\lambda b)\,\mathbf {i} +(\lambda c)\,\mathbf {j} +(\lambda d)\,\mathbf {k} .}
 $$
 
-A multiplicative group structure, called the Hamilton product, denoted by juxtaposition, can be defined on the quaternions in the following way:
-
 可以通过以下方式在四元数上定义乘法群结构，称为 Hamilton 积，用juxtaposition表示：
 
-- The real quaternion 1 is the identity element.  
-实四元数 1 是单位元。
+- 实四元数 1 是单位元。
 
-- The real quaternions commute with all other quaternions, that is aq = qa for every quaternion q and every real quaternion a. In algebraic terminology this is to say that the field of real quaternions are the center of this quaternion algebra.  
-实四元数与所有其他四元数满足交换律，即对于每一个四元数 q 和每一个实四元数 a，aq = qa。 在代数术语中，这就是说实四元数域是这个四元数代数的中心。
+- 实四元数与所有其他四元数满足交换律，即对于每一个四元数 q 和每一个实四元数 a，aq = qa。 在代数术语中，这就是说实四元数域是这个四元数代数的中心。
 
->**[success]**  
+> &#x1F504;  
 下文3.2会解释“代数的中心”概念
 
 - The product is first given for the basis elements (see next subsection), and then extended to all quaternions by using the distributive property and the center property of the real quaternions. The Hamilton product is not commutative, but is associative, thus the quaternions form an associative algebra over the real numbers.  
-首先给出基元素的乘积（见下一小节），然后利用实四元数的分布性质和中心性质扩展到所有四元数。 Hamilton积不是可交换的，而是结合的，因此四元数在实数上形成结合代数。
+首先给出基元素的乘积（见下一小节），然后利用实四元数的分布性质和中心性质扩展到所有四元数。 Hamilton积是不可交换的，是结合的，因此四元数在实数上形成结合代数。
+
+> &#x1F4CC; **basis element Vs identity element**
+> basis element：基元素，即i, j, k，来源于四元数的定义  
+> identity element：1，特点是任何数与它相乘都等于它自己，来源于乘法定义  
+> &#x2753;
+> [?] 实四元数的分布性质
+> &#x1F4CC;
+> 实四元数的中心性质：aq = qa，见本页面3.2节
+> 不可交换：q2q1 != q1q2
+> 结合：(q1q2)q3 = q1(q2q3)
+> 在实数上形成结合代数：在其实数域上满足交换律和结合律
 
 - Additionally, every nonzero quaternion has an inverse with respect to the Hamilton product:  
 此外，根据Hamilton 积的定义每个非零四元数都有逆：
@@ -204,11 +189,9 @@ Thus the quaternions form a division algebra.
 
 因此，四元数形成一个除法代数。
 
-## Multiplication of basis elements  基本元素的乘法
+## 基本元素的乘法
 
-Multiplication table  乘法表
-
-Non commutativity is emphasized by colored squares  非交换性用彩色方块强调
+乘法表（非交换性用彩色方块强调）
 
 |×|1|i|j|k|
 |---|---|---|---|---|
@@ -217,17 +200,15 @@ Non commutativity is emphasized by colored squares  非交换性用彩色方块�
 |j|j|−k|−1|i|
 |k|k|j|−i|−1|
 
-The multiplication with 1 of the basis elements i, j, and k is defined by the fact that 1 is a multiplicative identity, that is,
-
 由于1是乘法单位，基元素 i、j 和 k 与 1 的乘法定义如下，即
 
 $$
 {\displaystyle \mathbf {i} \,1=1\,\mathbf {i} =\mathbf {i} ,\qquad \mathbf {j} \,1=1\,\mathbf {j} =\mathbf {j} ,\qquad \mathbf {k} \,1=1\,\mathbf {k} =\mathbf {k} \,.}
 $$
 
-The products of basis elements are derived from the product rules for $${\displaystyle \mathbf {i} }$$ and $${\displaystyle \mathbf {j}}$$
+The products of basis elements are derived from the product rules for \\({\displaystyle \mathbf {i} }\\) and \\({\displaystyle \mathbf {j}}\\)
 
-基元素的乘积源自 $${\displaystyle \mathbf {i} }$$ 和 $${\displaystyle \mathbf {j} }$$ 的乘积规则：
+基元素的乘积源自 \\({\displaystyle \mathbf {i} }\\) 和 \\({\displaystyle \mathbf {j} }\\) 的乘积规则：
 
 $$
 {\displaystyle \mathbf {i} ^{2}=\mathbf {j} ^{2}=-1}
@@ -239,12 +220,12 @@ $$
 {\displaystyle {\begin{aligned}\mathbf {i\,j} &=\mathbf {k} \,,\quad &\mathbf {j\,i} &=-\mathbf {k} \,.\end{aligned}}}
 $$
 
->**[success]**  
+> &#x1F4CC;  
 类似3D中的叉积
 
-The remaining product rules are obtained by multiplying both sides of these latter rules by $${\displaystyle \mathbf {j} }$$ or $${\displaystyle \mathbf {i} }$$ from the left or right and applying associativity which gives
+The remaining product rules are obtained by multiplying both sides of these latter rules by \\({\displaystyle \mathbf {j} }\\) or \\({\displaystyle \mathbf {i} }\\) from the left or right and applying associativity which gives
 
-剩下的乘积规则是通过将上面这些规则的两边从左边或右边乘以 $${\displaystyle \mathbf {j} }$$ 或 $${\displaystyle \mathbf {i} }$$ 并应用关联性来获得的：
+剩下的乘积规则是通过将上面这些规则的两边从左边或右边乘以 \\({\displaystyle \mathbf {j} }\\) 或 \\({\displaystyle \mathbf {i} }\\) 并应用关联性来获得的：
 
 $$
 {\displaystyle {\begin{aligned}\mathbf {j\,k} &=\mathbf {i} \,,\quad &\mathbf {k\,j} &=-\mathbf {i} \,,\\\mathbf {k\,i} &=\mathbf {j} \,,\quad &\mathbf {i\,k} &=-\mathbf {j} \,,\\\mathbf {i\,j\,k} &=-1\,,\quad &\mathbf {k} ^{2}&=-1\,\\\end{aligned}}}
@@ -256,7 +237,7 @@ The center of a noncommutative ring is the subring of elements c such that cx = 
 
 非交换环的中心是元素 c 的子环，使得对于每个 x，cx = xc。 四元数代数的中心是实四元数的子域。 事实上，实四元数属于中心是定义的一部分。 反之，若 q = a + b i + c j + d k 属于中心，则
 
->**[success]**  
+> &#x1F4CC;  
 **非交换环的中心是元素 c 的子环，使得对于每个 x，cx = xc**：代数中心的定义
 
 $$
@@ -293,17 +274,17 @@ The product of two rotation quaternions[25] will be equivalent to the rotation a
 
 两个旋转四元数[25] 的乘积将等价于旋转 a2 + b2i + c2j + d2k，然后是旋转 a1 + b1i + c1j + d1k。
 
->**[success]**  
+> &#x1F4CC;  
 $q_1\times q_2$ 等价于先旋转$q_2$再旋转$q_1$
 
->**[warning]**  
+> &#x2753;  
 q的旋转怎么定义？
 
-## Scalar and vector parts  标量和矢量部分
+## 标量部分和矢量部分
 
-A quaternion of the form a + 0 i + 0 j + 0 k, where a is a real number, is called scalar, and a quaternion of the form 0 + b i + c j + d k, where b, c, and d are real numbers, and at least one of b, c or d is nonzero, is called a vector quaternion. If a + b i + c j + d k is any quaternion, then a is called its scalar part and b i + c j + d k is called its vector part. Even though every quaternion can be viewed as a vector in a four-dimensional vector space, it is common to refer to the vector part as vectors in three-dimensional space. With this convention, a vector is the same as an element of the vector space $${\displaystyle \mathbb {R} ^{3}.}$$[b]
+A quaternion of the form a + 0 i + 0 j + 0 k, where a is a real number, is called scalar, and a quaternion of the form 0 + b i + c j + d k, where b, c, and d are real numbers, and at least one of b, c or d is nonzero, is called a vector quaternion. If a + b i + c j + d k is any quaternion, then a is called its scalar part and b i + c j + d k is called its vector part. Even though every quaternion can be viewed as a vector in a four-dimensional vector space, it is common to refer to the vector part as vectors in three-dimensional space. With this convention, a vector is the same as an element of the vector space \\({\displaystyle \mathbb {R} ^{3}.}\\)[b]
 
-a + 0 i + 0 j + 0 k 形式的四元数，其中 a 是实数，称为标量，0 + bi + cj + dk 形式的四元数，其中 b、c 和 d 是实数 数，且 b、c 或 d 中至少有一个非零，称为向量四元数。 如果 a + b i + c j + d k 是任何四元数，则 a 称为其标量部分，而 b i + c j + d k 称为其矢量部分。 尽管每个四元数都可以被视为四维向量空间中的向量，但通常**将向量部分称为三维空间中的向量**。 按照这种约定，向量与向量空间中的元素相同 $${\displaystyle \mathbb {R} ^{3}.}$$[b]
+a + 0 i + 0 j + 0 k 形式的四元数，其中 a 是实数，称为标量，0 + bi + cj + dk 形式的四元数，其中 b、c 和 d 是实数，且 b、c 或 d 中至少有一个非零，称为向量四元数。 如果 a + b i + c j + d k 是任何四元数，则 a 称为其标量部分，而 b i + c j + d k 称为其矢量部分。 尽管每个四元数都可以被视为四维向量空间中的向量，但通常**将向量部分称为三维空间中的向量**。 按照这种约定，向量与向量空间中的元素相同 \\({\displaystyle \mathbb {R} ^{3}.}\\)[b]
 
 Hamilton also called vector quaternions right quaternions[27][28] and real numbers (considered as quaternions with zero vector part) scalar quaternions.
 
@@ -326,17 +307,22 @@ $$
 {\displaystyle (r_{1},\ {\vec {v}}_{1})(r_{2},\ {\vec {v}}_{2})=(r_{1}r_{2}-{\vec {v}}_{1}\cdot {\vec {v}}_{2},\ r_{1}{\vec {v}}_{2}+r_{2}{\vec {v}}_{1}+{\vec {v}}_{1}\times {\vec {v}}_{2}),}
 $$
 
-where "$${\displaystyle \cdot }$$ " and "$${\displaystyle \times }$$ " denote respectively the dot product and the cross product.
+where "\\({\displaystyle \cdot }\\) " and "\\({\displaystyle \times }\\) " denote respectively the dot product and the cross product.
 
-其中“$${\displaystyle \cdot }$$ ”和“$${\displaystyle \times }$$ ”分别表示点积和叉积。
+其中“\\({\displaystyle \cdot }\\) ”和“\\({\displaystyle \times }\\) ”分别表示点积和叉积。
 
 # Conjugation, the norm, and reciprocal  共轭、范数和倒数
 
-Conjugation of quaternions is analogous to conjugation of complex numbers and to transposition (also known as reversal) of elements of Clifford algebras. To define it, let $${\displaystyle q=a+b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} }$$ be a quaternion. The conjugate of q is the quaternion $${\displaystyle q^{*}=a-b\,\mathbf {i} -c\,\mathbf {j} -d\,\mathbf {k} }.$$ It is denoted by q∗, qt, $${\displaystyle {\tilde {q}}}$$, or q.[7] Conjugation is an involution, meaning that it is its own inverse, so conjugating an element twice returns the original element. The conjugate of a product of two quaternions is the product of the conjugates in the reverse order. That is, if p and q are quaternions, then (pq)∗ = q∗p∗, not p∗q∗.
+Conjugation of quaternions is analogous to conjugation of complex numbers and to transposition (also known as reversal) of elements of Clifford algebras. To define it, let \\({\displaystyle q=a+b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} }\\) be a quaternion. The conjugate of q is the quaternion \\({\displaystyle q^{*}=a-b\,\mathbf {i} -c\,\mathbf {j} -d\,\mathbf {k} }.$$ It is denoted by q∗, qt, \\({\displaystyle {\tilde {q}}}\\), or q.[7] Conjugation is an involution, meaning that it is its own inverse, so conjugating an element twice returns the original element. The conjugate of a product of two quaternions is the product of the conjugates in the reverse order. That is, if p and q are quaternions, then (pq)∗ = q∗p∗, not p∗q∗.
 
-四元数的共轭类似于复数的共轭和 Clifford 代数元素的转置（也称为反转）。 为了定义它，令 $${\displaystyle q=a+b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} }$$ 是一个四元数。 q 的共轭是四元数 $${\displaystyle q^{*}=a-b\,\mathbf {i} -c\,\mathbf {j} -d\,\mathbf {k} }.$$ 它可以用 q∗、qt、$${\displaystyle {\tilde {q}}}$$ 或 q 表示。[7] 共轭是对合，这意味着它是它自己的逆，所以共轭一个元素两次返回原始元素。 两个四元数乘积的共轭是共轭逆序的乘积。 也就是说，如果 p 和 q 是四元数，那么 (pq)∗ = q∗p∗，而不是 p∗q∗。
+四元数的共轭类似于复数的共轭和 Clifford 代数元素的转置（也称为反转）。 为了定义它，令 \\({\displaystyle q=a+b\,\mathbf {i} +c\,\mathbf {j} +d\,\mathbf {k} }\\) 是一个四元数。 q 的共轭是四元数 \\({\displaystyle q^{*}=a-b\,\mathbf {i} -c\,\mathbf {j} -d\,\mathbf {k} }.$$ 它可以用 q∗、qt、\\({\displaystyle {\tilde {q}}}\\) 或 q 表示。[7] 共轭是对合，这意味着它是它自己的逆，所以共轭一个元素两次返回原始元素。  
 
->**[success]**  
+> &#x1F4CC;
+> 这里的逆是指共轭的这个操作是可逆的，不是指前面定义中提到的\\(q^{-1}\\)
+
+两个四元数乘积的共轭是共轭逆序的乘积。 也就是说，如果 p 和 q 是四元数，那么 (pq)∗ = q∗p∗，而不是 p∗q∗。
+
+> &#x1F504;  
 **对合**：involution
 
 The conjugation of a quaternion, in stark contrast to the complex setting, can be expressed with multiplication and addition of quaternions:
@@ -347,8 +333,20 @@ $$
 {\displaystyle q^{*}=-{\frac {1}{2}}(q+\,\mathbf {i} \,q\,\mathbf {i} +\,\mathbf {j} \,q\,\mathbf {j} +\,\mathbf {k} \,q\,\mathbf {k} )~.}
 $$
 
->**[warning]**  
-这个公式很奇怪
+> &#x1F4CC;  
+$$
+{\displaystyle {\begin{aligned} \mathbf {i}q\mathbf {i} &= \mathbf {i} \cdot (a + b\mathbf {i} + c\mathbf {j} + d\mathbf {k}) \cdot \mathbf {i} \\
+&= (a\mathbf {i} - b + c\mathbf {k} -d\mathbf {j}) \cdot \mathbf {i} \\
+&= -a - b\mathbf {i} + c\mathbf {j} + d\mathbf {k}\end{aligned}}}
+$$
+同理  
+$$
+{\displaystyle
+{\begin{aligned}
+\mathbf {j}q\mathbf {j} &= - a + b\mathbf {i} - c\mathbf {j} + d\mathbf {k} \\
+\mathbf {k}q\mathbf {k} &= - a + b\mathbf {i} + c\mathbf {j} - d\mathbf {k} \\
+\end{aligned}}}
+$$
 
 Conjugation can be used to extract the scalar and vector parts of a quaternion. The scalar part of p is 
 1
@@ -378,11 +376,11 @@ $$
 {\displaystyle \lVert q\rVert ={\sqrt {\,qq^{*}~}}={\sqrt {\,q^{*}q~}}={\sqrt {\,a^{2}+b^{2}+c^{2}+d^{2}~}}}
 $$
 
-This is always a non-negative real number, and it is the same as the Euclidean norm on $${\displaystyle \mathbb {H} }$$  considered as the vector space $${\displaystyle \mathbb {R} ^{4}}$$. Multiplying a quaternion by a real number scales its norm by the absolute value of the number. That is, if α is real, then
+This is always a non-negative real number, and it is the same as the Euclidean norm on \\({\displaystyle \mathbb {H} }\\)  considered as the vector space \\({\displaystyle \mathbb {R} ^{4}}\\). Multiplying a quaternion by a real number scales its norm by the absolute value of the number. That is, if α is real, then
 
-这始终是一个非负实数，它与被视为向量空间 $${\displaystyle \mathbb {H} }$$  的 $${\displaystyle \mathbb {R} ^{4}}$$ 上的欧几里得范数相同。 将一个四元数乘以一个实数会按该数的绝对值缩放其范数。 也就是说，如果 α 是实数，那么
+这始终是一个非负实数，它与被视为向量空间 \\({\displaystyle \mathbb {H} }\\)  的 \\({\displaystyle \mathbb {R} ^{4}}\\) 上的欧几里得范数相同。 将一个四元数乘以一个实数会按该数的绝对值缩放其范数。 也就是说，如果 α 是实数，那么
 
-$${\displaystyle \lVert \alpha q\rVert =\left|\alpha \right|\,\lVert q\rVert ~.}$$
+\\({\displaystyle \lVert \alpha q\rVert =\left|\alpha \right|\,\lVert q\rVert ~.}\\)
 
 This is a special case of the fact that the norm is multiplicative, meaning that
 
@@ -394,10 +392,13 @@ $$
 
 for any two quaternions p and q. Multiplicativity is a consequence of the formula for the conjugate of a product. Alternatively it follows from the identity
 
+> &#x2753;  
+> [?] identity怎么理解？
+
 对于任何两个四元数 p 和 q。 乘法性是乘积共轭公式的结果。 或者它来自身份
 
->**[warning]**  
-这一段没看懂
+> &#x2753;  
+[?] 这一段没看懂？为什么行列式是这样定义的？
 
 $$
 {\displaystyle \det {\Bigl (}{\begin{array}{cc}a+ib&id+c\\id-c&a-ib\end{array}}{\Bigr )}=a^{2}+b^{2}+c^{2}+d^{2},}
@@ -407,6 +408,9 @@ $$
 
 （其中 i 表示通常的虚数单位），因此来自方阵行列式的乘法性质。
 
+> &#x2753; 
+> [?] 方阵行列式的乘法性质?
+
 This norm makes it possible to define the distance d(p, q) between p and q as the norm of their difference:
 
 通过范数可以将 p 和 q 之间的距离 d(p, q) 定义为它们的差异的范数：
@@ -415,18 +419,11 @@ $$
 {\displaystyle d(p,q)=\lVert p-q\rVert ~.}
 $$
 
-This makes $${\displaystyle \mathbb {H} }$$  a metric space. Addition and multiplication are continuous in regard to the associated metric topology. This follows with exacly the same proof as for the real numbers $${\displaystyle \mathbb {R} }$$  from the fact that $${\displaystyle \mathbb {H} }$$ is a normed algebra.
+This makes \\({\displaystyle \mathbb {H} }\\)  a metric space. Addition and multiplication are continuous in regard to the associated metric topology. This follows with exacly the same proof as for the real numbers \\({\displaystyle \mathbb {R} }\\)  from the fact that \\({\displaystyle \mathbb {H} }\\) is a normed algebra.
 
->**[warning]**  
-**associated metric topology**：什么是metric topology？怎么定义associate？
+这使得 \\({\displaystyle \mathbb {H} }\\) 成为一个度量空间。 关于相关的度量拓扑，加法和乘法是连续的。 这与实数 \\({\displaystyle \mathbb {R} }\\) 的证明完全相同，因为 \\({\displaystyle \mathbb {H} }\\) 是一个范数代数。
 
-这使得 $${\displaystyle \mathbb {H} }$$ 成为一个度量空间。 关于相关的度量拓扑，加法和乘法是连续的。 这与实数 $${\displaystyle \mathbb {R} }$$ 的证明完全相同，因为 $${\displaystyle \mathbb {H} }$$ 是一个范数代数。
-
-## Unit quaternion  单位四元数
-
-*Main article: Versor*
-
-*主条目：Versor*
+## 单位四元数
 
 A unit quaternion is a quaternion of norm one. Dividing a non-zero quaternion q by its norm produces a unit quaternion Uq called the versor of q:
 
@@ -436,15 +433,15 @@ $$
 {\displaystyle \mathbf {U} q={\frac {q}{\lVert q\rVert }}.}
 $$
 
-Every quaternion has a polar decomposition $${\displaystyle q=\lVert q\rVert \cdot \mathbf {U} q}.$$
+Every quaternion has a polar decomposition \\({\displaystyle q=\lVert q\rVert \cdot \mathbf {U} q}.$$
 
-每个四元数都有一个极分解 $${\displaystyle q=\lVert q\rVert \cdot \mathbf {U} q}.$$
+每个四元数都有一个极分解 \\({\displaystyle q=\lVert q\rVert \cdot \mathbf {U} q}\\)
 
-Using conjugation and the norm makes it possible to define the reciprocal of a non-zero quaternion. The product of a quaternion with its reciprocal should equal 1, and the considerations above imply that the product of $${\displaystyle q} $$and $${\displaystyle q^{*}/\left\Vert q\right\|^{2}}$$ is 1 (for either order of multiplication). So the reciprocal of q is defined to be
+Using conjugation and the norm makes it possible to define the reciprocal of a non-zero quaternion. The product of a quaternion with its reciprocal should equal 1, and the considerations above imply that the product of \\({\displaystyle q} $$and \\({\displaystyle q^{*}/\left\Vert q\right\|^{2}}\\) is 1 (for either order of multiplication). So the reciprocal of q is defined to be
 
-使用共轭和范数可以定义非零四元数的倒数。 四元数与其倒数的乘积应该等于 1，上述考虑意味着 $${\displaystyle q} $$和 $${\displaystyle q^{*}/\left\Vert q\right\|^{2}}$$的乘积 为 1（对于任一乘法顺序）。 所以q的倒数定义为
+使用共轭和范数可以定义非零四元数的倒数。 四元数与其倒数的乘积应该等于 1，上述考虑意味着 \\({\displaystyle q} $$和 \\({\displaystyle q^{*}/\left\Vert q\right\|^{2}}\\)的乘积 为 1（对于任一乘法顺序）。 所以q的倒数定义为
 
->**[success]**  
+> &#x1F4CC;  
 **对于任一乘法顺序**：$||q||^2$是实数，因此乘法顺序可交换
 
 $$
@@ -469,16 +466,16 @@ q
 
 ![](assets/14.png)
 
->- Cayley graph of Q8. The red arrows represent multiplication on the right by i, and the green arrows represent multiplication on the right by j.  
+> &#x1F446; Cayley graph of Q8. The red arrows represent multiplication on the right by i, and the green arrows represent multiplication on the right by j.  
 Q8的凯莱图。 红色箭头代表右边乘以 i，绿色箭头代表右边乘以 j。
 
-The set $${\displaystyle \mathbb {H} }$$  of all quaternions is a vector space over the real numbers with dimension 4.[c] Multiplication of quaternions is associative and distributes over vector addition, but with the exception of the scalar subset, it is not commutative. Therefore, the quaternions $${\displaystyle \mathbb {H} }$$  are a non-commutative, associative algebra over the real numbers. Even though $${\displaystyle \mathbb {H} }$$  contains copies of the complex numbers, it is not an associative algebra over the complex numbers.
+The set \\({\displaystyle \mathbb {H} }\\)  of all quaternions is a vector space over the real numbers with dimension 4.[c] Multiplication of quaternions is associative and distributes over vector addition, but with the exception of the scalar subset, it is not commutative. Therefore, the quaternions \\({\displaystyle \mathbb {H} }\\)  are a non-commutative, associative algebra over the real numbers. Even though \\({\displaystyle \mathbb {H} }\\)  contains copies of the complex numbers, it is not an associative algebra over the complex numbers.
 
-所有四元数的集合 $${\displaystyle \mathbb {H} }$$ 是维数为 4 的实数上的向量空间。[c] 四元数满足乘法结合律和加法分配律，不满足交换律（除了其标量子集可交换—）。 因此，四元数 $${\displaystyle \mathbb {H} }$$ 是实数上的非交换结合代数。 尽管 $${\displaystyle \mathbb {H} }$$ 包含复数的副本，但它不是复数上的结合代数。
+所有四元数的集合 \\({\displaystyle \mathbb {H} }\\) 是维数为 4 的实数上的向量空间。[c] 四元数满足乘法结合律和加法分配律，不满足交换律（除了其标量子集可交换—）。 因此，四元数 \\({\displaystyle \mathbb {H} }\\) 是实数上的非交换结合代数。 尽管 \\({\displaystyle \mathbb {H} }\\) 包含复数的副本，但它不是复数上的结合代数。
 
-Because it is possible to divide quaternions, they form a division algebra. This is a structure similar to a field except for the non-commutativity of multiplication. Finite-dimensional associative division algebras over the real numbers are very rare. The Frobenius theorem states that there are exactly three: $${\displaystyle \mathbb {R} }$$ , $${\displaystyle \mathbb {C} }$$ , and $${\displaystyle \mathbb {H} }$$ . The norm makes the quaternions into a normed algebra, and normed division algebras over the real numbers are also very rare: Hurwitz's theorem says that there are only four: $${\displaystyle \mathbb {R} }$$ , $${\displaystyle \mathbb {C} }$$ , $${\displaystyle \mathbb {H} }$$ , and $${\displaystyle \mathbb {O} }$$  (the octonions). The quaternions are also an example of a composition algebra and of a unital Banach algebra.
+Because it is possible to divide quaternions, they form a division algebra. This is a structure similar to a field except for the non-commutativity of multiplication. Finite-dimensional associative division algebras over the real numbers are very rare. The Frobenius theorem states that there are exactly three: \\({\displaystyle \mathbb {R} }\\) , \\({\displaystyle \mathbb {C} }\\) , and \\({\displaystyle \mathbb {H} }\\) . The norm makes the quaternions into a normed algebra, and normed division algebras over the real numbers are also very rare: Hurwitz's theorem says that there are only four: \\({\displaystyle \mathbb {R} }\\) , \\({\displaystyle \mathbb {C} }\\) , \\({\displaystyle \mathbb {H} }\\) , and \\({\displaystyle \mathbb {O} }\\)  (the octonions). The quaternions are also an example of a composition algebra and of a unital Banach algebra.
 
-因为四元数可以相除，所以它们形成了一个除法代数。 这是一个类似于域的结构，除了乘法的不可交换性。 实数上的有限维关联除法代数非常罕见。 Frobenius 定理指出正好有三个：$${\displaystyle \mathbb {R} }$$ 、$${\displaystyle \mathbb {C} }$$ 和 $${\displaystyle \mathbb {H} } $$ 。 范数使四元数成为范数代数，实数上的范数除法也非常罕见：赫尔维茨定理说只有四个： $${\displaystyle \mathbb {R} }$$ , $${\ displaystyle \mathbb {C} }$$ 、 $${\displaystyle \mathbb {H} }$$ 和 $${\displaystyle \mathbb {O} }$$ （八元数）。 四元数也是合成代数和单位巴拿赫代数的一个例子。
+因为四元数可以相除，所以它们形成了一个除法代数。 这是一个类似于域的结构，除了乘法的不可交换性。 实数上的有限维关联除法代数非常罕见。 Frobenius 定理指出正好有三个：\\({\displaystyle \mathbb {R} }\\) 、\\({\displaystyle \mathbb {C} }\\) 和 \\({\displaystyle \mathbb {H} } $$ 。 范数使四元数成为范数代数，实数上的范数除法也非常罕见：赫尔维茨定理说只有四个： \\({\displaystyle \mathbb {R} }\\) , \\({\ displaystyle \mathbb {C} }\\) 、 \\({\displaystyle \mathbb {H} }\\) 和 \\({\displaystyle \mathbb {O} }\\) （八元数）。 四元数也是合成代数和单位巴拿赫代数的一个例子。
 
 ![](assets/15.png)
 
@@ -486,23 +483,23 @@ Three-dimensional graph of Q8. Red, green and blue arrows represent multiplicati
 
 Q8的三维图。 红色、绿色和蓝色箭头分别表示乘以 i、j 和 k。 为清楚起见，省略了乘以负数。
 
-Because the product of any two basis vectors is plus or minus another basis vector, the set {±1, ±i, ±j, ±k} forms a group under multiplication. This non-abelian group is called the quaternion group and is denoted Q8.[29] The real group ring of Q8 is a ring $${\displaystyle \mathbb {R} [\mathrm {Q} _{8}]}$$ which is also an eight-dimensional vector space over $${\displaystyle \mathbb {R} .}$$. It has one basis vector for each element of $${\displaystyle \mathrm {Q} _{8}.}$$ The quaternions are isomorphic to the quotient ring of $${\displaystyle \mathbb {R} [\mathrm {Q} _{8}]}$$ by the ideal generated by the elements 1 + (−1), i + (−i), j + (−j), and k + (−k). Here the first term in each of the differences is one of the basis elements 1, i, j, and k, and the second term is one of basis elements −1, −i, −j, and −k, not the additive inverses of 1, i, j, and k.
+Because the product of any two basis vectors is plus or minus another basis vector, the set {±1, ±i, ±j, ±k} forms a group under multiplication. This non-abelian group is called the quaternion group and is denoted Q8.[29] The real group ring of Q8 is a ring \\({\displaystyle \mathbb {R} [\mathrm {Q} _{8}]}\\) which is also an eight-dimensional vector space over \\({\displaystyle \mathbb {R} .}\\). It has one basis vector for each element of \\({\displaystyle \mathrm {Q} _{8}.}\\) The quaternions are isomorphic to the quotient ring of \\({\displaystyle \mathbb {R} [\mathrm {Q} _{8}]}\\) by the ideal generated by the elements 1 + (−1), i + (−i), j + (−j), and k + (−k). Here the first term in each of the differences is one of the basis elements 1, i, j, and k, and the second term is one of basis elements −1, −i, −j, and −k, not the additive inverses of 1, i, j, and k.
 
-因为任何两个基向量的乘积是正负另一个基向量，所以集合{±1，±i，±j，±k}在乘法下形成一个群。 这个非阿贝尔群称为四元数群，记为 Q8。 [29] Q8 的实群环是一个环 $${\displaystyle \mathbb {R} [\mathrm {Q} _{8}]}$$ 也是 $${\displaystyle \mathbb 上的一个八维向量空间 {R} .}$$。 $${\displaystyle \mathrm {Q} _{8}.}$$ 的每个元素都有一个基向量。四元数同构于 $${\displaystyle \mathbb {R} [\mathrm { Q} _{8}]}$$ 由元素 1 + (−1)、i + (−i)、j + (−j) 和 k + (−k) 生成的理想。 这里每个差的第一项是基元素 1、i、j 和 k 之一，第二项是基元素 -1、-i、-j 和 -k 之一，而不是加法逆元 1、i、j 和 k。
+因为任何两个基向量的乘积是正负另一个基向量，所以集合{±1，±i，±j，±k}在乘法下形成一个群。 这个非阿贝尔群称为四元数群，记为 Q8。 [29] Q8 的实群环是一个环 \\({\displaystyle \mathbb {R} [\mathrm {Q} _{8}]}\\) 也是 \\({\displaystyle \mathbb 上的一个八维向量空间 {R} .}\\)。 \\({\displaystyle \mathrm {Q} _{8}.}\\) 的每个元素都有一个基向量。四元数同构于 \\({\displaystyle \mathbb {R} [\mathrm { Q} _{8}]}\\) 由元素 1 + (−1)、i + (−i)、j + (−j) 和 k + (−k) 生成的理想。 这里每个差的第一项是基元素 1、i、j 和 k 之一，第二项是基元素 -1、-i、-j 和 -k 之一，而不是加法逆元 1、i、j 和 k。
 
 # Quaternions and the space geometry  四元数和空间几何
 
-The vector part of a quaternion can be interpreted as a coordinate vector in $${\displaystyle \mathbb {R} ^{3};}$$ therefore, the algebraic operations of the quaternions reflect the geometry of $${\displaystyle \mathbb {R} ^{3}.}$$ Operations such as the vector dot and cross products can be defined in terms of quaternions, and this makes it possible to apply quaternion techniques wherever spatial vectors arise. A useful application of quaternions has been to interpolate the orientations of key-frames in computer graphics.[14]
+The vector part of a quaternion can be interpreted as a coordinate vector in \\({\displaystyle \mathbb {R} ^{3};}\\) therefore, the algebraic operations of the quaternions reflect the geometry of \\({\displaystyle \mathbb {R} ^{3}.}\\) Operations such as the vector dot and cross products can be defined in terms of quaternions, and this makes it possible to apply quaternion techniques wherever spatial vectors arise. A useful application of quaternions has been to interpolate the orientations of key-frames in computer graphics.[14]
 
-四元数的向量部分可以解释为 $${\displaystyle \mathbb {R} ^{3};}$$ 中的坐标向量，因此，四元数的代数运算反映了 $${\displaystyle \mathbb {R} ^{3}.}$$ 可以根据四元数定义向量点和叉积等运算，这使得**在出现空间向量的任何地方都可以应用四元数技术**。 四元数的一个有用应用是在计算机图形学中插入关键帧的方向。 [14]
+四元数的向量部分可以解释为 \\({\displaystyle \mathbb {R} ^{3};}\\) 中的坐标向量，因此，四元数的代数运算反映了 \\({\displaystyle \mathbb {R} ^{3}.}\\) 可以根据四元数定义向量点和叉积等运算，这使得**在出现空间向量的任何地方都可以应用四元数技术**。 四元数的一个有用应用是在计算机图形学中插入关键帧的方向。 [14]
 
-For the remainder of this section, i, j, and k will denote both the three imaginary[30] basis vectors of $${\displaystyle \mathbb {H} }$$  and a basis for $${\displaystyle \mathbb {R} ^{3}.}$$ Replacing i by −i, j by −j, and k by −k sends a vector to its additive inverse, so the additive inverse of a vector is the same as its conjugate as a quaternion. For this reason, conjugation is sometimes called the spatial inverse.
+For the remainder of this section, i, j, and k will denote both the three imaginary[30] basis vectors of \\({\displaystyle \mathbb {H} }\\)  and a basis for \\({\displaystyle \mathbb {R} ^{3}.}\\) Replacing i by −i, j by −j, and k by −k sends a vector to its additive inverse, so the additive inverse of a vector is the same as its conjugate as a quaternion. For this reason, conjugation is sometimes called the spatial inverse.
 
-对于本节的接下来部分，i、j 和 k 既表示 $${\displaystyle \mathbb {H} }$$ 的三个虚数[30] 基向量，同时也表示 $${\displaystyle \mathbb { R} ^{3}.}$$ 将 i 替换为 -i，j 替换为 -j，k 替换为 -k 就是向量的加法逆，因此向量的加法逆与它作为四元数的共轭相同 . 因此，共轭有时被称为空间逆。
+对于本节的接下来部分，i、j 和 k 既表示 \\({\displaystyle \mathbb {H} }\\) 的三个虚数[30] 基向量，同时也表示 \\({\displaystyle \mathbb { R} ^{3}.}\\) 将 i 替换为 -i，j 替换为 -j，k 替换为 -k 就是向量的加法逆，因此向量的加法逆与它作为四元数的共轭相同 . 因此，共轭有时被称为空间逆。
 
-For two vector quaternions p = b1i + c1j + d1k and q = b2i + c2j + d2k their dot product, by analogy to vectors in $${\displaystyle \mathbb {R} ^{3},}$$ is
+For two vector quaternions p = b1i + c1j + d1k and q = b2i + c2j + d2k their dot product, by analogy to vectors in \\({\displaystyle \mathbb {R} ^{3},}\\) is
 
-对于两个向量四元数 p = b1i + c1j + d1k 和 q = b2i + c2j + d2k 它们的点积，类似于 $${\displaystyle \mathbb {R} ^{3},}$$ 中的向量点积
+对于两个向量四元数 p = b1i + c1j + d1k 和 q = b2i + c2j + d2k 它们的点积，类似于 \\({\displaystyle \mathbb {R} ^{3},}\\) 中的向量点积
 
 $$
 {\displaystyle p\cdot q=b_{1}b_{2}+c_{1}c_{2}+d_{1}d_{2}~.}
@@ -536,7 +533,7 @@ $$
 {\displaystyle p\times q=\textstyle {\tfrac {1}{2}}(pq-qp).}
 $$
 
->**[success]**  
+> &#x1F4CC;  
 经核实，原文章公式中就为qp，而不是-q* p*
 
 For the commutator, [p, q] = pq − qp, of two vector quaternions one obtains
@@ -571,9 +568,9 @@ This shows that the noncommutativity of quaternion multiplication comes from the
 
 这说明四元数乘法的不可交换性来自向量四元数的乘法。 它还表明，当且仅当它们的向量部分共线时，两个四元数可以交换。 Hamilton[31] 表明，该乘积从两个给定顶点及其相关的弧长计算球面三角形的第三个顶点，这也是椭圆几何中的点代数。
 
-Unit quaternions can be identified with rotations in $${\displaystyle \mathbb {R} ^{3}}$$ and were called versors by Hamilton.[31] Also see Quaternions and spatial rotation for more information about modeling three-dimensional rotations using quaternions.
+Unit quaternions can be identified with rotations in \\({\displaystyle \mathbb {R} ^{3}}\\) and were called versors by Hamilton.[31] Also see Quaternions and spatial rotation for more information about modeling three-dimensional rotations using quaternions.
 
-单位四元数可以用 $${\displaystyle \mathbb {R} ^{3}}$$ 中的旋转来识别，并被 Hamilton 称为 versors。 [31] 另请参阅四元数和空间旋转，了解有关使用四元数对三维旋转进行建模的更多信息。
+单位四元数可以用 \\({\displaystyle \mathbb {R} ^{3}}\\) 中的旋转来识别，并被 Hamilton 称为 versors。 [31] 另请参阅四元数和空间旋转，了解有关使用四元数对三维旋转进行建模的更多信息。
 
 See Hanson (2005)[32] for visualization of quaternions.
 
@@ -581,9 +578,9 @@ See Hanson (2005)[32] for visualization of quaternions.
 
 # Matrix representations  矩阵表示
 
-Just as complex numbers can be represented as matrices, so can quaternions. There are at least two ways of representing quaternions as matrices in such a way that quaternion addition and multiplication correspond to matrix addition and matrix multiplication. One is to use 2 × 2 complex matrices, and the other is to use 4 × 4 real matrices. In each case, the representation given is one of a family of linearly related representations. In the terminology of abstract algebra, these are injective homomorphisms from $${\displaystyle \mathbb {H} }$$  to the matrix rings M(2,ℂ) and M(4,ℝ), respectively.
+Just as complex numbers can be represented as matrices, so can quaternions. There are at least two ways of representing quaternions as matrices in such a way that quaternion addition and multiplication correspond to matrix addition and matrix multiplication. One is to use 2 × 2 complex matrices, and the other is to use 4 × 4 real matrices. In each case, the representation given is one of a family of linearly related representations. In the terminology of abstract algebra, these are injective homomorphisms from \\({\displaystyle \mathbb {H} }\\)  to the matrix rings M(2,ℂ) and M(4,ℝ), respectively.
 
-正如复数可以表示为矩阵一样，四元数也可以。 至少有两种将四元数表示为矩阵的方式，即四元数加法和乘法对应于矩阵加法和矩阵乘法。 一种是使用 2 × 2 复矩阵，另一种是使用 4 × 4 实矩阵。 在每种情况下，给定的表示是一系列线性相关的表示之一。 在抽象代数的术语中，这些是从 $${\displaystyle \mathbb {H} }$$ 到矩阵环 M(2,ℂ) 和 M(4,ℝ) 的单射同态。
+正如复数可以表示为矩阵一样，四元数也可以。 至少有两种将四元数表示为矩阵的方式，即四元数加法和乘法对应于矩阵加法和矩阵乘法。 一种是使用 2 × 2 复矩阵，另一种是使用 4 × 4 实矩阵。 在每种情况下，给定的表示是一系列线性相关的表示之一。 在抽象代数的术语中，这些是从 \\({\displaystyle \mathbb {H} }\\) 到矩阵环 M(2,ℂ) 和 M(4,ℝ) 的单射同态。
 
 Using 2 × 2 complex matrices, the quaternion a + bi + cj + dk can be represented as
 
@@ -614,10 +611,10 @@ This representation has the following properties:
 通过限制，这种表示在单位四元数的子群和它们的图像 SU(2) 之间产生了同构。 拓扑上，单位四元数是 3 球体，所以 SU(2) 的底层空间也是 3 球体。 SU(2) 群对于描述量子力学中的自旋很重要； 参见泡利矩阵。
 
 - There is a strong relation between quaternion units and Pauli matrices. Obtain the eight quaternion unit matrices by taking a, b, c and d, set three of them at zero and the fourth at 1 or −1. Multiplying any two Pauli matrices always yields a quaternion unit matrix, all of them except for −1. One obtains −1 via i2 = j2 = k2 = i j k = −1; e.g. the last equality is
-$${\displaystyle {\begin{aligned}ijk=\sigma _{1}\sigma _{2}\sigma _{3}\sigma _{1}\sigma _{2}\sigma _{3}=-1\end{aligned}}}$$  
+\\({\displaystyle {\begin{aligned}ijk=\sigma _{1}\sigma _{2}\sigma _{3}\sigma _{1}\sigma _{2}\sigma _{3}=-1\end{aligned}}}\\)  
 
 四元数单元和Pauli矩阵之间存在很强的关系。 通过取 a、b、c 和 d 获得八个四元数单位矩阵，将其中三个设置为零，第四个设置为 1 或 -1。 将任何两个泡利矩阵相乘总是会产生一个四元数单位矩阵，除了 -1 之外的所有矩阵。 一个通过 i2 = j2 = k2 = i j k = -1 获得 -1； 例如 最后一个等式是
-$${\displaystyle {\begin{aligned}ijk=\sigma _{1}\sigma _{2}\sigma _{3}\sigma _{1}\sigma _{2}\sigma _{3}=-1\end{aligned}}}$$  
+\\({\displaystyle {\begin{aligned}ijk=\sigma _{1}\sigma _{2}\sigma _{3}\sigma _{1}\sigma _{2}\sigma _{3}=-1\end{aligned}}}\\)  
 
 Using 4 × 4 real matrices, that same quaternion can be written as
 
@@ -650,9 +647,9 @@ Each 4×4 matrix representation of quaternions corresponds to a multiplication t
 |b|b|−c|a|−d|
 |c|c|b|d|a|
 
-which is isomorphic — through $${\displaystyle \{a\mapsto 1,b\mapsto i,c\mapsto j,d\mapsto k\}}$$ — to
+which is isomorphic — through \\({\displaystyle \{a\mapsto 1,b\mapsto i,c\mapsto j,d\mapsto k\}}\\) — to
 
-这是同构的 - 通过 $${\displaystyle \{a\mapsto 1,b\mapsto i,c\mapsto j,d\mapsto k\}}$$ - 到
+这是同构的 - 通过 \\({\displaystyle \{a\mapsto 1,b\mapsto i,c\mapsto j,d\mapsto k\}}\\) - 到
 
 |×|1|k|−i|−j|
 |---|---|---|---|---|
@@ -685,17 +682,17 @@ Quaternions can be represented as pairs of complex numbers. From this perspectiv
 
 四元数可以表示为复数对。 从这个角度来看，四元数是将 Cayley-Dickson 构造应用于复数的结果。 这是将复数构造为实数对的概括。
 
-Let $${\displaystyle \mathbb {C} ^{2}}$$ be a two-dimensional vector space over the complex numbers. Choose a basis consisting of two elements 1 and j. A vector in $${\displaystyle \mathbb {C} ^{2}}$$ can be written in terms of the basis elements 1 and j as
+Let \\({\displaystyle \mathbb {C} ^{2}}\\) be a two-dimensional vector space over the complex numbers. Choose a basis consisting of two elements 1 and j. A vector in \\({\displaystyle \mathbb {C} ^{2}}\\) can be written in terms of the basis elements 1 and j as
 
-令 $${\displaystyle \mathbb {C} ^{2}}$$ 是复数上的二维向量空间。 选择一个由两个元素 1 和 j 组成的基。 $${\displaystyle \mathbb {C} ^{2}}$$ 中的向量可以写成基元素 1 和 j 为
+令 \\({\displaystyle \mathbb {C} ^{2}}\\) 是复数上的二维向量空间。 选择一个由两个元素 1 和 j 组成的基。 \\({\displaystyle \mathbb {C} ^{2}}\\) 中的向量可以写成基元素 1 和 j 为
 
 $$
 {\displaystyle (a+bi)1+(c+di)\mathbf {j} \,.}
 $$
 
-If we define j2 = −1 and i j = −j i, then we can multiply two vectors using the distributive law. Using k as an abbreviated notation for the product i j leads to the same rules for multiplication as the usual quaternions. Therefore, the above vector of complex numbers corresponds to the quaternion a + b i + c j + d k . If we write the elements of $${\displaystyle \mathbb {C} ^{2}}$$ as ordered pairs and quaternions as quadruples, then the correspondence is
+If we define j2 = −1 and i j = −j i, then we can multiply two vectors using the distributive law. Using k as an abbreviated notation for the product i j leads to the same rules for multiplication as the usual quaternions. Therefore, the above vector of complex numbers corresponds to the quaternion a + b i + c j + d k . If we write the elements of \\({\displaystyle \mathbb {C} ^{2}}\\) as ordered pairs and quaternions as quadruples, then the correspondence is
 
-如果我们定义 j2 = -1 和 i j = -j i，那么我们可以使用分配定律将两个向量相乘。 使用 k 作为乘积 i j 的缩写符号会导致与通常的四元数相同的乘法规则。 因此，上述复数向量对应于四元数 a + b i + c j + d k 。 如果我们将 $${\displaystyle \mathbb {C} ^{2}}$$ 的元素写成有序对，四元数写成四元数，那么对应关系是
+如果我们定义 j2 = -1 和 i j = -j i，那么我们可以使用分配定律将两个向量相乘。 使用 k 作为乘积 i j 的缩写符号会导致与通常的四元数相同的乘法规则。 因此，上述复数向量对应于四元数 a + b i + c j + d k 。 如果我们将 \\({\displaystyle \mathbb {C} ^{2}}\\) 的元素写成有序对，四元数写成四元数，那么对应关系是
 
 $$
 {\displaystyle (a+bi,\ c+di)\leftrightarrow (a,b,c,d).}
@@ -705,9 +702,9 @@ $$
 
 ## Square roots of −1    -1的平方根
 
-In the complex numbers, $${\displaystyle \mathbb {C} ,}$$ there are just two numbers, i and −i, whose square is −1 . In $${\displaystyle \mathbb {H} }$$  there are infinitely many square roots of minus one: the quaternion solution for the square root of −1 is the unit sphere in $${\displaystyle \mathbb {R} ^{3}.}$$ To see this, let q = a + b i + c j + d k be a quaternion, and assume that its square is −1. In terms of a, b, c, and d, this means
+In the complex numbers, \\({\displaystyle \mathbb {C} ,}\\) there are just two numbers, i and −i, whose square is −1 . In \\({\displaystyle \mathbb {H} }\\)  there are infinitely many square roots of minus one: the quaternion solution for the square root of −1 is the unit sphere in \\({\displaystyle \mathbb {R} ^{3}.}\\) To see this, let q = a + b i + c j + d k be a quaternion, and assume that its square is −1. In terms of a, b, c, and d, this means
 
-在复数 $${\displaystyle \mathbb {C} ,}$$ 中只有两个数 i 和 -i，它们的平方是 -1 。 在 $${\displaystyle \mathbb {H} }$$ 中有无穷多个负一的平方根：-1 平方根的四元数解是 $${\displaystyle \mathbb {R} 中的单位球 ^ {3}.}$$ 要看到这一点，让 q = a + bi + cj + dk 是一个四元数，并假设它的平方为 -1。 就 a、b、c 和 d 而言，这意味着
+在复数 \\({\displaystyle \mathbb {C} ,}\\) 中只有两个数 i 和 -i，它们的平方是 -1 。 在 \\({\displaystyle \mathbb {H} }\\) 中有无穷多个负一的平方根：-1 平方根的四元数解是 \\({\displaystyle \mathbb {R} 中的单位球 ^ {3}.}\\) 要看到这一点，让 q = a + bi + cj + dk 是一个四元数，并假设它的平方为 -1。 就 a、b、c 和 d 而言，这意味着
 
 $$
 {\displaystyle a^{2}-b^{2}-c^{2}-d^{2}=-1,}
@@ -743,13 +740,13 @@ $$
 {\displaystyle a+b{\sqrt {-1\,}}\mapsto a+bq\,.}
 $$
 
-This is an injective ring homomorphism from $${\displaystyle \mathbb {C} }$$  to $${\displaystyle \mathbb {H} ,}$$ which defines a field isomorphism from $${\displaystyle \mathbb {C} }$$  onto its image. The images of the embeddings corresponding to q and −q are identical.
+This is an injective ring homomorphism from \\({\displaystyle \mathbb {C} }\\)  to \\({\displaystyle \mathbb {H} ,}\\) which defines a field isomorphism from \\({\displaystyle \mathbb {C} }\\)  onto its image. The images of the embeddings corresponding to q and −q are identical.
 
-这是一个从 $${\displaystyle \mathbb {C} }$$ 到 $${\displaystyle \mathbb {H} ,}$$ 的单射环同态，它定义了从 $${\displaystyle \mathbb {C } }$$ 到它的图像上。 对应于 q 和 -q 的嵌入的图像是相同的。
+这是一个从 \\({\displaystyle \mathbb {C} }\\) 到 \\({\displaystyle \mathbb {H} ,}\\) 的单射环同态，它定义了从 \\({\displaystyle \mathbb {C } }\\) 到它的图像上。 对应于 q 和 -q 的嵌入的图像是相同的。
 
-Every non-real quaternion generates a subalgebra of the quaternions that is isomorphic to $${\displaystyle \mathbb {C} ,}$$ and is thus a planar subspace of $${\displaystyle \mathbb {H} \colon }$$ write q as the sum of its scalar part and its vector part:
+Every non-real quaternion generates a subalgebra of the quaternions that is isomorphic to \\({\displaystyle \mathbb {C} ,}\\) and is thus a planar subspace of \\({\displaystyle \mathbb {H} \colon }\\) write q as the sum of its scalar part and its vector part:
 
-每个非实数四元数生成一个四元数的子代数，它与 $${\displaystyle \mathbb {C} ,}$$ 同构，因此是 $${\displaystyle \mathbb {H} \colon }$$ 的平面子空间将 q 写为其标量部分和向量部分之和：
+每个非实数四元数生成一个四元数的子代数，它与 \\({\displaystyle \mathbb {C} ,}\\) 同构，因此是 \\({\displaystyle \mathbb {H} \colon }\\) 的平面子空间将 q 写为其标量部分和向量部分之和：
 
 $$
 {\displaystyle q=q_{s}+{\vec {q}}_{v}.}
@@ -763,45 +760,45 @@ $$
 {\displaystyle q=q_{s}+\lVert {\vec {q}}_{v}\rVert \cdot \mathbf {U} {\vec {q}}_{v}=q_{s}+{\frac {q_{v}}{\|q_{v}\|}}.}
 $$
 
-(Note that this is not the same as $${\displaystyle q_{s}+\lVert q\rVert \cdot \mathbf {U} q}$$ The versor of the vector part of q, $${\displaystyle \mathbf {U} {\vec {q}}_{v}}$$, is a right versor with –1 as its square. A straightforward verification shows that
+(Note that this is not the same as \\({\displaystyle q_{s}+\lVert q\rVert \cdot \mathbf {U} q}\\) The versor of the vector part of q, \\({\displaystyle \mathbf {U} {\vec {q}}_{v}}\\), is a right versor with –1 as its square. A straightforward verification shows that
 
-（注意这和 $${\displaystyle q_{s}+\lVert q\rVert \cdot \mathbf {U} q}$$ q的向量部分的倒数， $${\displaystyle \mathbf {U} {\vec {q}}_{v}}$$, 是一个以 –1 为平方的右 versor。一个简单的验证表明
+（注意这和 \\({\displaystyle q_{s}+\lVert q\rVert \cdot \mathbf {U} q}\\) q的向量部分的倒数， \\({\displaystyle \mathbf {U} {\vec {q}}_{v}}\\), 是一个以 –1 为平方的右 versor。一个简单的验证表明
 
 $$
 {\displaystyle a+b{\sqrt {-1\,}}\mapsto a+b\mathbf {U} {\vec {q}}_{v}}
 $$
 
-defines an injective homomorphism of normed algebras from $${\displaystyle \mathbb {C} }$$  into the quaternions. Under this homomorphism, q is the image of the complex number $${\displaystyle q_{s}+\lVert {\vec {q}}_{v}\rVert i}$$.
+defines an injective homomorphism of normed algebras from \\({\displaystyle \mathbb {C} }\\)  into the quaternions. Under this homomorphism, q is the image of the complex number \\({\displaystyle q_{s}+\lVert {\vec {q}}_{v}\rVert i}\\).
 
-定义了从 $${\displaystyle \mathbb {C} }$$ 到四元数的范数的单射同态。 在这种同态下，q 是复数 $${\displaystyle q_{s}+\lVert {\vec {q}}_{v}\rVert i}$$ 的图像。
+定义了从 \\({\displaystyle \mathbb {C} }\\) 到四元数的范数的单射同态。 在这种同态下，q 是复数 \\({\displaystyle q_{s}+\lVert {\vec {q}}_{v}\rVert i}\\) 的图像。
 
-As $${\displaystyle \mathbb {H} }$$  is the union of the images of all these homomorphisms, this allows viewing the quaternions as a union of complex planes intersecting on the real line. Each of these complex planes contains exactly one pair of antipodal points of the sphere of square roots of minus one.
+As \\({\displaystyle \mathbb {H} }\\)  is the union of the images of all these homomorphisms, this allows viewing the quaternions as a union of complex planes intersecting on the real line. Each of these complex planes contains exactly one pair of antipodal points of the sphere of square roots of minus one.
 
-由于 $${\displaystyle \mathbb {H} }$$ 是所有这些同态的图像的并集，因此可以将四元数视为在实线上相交的复平面的并集。 这些复平面中的每一个都恰好包含负一平方根球面的一对对映点。
+由于 \\({\displaystyle \mathbb {H} }\\) 是所有这些同态的图像的并集，因此可以将四元数视为在实线上相交的复平面的并集。 这些复平面中的每一个都恰好包含负一平方根球面的一对对映点。
 
 ## Commutative subrings  交换子环
 
-The relationship of quaternions to each other within the complex subplanes of $${\displaystyle \mathbb {H} }$$  can also be identified and expressed in terms of commutative subrings. Specifically, since two quaternions p and q commute (i.e., p q = q p) only if they lie in the same complex subplane of $${\displaystyle \mathbb {H} }$$ , the profile of $${\displaystyle \mathbb {H} }$$  as a union of complex planes arises when one seeks to find all commutative subrings of the quaternion ring.
+The relationship of quaternions to each other within the complex subplanes of \\({\displaystyle \mathbb {H} }\\)  can also be identified and expressed in terms of commutative subrings. Specifically, since two quaternions p and q commute (i.e., p q = q p) only if they lie in the same complex subplane of \\({\displaystyle \mathbb {H} }\\) , the profile of \\({\displaystyle \mathbb {H} }\\)  as a union of complex planes arises when one seeks to find all commutative subrings of the quaternion ring.
 
-$${\displaystyle \mathbb {H} }$$  的复子平面内四元数之间的关系也可以用交换子环来识别和表达。 具体来说，由于两个四元数 p 和 q 仅当它们位于 $${\displaystyle \mathbb {H} }$$ 的同一个复子平面中时才可对易（即 pq = qp），$${\displaystyle \mathbb {H} }$$  作为复平面的并集出现在寻找四元数环的所有可交换子环时。
+\\({\displaystyle \mathbb {H} }\\)  的复子平面内四元数之间的关系也可以用交换子环来识别和表达。 具体来说，由于两个四元数 p 和 q 仅当它们位于 \\({\displaystyle \mathbb {H} }\\) 的同一个复子平面中时才可对易（即 pq = qp），\\({\displaystyle \mathbb {H} }\\)  作为复平面的并集出现在寻找四元数环的所有可交换子环时。
 
 ## Square roots of arbitrary quaternions  任意四元数的平方根
 
-Any quaternion $${\displaystyle \mathbf {q} =(r,\,{\vec {v}})}$$ (represented here in scalar–vector representation) has at least one square root $${\displaystyle {\sqrt {\mathbf {q} }}=(x,\,{\vec {y}})}$$ which solves the equation $${\displaystyle {\sqrt {\mathbf {q} }}^{2}=(x,\,{\vec {y}})^{2}=\mathbf {q} }$$. Looking at the scalar and vector parts in this equation separately yields two equations, which when solved gives the solutions
+Any quaternion \\({\displaystyle \mathbf {q} =(r,\,{\vec {v}})}\\) (represented here in scalar–vector representation) has at least one square root \\({\displaystyle {\sqrt {\mathbf {q} }}=(x,\,{\vec {y}})}\\) which solves the equation \\({\displaystyle {\sqrt {\mathbf {q} }}^{2}=(x,\,{\vec {y}})^{2}=\mathbf {q} }\\). Looking at the scalar and vector parts in this equation separately yields two equations, which when solved gives the solutions
 
-任何四元数 $${\displaystyle \mathbf {q} =(r,\,{\vec {v}})}$$（这里以标量-矢量表示）至少有一个平方根 $${\displaystyle { \sqrt {\mathbf {q} }}=(x,\,{\vec {y}})}$$ 求解方程 $${\displaystyle {\sqrt {\mathbf {q} }}^{2 }=(x,\,{\vec {y}})^{2}=\mathbf {q} }$$。 分别查看该方程中的标量和矢量部分会产生两个方程，求解时会给出解
+任何四元数 \\({\displaystyle \mathbf {q} =(r,\,{\vec {v}})}\\)（这里以标量-矢量表示）至少有一个平方根 \\({\displaystyle { \sqrt {\mathbf {q} }}=(x,\,{\vec {y}})}\\) 求解方程 \\({\displaystyle {\sqrt {\mathbf {q} }}^{2 }=(x,\,{\vec {y}})^{2}=\mathbf {q} }\\)。 分别查看该方程中的标量和矢量部分会产生两个方程，求解时会给出解
 
 $$
 {\displaystyle {\sqrt {\mathbf {q} }}={\sqrt {(r,\,{\vec {v}}\,)}}=\pm \left({\sqrt {\frac {\|\mathbf {q} \|+r}{2}}},\ {\frac {\vec {v}}{\|{\vec {v}}\|}}{\sqrt {\frac {\|\mathbf {q} \|-r}{2}}}\right),}
 $$
 
-where $${\displaystyle \|{\vec {v}}\|={\sqrt { {\vec {v} }\cdot {\vec {v}}}}={\sqrt {-{\vec {v}}^{2}}}}$$ is the norm of $${\displaystyle {\vec {v}}}$$ and $${\displaystyle \|\mathbf {q} \|={\sqrt {\mathbf {q} ^{*}\mathbf {q} }}=r^{2}+\|{\vec {v}}\|^{2}}$$ is the norm of $${\displaystyle \mathbf {q} }$$ . For any scalar quaternion $${\displaystyle \mathbf {q} }$$, this equation provides the correct square roots if $${\displaystyle {\frac {\vec {v}}{\|{\vec {v}}\|}}}$$ is interpreted as an arbitrary unit vector.
+where \\({\displaystyle \|{\vec {v}}\|={\sqrt { {\vec {v} }\cdot {\vec {v}}}}={\sqrt {-{\vec {v}}^{2}}}}\\) is the norm of \\({\displaystyle {\vec {v}}}\\) and \\({\displaystyle \|\mathbf {q} \|={\sqrt {\mathbf {q} ^{*}\mathbf {q} }}=r^{2}+\|{\vec {v}}\|^{2}}\\) is the norm of \\({\displaystyle \mathbf {q} }\\) . For any scalar quaternion \\({\displaystyle \mathbf {q} }\\), this equation provides the correct square roots if \\({\displaystyle {\frac {\vec {v}}{\|{\vec {v}}\|}}}\\) is interpreted as an arbitrary unit vector.
 
-其中 $${\displaystyle \|{\vec {v}}\|={\sqrt { {\vec {v} }\cdot {\vec {v}}}}={\sqrt {-{\vec { v}}^{2}}}}$$ 是 $${\displaystyle {\vec {v}}}$$ 和 $${\displaystyle \|\mathbf {q} \|={\sqrt 的范数 {\mathbf {q} ^{*}\mathbf {q} }}=r^{2}+\|{\vec {v}}\|^{2}}$$ 是 $${\ 显示风格 \mathbf {q} }$$ 。 对于任何标量四元数 $${\displaystyle \mathbf {q} }$$，如果 $${\displaystyle {\frac {\vec {v}}{\|{\vec {v} }\|}}}$$ 被解释为任意单位向量。
+其中 \\({\displaystyle \|{\vec {v}}\|={\sqrt { {\vec {v} }\cdot {\vec {v}}}}={\sqrt {-{\vec { v}}^{2}}}}\\) 是 \\({\displaystyle {\vec {v}}}\\) 和 \\({\displaystyle \|\mathbf {q} \|={\sqrt 的范数 {\mathbf {q} ^{*}\mathbf {q} }}=r^{2}+\|{\vec {v}}\|^{2}}\\) 是 \\({\ 显示风格 \mathbf {q} }\\) 。 对于任何标量四元数 \\({\displaystyle \mathbf {q} }\\)，如果 \\({\displaystyle {\frac {\vec {v}}{\|{\vec {v} }\|}}}\\) 被解释为任意单位向量。
 
-Therefore, non-zero, non-scalar quaternions, or positive scalar quaternions, have exactly two roots, while 0 has exactly one root (0), and negative scalar quaternions have infinitely many roots, which are the vector quaternions located on $${\displaystyle \{0\}\times S^{2}({\sqrt {-r}})}$$, i.e., where the scalar part is zero and the vector part is located on the 2-sphere with radius $${\displaystyle {\sqrt {-r}}}$$.
+Therefore, non-zero, non-scalar quaternions, or positive scalar quaternions, have exactly two roots, while 0 has exactly one root (0), and negative scalar quaternions have infinitely many roots, which are the vector quaternions located on \\({\displaystyle \{0\}\times S^{2}({\sqrt {-r}})}\\), i.e., where the scalar part is zero and the vector part is located on the 2-sphere with radius \\({\displaystyle {\sqrt {-r}}}\\).
 
-因此，非零、非标量四元数或正标量四元数正好有两个根，而 0 正好有一个根 (0)，负标量四元数有无穷多个根，即位于 $${ 上的向量四元数 \displaystyle \{0\}\times S^{2}({\sqrt {-r}})}$$，即标量部分为零，向量部分位于半径为$的2-球体上 ${\displaystyle {\sqrt {-r}}}$$。
+因此，非零、非标量四元数或正标量四元数正好有两个根，而 0 正好有一个根 (0)，负标量四元数有无穷多个根，即位于 \\({ 上的向量四元数 \displaystyle \{0\}\times S^{2}({\sqrt {-r}})}\\)，即标量部分为零，向量部分位于半径为$的2-球体上 ${\displaystyle {\sqrt {-r}}}\\)。
 
 # Functions of a quaternion variable  四元变量的函数
 
@@ -811,7 +808,7 @@ Therefore, non-zero, non-scalar quaternions, or positive scalar quaternions, hav
 
 ![](assets/16.jpg)
 
->- The Julia sets and Mandelbrot sets can be extended to the Quaternions, but they must use cross sections to be rendered visually in 3 dimensions. This Julia set is cross sectioned at the x y plane.  
+> &#x1F446; The Julia sets and Mandelbrot sets can be extended to the Quaternions, but they must use cross sections to be rendered visually in 3 dimensions. This Julia set is cross sectioned at the x y plane.  
 Julia 集和 Mandelbrot 集可以扩展到四元数，但它们必须使用横截面才能在 3 维视觉上呈现。 这个 Julia 集在 x y 平面上进行横截面。
 
 Like functions of a complex variable, functions of a quaternion variable suggest useful physical models. For example, the original electric and magnetic fields described by Maxwell were functions of a quaternion variable. Examples of other functions include the extension of the Mandelbrot set and Julia sets into 4-dimensional space.[36]
@@ -852,17 +849,17 @@ $$
 {\displaystyle q=\|q\|e^{ {\hat {n} }\varphi }=\|q\|\left(\cos(\varphi )+{\hat {n}}\sin(\varphi )\right),}
 $$
 
-where the angle $${\displaystyle \varphi } [e]$$
+where the angle \\({\displaystyle \varphi } [e]$$
 
-其中角度 $${\displaystyle \varphi } [e]$$
+其中角度 \\({\displaystyle \varphi } [e]$$
 
 $$
 {\displaystyle a=\|q\|\cos(\varphi )}
 $$
 
-and the unit vector $${\displaystyle {\hat {n}}}$$ is defined by:
+and the unit vector \\({\displaystyle {\hat {n}}}\\) is defined by:
 
-单位向量 $${\displaystyle {\hat {n}}}$$ 定义为：
+单位向量 \\({\displaystyle {\hat {n}}}\\) 定义为：
 
 $$
 {\displaystyle \mathbf {v} ={\hat {n}}\|\mathbf {v} \|={\hat {n}}\|q\|\sin(\varphi )\,.}
@@ -912,17 +909,17 @@ The word "conjugation", besides the meaning given above, can also mean taking an
 
 “共轭”这个词，除了上面给出的含义外，还可以表示将元素 a 变为 rar-1，其中 r 是某个非零四元数。 与给定元素共轭的所有元素（在这个词共轭的意义上）具有相同的实部和向量部分的相同范数。 （因此，另一种意义上的共轭是这种意义上的共轭之一。）
 
->**[warning]**  
+> &#x2753;  
 **rar-1**:?
 
-Thus the multiplicative group of non-zero quaternions acts by conjugation on the copy of $${\displaystyle \mathbb {R} ^{3}}$$ consisting of quaternions with real part equal to zero. Conjugation by a unit quaternion (a quaternion of absolute value 1) with real part cos(φ) is a rotation by an angle 2φ, the axis of the rotation being the direction of the vector part. The advantages of quaternions are:
+Thus the multiplicative group of non-zero quaternions acts by conjugation on the copy of \\({\displaystyle \mathbb {R} ^{3}}\\) consisting of quaternions with real part equal to zero. Conjugation by a unit quaternion (a quaternion of absolute value 1) with real part cos(φ) is a rotation by an angle 2φ, the axis of the rotation being the direction of the vector part. The advantages of quaternions are:
 
-因此，非零四元数的乘法群通过共轭作用于由实部为零的四元数组成的 $${\displaystyle \mathbb {R} ^{3}}$$ 的副本。 单位四元数（绝对值为 1 的四元数）与实部 cos(φ) 的共轭是角度 2φ 的旋转，旋转的轴是矢量部分的方向。 四元数的优点是：
+因此，非零四元数的乘法群通过共轭作用于由实部为零的四元数组成的 \\({\displaystyle \mathbb {R} ^{3}}\\) 的副本。 单位四元数（绝对值为 1 的四元数）与实部 cos(φ) 的共轭是角度 2φ 的旋转，旋转的轴是矢量部分的方向。 四元数的优点是：
 
 - Avoiding gimbal lock, a problem with systems such as Euler angles.  
 避免万向节锁定，这是欧拉角等系统的问题。
 
->**[warning]**  
+> &#x2753;  
 **万向节锁定**：？
 
 - Faster and more compact than matrices.  
@@ -931,7 +928,7 @@ Thus the multiplicative group of non-zero quaternions acts by conjugation on the
 - Nonsingular representation (compared with Euler angles for example).  
 非奇异表示（例如与欧拉角相比）。
 
->**[warning]**  
+> &#x2753;  
 **非奇异表示**：？
 
 - Pairs of unit quaternions represent a rotation in 4D space (see Rotations in 4-dimensional Euclidean space: Algebra of 4D rotations).  
@@ -977,9 +974,9 @@ Quaternion algebras are isomorphic to the algebra of 2×2 matrices over F or for
 
 *主条目：旋量§三维*
 
-The usefulness of quaternions for geometrical computations can be generalised to other dimensions by identifying the quaternions as the even part $${\displaystyle \operatorname {Cl} _{3,0}^{+}(\mathbb {R} )}$$ of the Clifford algebra $${\displaystyle \operatorname {Cl} _{3,0}(\mathbb {R} ).}$$ This is an associative multivector algebra built up from fundamental basis elements σ1, σ2, σ3 using the product rules
+The usefulness of quaternions for geometrical computations can be generalised to other dimensions by identifying the quaternions as the even part \\({\displaystyle \operatorname {Cl} _{3,0}^{+}(\mathbb {R} )}\\) of the Clifford algebra \\({\displaystyle \operatorname {Cl} _{3,0}(\mathbb {R} ).}\\) This is an associative multivector algebra built up from fundamental basis elements σ1, σ2, σ3 using the product rules
 
-通过将四元数识别为偶数部分 $${\displaystyle \operatorname {Cl} _{3,0}^{+}(\mathbb {R} )}$，可以将四元数对几何计算的有用性推广到其他维度 克利福德代数 $${\displaystyle \operatorname {Cl} _{3,0}(\mathbb {R} ).}$$ 这是一个结合多向量代数，由基本基元 σ1、σ2、σ3 组成，使用 产品规则
+通过将四元数识别为偶数部分 \\({\displaystyle \operatorname {Cl} _{3,0}^{+}(\mathbb {R} )}$，可以将四元数对几何计算的有用性推广到其他维度 克利福德代数 \\({\displaystyle \operatorname {Cl} _{3,0}(\mathbb {R} ).}\\) 这是一个结合多向量代数，由基本基元 σ1、σ2、σ3 组成，使用 产品规则
 
 $$
 {\displaystyle \sigma _{1}^{2}=\sigma _{2}^{2}=\sigma _{3}^{2}=1,}
@@ -1033,9 +1030,9 @@ In this picture, so-called "vector quaternions" (that is, pure imaginary quatern
 
 在这张图片中，所谓的“向量四元数”（即纯虚数四元数）对应的不是向量而是双向量——具有与特定 2D 平面而非 1D 方向相关联的大小和方向的量。 与复数的关系也变得更加清晰：在二维中，有两个向量方向 σ1 和 σ2，只有一个双向量基元 σ1σ2，所以只有一个虚数。 但在 3D 中，具有三个向量方向，存在三个双向量基元 σ1σ2、σ2σ3、σ3σ1，因此三个虚数。
 
-This reasoning extends further. In the Clifford algebra $${\displaystyle \operatorname {Cl} _{4,0}(\mathbb {R} ),}$$ there are six bivector basis elements, since with four different basic vector directions, six different pairs and therefore six different linearly independent planes can be defined. Rotations in such spaces using these generalisations of quaternions, called rotors, can be very useful for applications involving homogeneous coordinates. But it is only in 3D that the number of basis bivectors equals the number of basis vectors, and each bivector can be identified as a pseudovector.
+This reasoning extends further. In the Clifford algebra \\({\displaystyle \operatorname {Cl} _{4,0}(\mathbb {R} ),}\\) there are six bivector basis elements, since with four different basic vector directions, six different pairs and therefore six different linearly independent planes can be defined. Rotations in such spaces using these generalisations of quaternions, called rotors, can be very useful for applications involving homogeneous coordinates. But it is only in 3D that the number of basis bivectors equals the number of basis vectors, and each bivector can be identified as a pseudovector.
 
-这个推理进一步延伸。 在克利福德代数 $${\displaystyle \operatorname {Cl} _{4,0}(\mathbb {R} ),}$$ 中有六个双向量基元素，因为有四个不同的基本向量方向，六个不同的对和 因此可以定义六个不同的线性独立平面。 使用这些四元数的推广（称为转子）在此类空间中的旋转对于涉及齐次坐标的应用非常有用。 但是只有在 3D 中，基双向量的数量才等于基向量的数量，并且每个双向量都可以被识别为伪向量。
+这个推理进一步延伸。 在克利福德代数 \\({\displaystyle \operatorname {Cl} _{4,0}(\mathbb {R} ),}\\) 中有六个双向量基元素，因为有四个不同的基本向量方向，六个不同的对和 因此可以定义六个不同的线性独立平面。 使用这些四元数的推广（称为转子）在此类空间中的旋转对于涉及齐次坐标的应用非常有用。 但是只有在 3D 中，基双向量的数量才等于基向量的数量，并且每个双向量都可以被识别为伪向量。
 
 There are several advantages for placing quaternions in this wider setting:[40]
 
