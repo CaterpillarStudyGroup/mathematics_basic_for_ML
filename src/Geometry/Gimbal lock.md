@@ -1,11 +1,11 @@
 # Gimbal lock 万向节死锁
 
-![](图片/21.jpg)
+![](assets/21.jpg)
 
 >- "Phantom 4 Pro V2 Gimbal Holder" by Jordan Raychev  
 Jordan Raychev 的 Phantom 4 Pro V2 万向支架
 
-![](图片/22.png)
+![](assets/22.png)
 
 >- Adding a fourth rotational axis can solve the problem of gimbal lock, but it requires the outermost ring to be actively driven so that it stays 90 degrees out of alignment with the innermost axis (the flywheel shaft). Without active driving of the outermost ring, all four axes can become aligned in a plane as shown above, again leading to gimbal lock and inability to roll.  
 添加第四个旋转轴可以解决万向死锁问题，但它需要主动驱动最外圈，使其与最内轴（飞轮轴）保持90度不对齐。 如果没有主动驱动最外环，所有四个轴都可以在一个平面上对齐，如上图所示，再次导致万向节死锁和无法滚动。
@@ -95,17 +95,17 @@ Mathematically, this corresponds to the fact that spherical coordinates do not d
 
 ## In three dimensions 在三维
 
-![](图片/23.gif)
+![](assets/23.gif)
 
 >- Gimbal with 3 axes of rotation. A set of three gimbals mounted together to allow three degrees of freedom: roll, pitch and yaw. When two gimbals rotate around the same axis, the system loses one degree of freedom.  
 具有 3 个旋转轴的万向节。 一组三个安装在一起的万向节允许三个自由度：滚动、俯仰和偏航。 当两个万向节绕同一轴旋转时，系统失去一个自由度。
 
-![](图片/24.png)
+![](assets/24.png)
 
 >- Normal situation: the three gimbals are independent  
 正常情况：三个万向节独立
 
-![](图片/25.png)
+![](assets/25.png)
 
 >- Gimbal lock: two out of the three gimbals are in the same plane, one degree of freedom is lost  
 万向节死锁：三个万向节中有两个在同一平面，失去一个自由度
@@ -156,7 +156,7 @@ After the Lunar Module had landed, Mike Collins aboard the Command Module joked 
 
 ## Robotics 机器人技术
 
-![](图片/26.jpg)
+![](assets/26.jpg)
 
 >- Industrial robot operating in a foundry.  
 在铸造厂工作的工业机器人。
