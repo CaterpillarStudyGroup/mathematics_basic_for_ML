@@ -161,7 +161,7 @@ $$
 
 - 实四元数与所有其他四元数满足交换律，即对于每一个四元数 q 和每一个实四元数 a，aq = qa。 在代数术语中，这就是说实四元数域是这个四元数代数的中心。
 
-> &#x1F504;  
+> &#x1F50E;  
 下文3.2会解释“代数的中心”概念
 
 - The product is first given for the basis elements (see next subsection), and then extended to all quaternions by using the distributive property and the center property of the real quaternions. The Hamilton product is not commutative, but is associative, thus the quaternions form an associative algebra over the real numbers.  
@@ -322,7 +322,7 @@ Conjugation of quaternions is analogous to conjugation of complex numbers and to
 
 两个四元数乘积的共轭是共轭逆序的乘积。 也就是说，如果 p 和 q 是四元数，那么 (pq)∗ = q∗p∗，而不是 p∗q∗。
 
-> &#x1F504;  
+> &#x1F50E;  
 **对合**：involution
 
 The conjugation of a quaternion, in stark contrast to the complex setting, can be expressed with multiplication and addition of quaternions:

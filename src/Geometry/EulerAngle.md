@@ -4,7 +4,7 @@
 
 它们还可以表示物理学中移动参考系的方向，或三维线性代数中一般基的方向。后来，彼得·古思里·泰特（Peter Guthrie Tait）和乔治·H·布莱恩（George H.Bryan）引入了另一种形式，用于航空和工程领域。
 
-> &#x1F504;   
+> &#x1F50E;   
 frame of reference：参考坐标系  
 basis：基  
 
@@ -22,7 +22,7 @@ basis：基
 
 三个元素旋转可以是外旋（围绕原始坐标系的轴xyz旋转，假设其保持不变），也可以是内旋（围绕旋转坐标系的轴XYZ旋转，与运动物体保持一致，在每次元素旋转后改变其方向）。
 
-> &#x1F504;  
+> &#x1F50E;  
 extrinsic rotations：外旋  
 intrinsic rotations：内旋  
 
