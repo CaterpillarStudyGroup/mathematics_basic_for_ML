@@ -37,6 +37,7 @@
    * [梯度下降法](NumericalComputation/GradientDescent.md)
    * [牛顿法](NumericalComputation/Newton.md) 
    * [带约束的优化](NumericalComputation/ConstrainedOptimization.md)
+   * [ODE & SDE](NumericalComputation/ODE_SDE.md)
 * [概率论]()
    * [一些术语](Probability/norms.md)
    * [概率分布](Probability/probability_distribution.md)
@@ -54,4 +55,4 @@
 	* [维基百科 - 欧拉角](Geometry/EulerAngle.md)
 	* [维基百科 - 四元数](Geometry/Quaternion.md)
 	* [维基百科 - 旋转矩阵](Geometry/RotationMatrix.md)
-	* [维基百科 - 万象节死锁](Geometry/Gimbal%20lock.md)
+	* [维基百科 - 万向节死锁](Geometry/Gimbal%20lock.md)
