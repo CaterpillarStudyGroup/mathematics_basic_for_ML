@@ -63,3 +63,4 @@
 	* [维基百科 - 旋转矩阵](Geometry/RotationMatrix.md)
 	* [维基百科 - 万向节死锁](Geometry/Gimbal%20lock.md)
    * [黎曼流形](Geometry/RiemannianManifolds.md)
+   * [球谐基](Geometry/SphericalHarmonics.md)
