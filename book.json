@@ -1,0 +1,37 @@
+{
+    "gitbook": "3.2.3",
+    "author": "windmissing",
+    "plugins": [
+        "katex",
+        "katex-plus",
+        "alerts",
+        "github",
+        "github-buttons",
+        "splitter",
+        "-sharing", "sharing-plus",
+        "copy-code-button",
+        "anchor-navigation-ex",
+        "sectionx",
+        "click-reveal"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/windmissing/mathematics_basic_for_ML"
+        },
+        "github-buttons": {
+            "repo": "windmissing/mathematics_basic_for_ML",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
+        },
+        "anchor-navigation-ex": {
+            "isShowTocTitleIcon": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        }
+    }
+}
