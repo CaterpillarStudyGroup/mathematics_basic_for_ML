@@ -1,4 +1,4 @@
-在线阅读地址：https://windmissing.github.io/mathematics_basic_for_ML/
+在线阅读地址：https://caterpillarstudygroup.github.io/mathematics_basic_for_ML/index.html
 
 整理总结学习机器学习需要的数学基础。  
 这是一本不太严谨的数学笔记。内容比较入门。  
