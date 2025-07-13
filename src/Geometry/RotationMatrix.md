@@ -1,37 +1,13 @@
 
 # Rotation matrix 旋转矩阵
 
-In linear algebra, a **rotation matrix** is a transformation matrix that is used to perform a rotation in Euclidean space. For example, using the convention below, the matrix 
+在线性代数中，**旋转矩阵**是用于在欧几里得空间中执行旋转的变换矩阵。
 
-在线性代数中，**旋转矩阵**是用于在欧几里得空间中执行旋转的变换矩阵。例如，使用下面的约定，矩阵
+旋转矩阵是行列式 1 的正交矩阵。旋转矩阵描述了围绕原点的旋转。
 
-$$
-{\displaystyle R={\begin{bmatrix}\cos \theta &-\sin \theta \\\sin \theta &\cos \theta \end{bmatrix}}}
-$$
+## 2D旋转矩阵
 
-rotates points in the $$xy$$ plane counterclockwise through an angle $$θ$$ with respect to the $$x$$ axis about the origin of a two-dimensional Cartesian coordinate system. To perform the rotation on a plane point with standard coordinates **v** = $$(x, y)$$, it should be written as a column vector, and multiplied by the matrix $$R$$: 
 
-将 $$xy$$ 平面中的点相对于 $$x$$ 轴逆时针旋转角度 $$θ$$，绕二维笛卡尔坐标系的原点旋转。 要在具有标准坐标**v** = $$(x, y)$$ 的平面点上执行旋转，应将其写为列向量，并乘以矩阵$$R$$
-
-$$ 
-{\displaystyle R\mathbf {v} ={\begin{bmatrix}\cos \theta &-\sin \theta \\\sin \theta &\cos \theta \end{bmatrix}}{\begin{bmatrix}x\\y\end{bmatrix}}={\begin{bmatrix}x\cos \theta -y\sin \theta \\x\sin \theta +y\cos \theta \end{bmatrix}}.} 
-$$
-
-If $$x$$ and $$y$$ are the endpoint coordinates of a vector, where $$x$$ is cosine and $$y$$ is sine, then the above equations become the trigonometric summation angle formulae. Indeed, a rotation matrix can be seen as the trigonometric summation angle formulae in matrix form. One way to understand this is say we have a vector at an angle 30° from the $$x$$ axis, and we wish to rotate that angle by a further 45°. We simply need to compute the vector endpoint coordinates at 75°. 
-
-如果$$x$$和$$y$$是一个向量的端点坐标，其中$$x$$是余弦，$$y$$是正弦，那么上面的方程就变成了三角求和角公式。 实际上，旋转矩阵可以看作是矩阵形式的三角求和角度公式。 理解这一点的一种方法是假设我们有一个与 $$x$$ 轴成 30° 角的向量，我们希望将该角度再旋转 45°。 我们只需要计算 75° 处的矢量端点坐标。
-
-The examples in this article apply to *active rotations* of vectors *counterclockwise* in a *right-handed coordinate system* ($$y$$ counterclockwise from $$x$$) by *pre-multiplication* ($$R$$ on the left). If any one of these is changed (such as rotating axes instead of vectors, a *passive transformation*), then the inverse of the example matrix should be used, which coincides with its transpose. 
-
-本文中的示例适用于 *右手坐标系*（$$y$$ 从 $$x$$ 逆时针）通过 *左乘法*（左侧的 $$R$$）*主动旋转*。 如果其中任何一个发生更改（例如旋转轴而不是向量，*被动变换*），则应使用示例矩阵的逆矩阵，这与其转置一致。
-
-Since matrix multiplication has no effect on the zero vector (the coordinates of the origin), rotation matrices describe rotations about the origin. Rotation matrices provide an algebraic description of such rotations, and are used extensively for computations in geometry, physics, and computer graphics. In some literature, the term rotation is generalized to include improper rotations, characterized by orthogonal matrices with a determinant of −1 (instead of +1). These combine *proper* rotations with *reflections* (which invert orientation). In other cases, where reflections are not being considered, the label *proper* may be dropped. The latter convention is followed in this article. 
-
-由于矩阵乘法对零向量（原点坐标）没有影响，因此旋转矩阵描述了围绕原点的旋转。 旋转矩阵提供了这种旋转的代数描述，并广泛用于几何、物理和计算机图形学中的计算。 在一些文献中，术语旋转被概括为包括不正确的旋转，其特征在于行列式为 -1（而不是 +1）的正交矩阵。 这些将 *proper* 旋转与 *reflections* （反转方向）结合在一起。 在其他不考虑反射的情况下，可能会删除 *proper* 标签。 本文遵循后一种约定。
-
-Rotation matrices are square matrices, with real entries. More specifically, they can be characterized as orthogonal matrices with determinant 1; that is, a square matrix *R* is a rotation matrix if and only if $$RT = R−1$$ and det $$R = 1$$. The set of all orthogonal matrices of size n with determinant +1 forms a group known as the special orthogonal group $$SO(n)$$, one example of which is the rotation group SO(3). The set of all orthogonal matrices of size $$n$$ with determinant +1 or −1 forms the (general) orthogonal group $$O(n)$$. 
-
-旋转矩阵是方阵，有实数。 更具体地说，它们可以被描述为具有行列式 1 的正交矩阵； 也就是说，方阵 *R* 是旋转矩阵当且仅当 $$RT = R−1$$ 并且 det $$R = 1$$。 所有大小为 n 且行列式为 +1 的正交矩阵的集合形成了一个称为特殊正交群 $$SO(n)$$ 的群，其中一个示例是旋转群 SO(3)。 具有行列式 +1 或 -1 的所有大小为 $$n$$ 的正交矩阵的集合形成（一般）正交群 $$O(n)$$。
 
 Contents
 
@@ -121,12 +97,12 @@ Contents
 
 16 External links 
 
-# In two dimensions 二维
+# 二维旋转矩阵
 
-在二维中，标准旋转矩阵具有以下形式：
+二维旋转矩阵具有以下形式：
 
 $$
-{\displaystyle R(\theta )={\begin{bmatrix}\cos \theta &-\sin \theta \\\sin \theta &\cos \theta \\\end{bmatrix}}.}
+{\displaystyle R={\begin{bmatrix}\cos \theta &-\sin \theta \\\sin \theta &\cos \theta \end{bmatrix}}}
 $$
 
 通过以下矩阵乘法旋转列向量，
@@ -187,17 +163,6 @@ The two-dimensional case is the only non-trivial (i.e. not one-dimensional) case
 
 二维旋转矩阵组是唯一非平凡的（即非一维）可交换情况，因此执行多次旋转的顺序无关紧要。 另一种约定使用旋转轴，[1] 并且上述矩阵也表示*轴顺时针*旋转角度 $$θ$$。
 
-## 坐标系的非标准方向
-
-如果使用标准右手笛卡尔坐标系，$$x$$ 轴向右，$$y$$ 轴向上，则旋转 $$R(θ)$$ 为逆时针方向。 如果使用左手笛卡尔坐标系，$$x$$ 指向右侧，$$y$$ 指向下方，则 $$R(θ)$$ 为顺时针方向。 这种非标准方向在数学中很少使用，但在 2D 计算机图形学中很常见，其原点通常位于左上角，$$y$$ 轴在屏幕或页面下方。[2]
-
-有关可能改变旋转矩阵产生的旋转方向的其他替代约定，请参见下文。
-
-![](assets/220px-Clockwise_rotation.png)
-
-> A rotation through angle θ with non-standard axes.
-非标准轴中角度 θ 的旋转
-
 ## 常见的旋转矩阵
 
 特别有用的矩阵是
@@ -206,92 +171,9 @@ $$
 {\displaystyle {\begin{bmatrix}0&-1\\[3pt]1&0\\\end{bmatrix}},\quad {\begin{bmatrix}-1&0\\[3pt]0&-1\\\end{bmatrix}},\quad {\begin{bmatrix}0&1\\[3pt]-1&0\\\end{bmatrix}}} 
 $$
 
-用于逆时针旋转 90°、180° 和 270°。
+# 三维旋转矩阵
 
-![](assets/Square_permutation_1_1.svg.png)![](assets/Square_permutation_3_0.svg.png)![](assets/Square_permutation_2_1.svg.png)
-
-> A 180° rotation (middle) followed by a positive 90° rotation (left) is equivalent to a single negative 90° (positive 270°) rotation (right). Each of these figures depicts the result of a rotation relative to an upright starting position (bottom left) and includes the matrix representation of the permutation applied by the rotation (center right), as well as other related diagrams. See "Permutation notation" on Wikiversity for details.
-180° 旋转（中）后跟 90° 正旋转（左）等效于单个负 90°（正 270°）旋转（右）。 这些图中的每一个都描绘了相对于直立起始位置（左下）的旋转结果，并包括由旋转（右中）应用的排列的矩阵表示，以及其他相关图表。 有关详细信息，请参阅 Wikiversity 上的“排列符号”。
-
-## Relationship with complex plane 与复平面的关系
-
-由于
-
-$$
-{\displaystyle {\begin{bmatrix}0&1\\-1&0\end{bmatrix}}^{2}\ =\ {\begin{bmatrix}-1&0\\0&-1\end{bmatrix}}\ =-I,} 
-$$
-
-以下形状的矩阵
-
-$$
-{\displaystyle {\begin{bmatrix}x&y\\-y&x\end{bmatrix}}} 
-$$
-
-form a ring isomorphic to the field of the complex numbers  $${\displaystyle \mathbb {C} } $$. Under this isomorphism, the rotation matrices correspond to circle of the unit complex numbers, the complex numbers of modulus 1. 
-
-形成一个与复数域 $${\displaystyle \mathbb {C} } $$ 同构的环。 在这种同构下，旋转矩阵对应于单位复数的圆，即模1的复数。
-
-If one identify  $${\displaystyle \mathbb {R} ^{2}}$$ with  $${\displaystyle \mathbb {C} }$$  through the linear isomorphism $${\displaystyle (a,b)\mapsto a+ib,}$$ the action of a matrix of the above form on vectors of $${\displaystyle \mathbb {R} ^{2}}$$ corresponds to the multiplication by the complex number $$x + iy$$, and rotations correspond to multiplication by complex numbers of modulus 1. 
-
-如果通过线性同构 $${\displaystyle (a,b)\mapsto a+ib,}$$ 将 $${\displaystyle \mathbb {R} ^{2}}$$ 识别为 $${\displaystyle \mathbb {C} }$$，} $$ 上述形式的矩阵对 {\displaystyle \mathbb {R} ^{2}}$$ 内的向量的作用相当于乘以复数 $$x + iy$$，旋转相当于乘以模为1的复数。
-
->**[warning]**  
-这一段不懂
-
-As every rotation matrix can be written 
-
-因为每个旋转矩阵都可以写成
-
-$$
-{\displaystyle {\begin{pmatrix}\cos t&\sin t\\-\sin t&\cos t\end{pmatrix}},} 
-$$
-
-the above correspondence associates such a matrix with the complex number
-
-上述对应关系将矩阵与这样的复数相关联
-
-$$
-\cos t + i \sin t = e^{it}
-$$
-
-(this last equality is Euler's formula). 
-
-（最后一个等式是欧拉公式）。
-
-# 三维
-
-*See also: Rotation formalisms in three dimensions*
-
-*另请参阅：三个维度的旋转形式*
-
-![](assets/180px-Cube_permutation_4_5.svg.png)![](assets/Cube_permutation_1_1.svg.png)![](assets/Cube_permutation_0_4.svg.png)
-
-> A positive 90° rotation around the y-axis (left) after one around the z-axis (middle) gives a 120° rotation around the main diagonal (right).
-In the top left corner are the rotation matrices, in the bottom right corner are the corresponding permutations of the cube with the origin in its center.
-绕 y 轴（左）旋转 90° 后绕 z 轴（中）旋转 90°，得到的是绕主对角线（右）旋转 120°的效果。左上角是旋转矩阵，右下角是立方体以原点为中心的对应排列。
-
-## Basic rotations 基本旋转
-
-A basic rotation (also called elemental rotation) is a rotation about one of the axes of a coordinate system. The following three basic rotation matrices rotate vectors by an angle θ about the x-, y-, or z-axis, in three dimensions, using the right-hand rule—which codifies their alternating signs. (The same matrices can also represent a clockwise rotation of the axes.[nb 1]) 
-
-基本旋转（也称为元素旋转）是围绕其中一个坐标轴的旋转。 以下三个基本旋转矩阵使用右手定则将向量围绕 x-、y- 或 z-轴在三个维度上旋转角度 θ，该右手定则编码了它们的交替符号。 （相同的矩阵也可以表示轴的顺时针旋转。[nb 1]）
-
-$$
-{\displaystyle {\begin{alignedat}{1}R_{x}(\theta )&={\begin{bmatrix}1&0&0\\0&\cos \theta &-\sin \theta \\[3pt]0&\sin \theta &\cos \theta \\[3pt]\end{bmatrix}}\\[6pt]R_{y}(\theta )&={\begin{bmatrix}\cos \theta &0&\sin \theta \\[3pt]0&1&0\\[3pt]-\sin \theta &0&\cos \theta \\\end{bmatrix}}\\[6pt]R_{z}(\theta )&={\begin{bmatrix}\cos \theta &-\sin \theta &0\\[3pt]\sin \theta &\cos \theta &0\\[3pt]0&0&1\\\end{bmatrix}}\end{alignedat}}} 
-$$
-
-For column vectors, each of these basic vector rotations appears counterclockwise when the axis about which they occur points toward the observer, the coordinate system is right-handed, and the angle θ is positive. Rz, for instance, would rotate toward the y-axis a vector aligned with the x-axis, as can easily be checked by operating with $$Rz$$ on the vector (1,0,0): 
-
-一个列向量，当它们的旋转轴指向观察者角度θ是正的时，这些基本向量旋转使向量出现逆时针方向，使用右手坐标系。 例如，Rz 将与 x 轴对齐的向量向 y 轴旋转，这可以通过在向量 (1,0,0) 上使用 Rz 来检查：
-
-$$ 
-{\displaystyle R_{z}(90^{\circ }){\begin{bmatrix}1\\0\\0\\\end{bmatrix}}={\begin{bmatrix}\cos 90^{\circ }&-\sin 90^{\circ }&0\\\sin 90^{\circ }&\quad \cos 90^{\circ }&0\\0&0&1\\\end{bmatrix}}{\begin{bmatrix}1\\0\\0\\\end{bmatrix}}={\begin{bmatrix}0&-1&0\\1&0&0\\0&0&1\\\end{bmatrix}}{\begin{bmatrix}1\\0\\0\\\end{bmatrix}}={\begin{bmatrix}0\\1\\0\\\end{bmatrix}}} 
-$$
-
-这类似于上述二维旋转矩阵产生的旋转。 请参阅下面的替代约定，这些约定可能明显或实际上颠倒了这些矩阵产生的旋转意义。
-
-## General rotations 一般旋转
-
+基本旋转（也称为元素旋转）是围绕其中一个坐标轴的旋转。
 可以使用矩阵乘法从这三个矩阵得到其他旋转矩阵。 例如，乘积
 
  $$
@@ -1108,180 +990,6 @@ $$
 {\displaystyle {\begin{aligned}R(\theta )&{}={\begin{bmatrix}1&0\\\tan \theta &1\end{bmatrix}}{\begin{bmatrix}1&-\sin \theta \cos \theta \\0&1\end{bmatrix}}{\begin{bmatrix}\cos \theta &0\\0&{\frac {1}{\cos \theta }}\end{bmatrix}}\end{aligned}}}
 $$
 
-# Group theory 群论
-
-Below follow some basic facts about the role of the collection of all rotation matrices of a fixed dimension (here mostly 3) in mathematics and particularly in physics where rotational symmetry is a requirement of every truly fundamental law (due to the assumption of isotropy of space), and where the same symmetry, when present, is a simplifying property of many problems of less fundamental nature. Examples abound in classical mechanics and quantum mechanics. Knowledge of the part of the solutions pertaining to this symmetry applies (with qualifications) to all such problems and it can be factored out of a specific problem at hand, thus reducing its complexity. A prime example – in mathematics and physics – would be the theory of spherical harmonics. Their role in the group theory of the rotation groups is that of being a representation space for the entire set of finite-dimensional irreducible representations of the rotation group SO(3). For this topic, see Rotation group SO(3) § Spherical harmonics.
-
-下面是一些关于固定维度（这里主要是 3）的所有旋转矩阵的集合在数学中的作用的一些基本事实，特别是在旋转对称性是每个真正基本定律的要求的物理学中（由于空间各向同性的假设） )，并且当存在相同的对称性时，它是许多基本性质较低的问题的简化属性。经典力学和量子力学中的例子比比皆是。与此对称性有关的部分解决方案的知识适用于（有条件地）所有此类问题，并且可以从手头的特定问题中分解出来，从而降低其复杂性。一个典型的例子——在数学和物理学中——是球谐函数理论。它们在旋转群的群论中的作用是作为旋转群 SO(3) 的整个有限维不可约表示集的表示空间。对于本主题，请参阅旋转组 SO(3) § 球谐函数。
-
-The main articles listed in each subsection are referred to for more detail.
-
-更详细地参考了每个小节中列出的主要文章。
-
-## Lie group 李群
-
-*Main articles: Special orthogonal group and Rotation group SO(3)*
-
-*主条目：特殊正交群和旋转群 SO(3)*
-
-The n × n rotation matrices for each n form a group, the special orthogonal group, SO(n). This algebraic structure is coupled with a topological structure inherited from $${\displaystyle \operatorname {GL} _{n}(\mathbb {R} )}$$ in such a way that the operations of multiplication and taking the inverse are analytic functions of the matrix entries. Thus SO(n) is for each n a Lie group. It is compact and connected, but not simply connected. It is also a semi-simple group, in fact a simple group with the exception SO(4).[6] The relevance of this is that all theorems and all machinery from the theory of analytic manifolds (analytic manifolds are in particular smooth manifolds) apply and the well-developed representation theory of compact semi-simple groups is ready for use.
-
-每个 n 的 n × n 旋转矩阵形成一个组，即特殊正交组 SO(n)。 这种代数结构与继承自 $${\displaystyle \operatorname {GL} _{n}(\mathbb {R} )}$$ 的拓扑结构相结合，使得乘法和取逆的运算是解析的 矩阵项的函数。 因此 SO(n) 对于每个 n 是一个李群。 它是紧凑和连接的，但不是简单的连接。 它也是一个半单群，实际上是一个单群，除了 SO(4)。[6] 与此相关的是，解析流形（解析流形尤其是光滑流形）理论中的所有定理和所有机制都适用，并且紧致半单群的发达表示理论已准备好使用。
-
-## Lie algebra
-
-*Main article: Rotation group SO(3) § Lie algebra*
-
-*主条目：旋转群 SO(3) § 李代数*
-
-The Lie algebra so(n) of SO(n) is given by
-
-SO(n) 的李代数 so(n) 由下式给出
-
-$$
-{\displaystyle {\mathfrak {so}}(n)={\mathfrak {o}}(n)=\left\{X\in M_{n}(\mathbb {R} )\mid X=-X^{\mathsf {T}}\right\},}
-$$
-
-and is the space of skew-symmetric matrices of dimension n, see classical group, where o(n) is the Lie algebra of O(n), the orthogonal group. For reference, the most common basis for so(3) is
-
-并且是维度为 n 的斜对称矩阵的空间，参见经典群，其中 o(n) 是正交群 O(n) 的李代数。 作为参考，so(3) 最常见的基础是
-
-$$
-{\displaystyle L_{\mathbf {x} }={\begin{bmatrix}0&0&0\\0&0&-1\\0&1&0\end{bmatrix}},\quad L_{\mathbf {y} }={\begin{bmatrix}0&0&1\\0&0&0\\-1&0&0\end{bmatrix}},\quad L_{\mathbf {z} }={\begin{bmatrix}0&-1&0\\1&0&0\\0&0&0\end{bmatrix}}.}
-$$
-
-## Exponential map 指数地图
-
-*Main articles: Rotation group SO(3) § Exponential map, and Matrix exponential*
-
-*主要文章：旋转组 SO(3) § 指数映射和矩阵指数*
-
-Connecting the Lie algebra to the Lie group is the exponential map, which is defined using the standard matrix exponential series for eA[7] For any skew-symmetric matrix A, exp(A) is always a rotation matrix.[nb 3]
-
-将李代数连接到李群是指数映射，它是使用 eA[7] 的标准矩阵指数级数定义的 对于任何斜对称矩阵 A，exp(A) 始终是一个旋转矩阵。[nb 3]
-
-An important practical example is the 3 × 3 case. In rotation group SO(3), it is shown that one can identify every A ∈ so(3) with an Euler vector ω = θu, where u = (x, y, z) is a unit magnitude vector.
-
-一个重要的实际例子是 3 × 3 的情况。 在旋转组 SO(3) 中，表明可以用欧拉向量 ω = θu 识别每个 A ∈ so(3)，其中 u = (x, y, z) 是单位幅度向量。
-
-By the properties of the identification $${\displaystyle \mathbf {su} (2)\cong \mathbb {R} ^{3}}, $$u is in the null space of A. Thus, u is left invariant by exp(A) and is hence a rotation axis.
-
-根据识别 $${\displaystyle \mathbf {su} (2)\cong \mathbb {R} ^{3}} 的性质，$$u 在 A 的零空间中。因此，u 保持不变 exp(A)，因此是一个旋转轴。
-
-According to Rodrigues' rotation formula on matrix form, one obtains,
-
-根据 Rodrigues 关于矩阵形式的旋转公式，可以得到，
-
-$$
-{\displaystyle {\begin{aligned}\exp(A)&=\exp {\bigl (}\theta (\mathbf {u} \cdot \mathbf {L} ){\bigr )}\\&=\exp \left({\begin{bmatrix}0&-z\theta &y\theta \\z\theta &0&-x\theta \\-y\theta &x\theta &0\end{bmatrix}}\right)\\&=I+\sin \theta \ \mathbf {u} \cdot \mathbf {L} +(1-\cos \theta )(\mathbf {u} \cdot \mathbf {L} )^{2},\end{aligned}}}
-$$
-
-where 其中
-
-$$
-{\displaystyle \mathbf {u} \cdot \mathbf {L} ={\begin{bmatrix}0&-z&y\\z&0&-x\\-y&x&0\end{bmatrix}}.}
-$$
-
-This is the matrix for a rotation around axis u by the angle θ. For full detail, see exponential map SO(3).
-
-这是围绕轴 u 旋转角度 θ 的矩阵。 有关完整详细信息，请参阅指数图 SO(3)。
-
-## Baker–Campbell–Hausdorff formula 贝克-坎贝尔-豪斯多夫公式
-
-*Main articles: Baker–Campbell–Hausdorff formula and Rotation group SO(3) § Baker–Campbell–Hausdorff formula*
-
-*主条目：Baker-Campbell-Hausdorff 公式和旋转群 SO(3) § Baker-Campbell-Hausdorff 公式*
-
-The BCH formula provides an explicit expression for Z = log(eXeY) in terms of a series expansion of nested commutators of X and Y.[8] This general expansion unfolds as[nb 4]
-
-BCH 公式根据 X 和 Y 的嵌套交换子的级数展开提供了 Z = log(eXeY) 的显式表达式。 [8] 这种一般展开展开为[nb 4]
-
-$$
-{\displaystyle Z=C(X,Y)=X+Y+{\tfrac {1}{2}}[X,Y]+{\tfrac {1}{12}}{\bigl [}X,[X,Y]{\bigr ]}-{\tfrac {1}{12}}{\bigl [}Y,[X,Y]{\bigr ]}+\cdots .}
-$$
-
-In the 3 × 3 case, the general infinite expansion has a compact form,[9]
-
-在 3 × 3 的情况下，一般无限展开具有紧致形式，[9]
-
-$$
-Z=\alpha X+\beta Y+\gamma [X,Y],
-$$
-
-for suitable trigonometric function coefficients, detailed in the Baker–Campbell–Hausdorff formula for SO(3).
-
-用于合适的三角函数系数，在 SO(3) 的 Baker-Campbell-Hausdorff 公式中有详细说明
-
-As a group identity, the above holds for all faithful representations, including the doublet (spinor representation), which is simpler. The same explicit formula thus follows straightforwardly through Pauli matrices; see the 2 × 2 derivation for SU(2). For the general n × n case, one might use Ref.[10]
-
-作为一个群恒等式，以上内容适用于所有忠实的表示，包括更简单的双峰（旋量表示）。 因此，相同的显式公式直接通过泡利矩阵得到； 参见 SU(2) 的 2 × 2 推导。 对于一般的 n × n 情况，可以使用 Ref.[10]
-
-## Spin group 旋转组
-
-*Main articles: Spin group and Rotation group SO(3) § Connection between SO(3) and SU(2)*
-
-*主要文章：自旋组和旋转组 SO(3) § SO(3) 和 SU(2) 之间的连接*
-
-The Lie group of n × n rotation matrices, SO(n), is not simply connected, so Lie theory tells us it is a homomorphic image of a universal covering group. Often the covering group, which in this case is called the spin group denoted by Spin(n), is simpler and more natural to work with.[11]
-
-n × n 旋转矩阵的李群 SO(n) 不是简单连通的，所以李理论告诉我们它是一个全覆盖群的同态图像。 通常，覆盖群，在这种情况下称为自旋群，用 Spin(n) 表示，使用起来更简单、更自然。 [11]
-
-In the case of planar rotations, SO(2) is topologically a circle, S1. Its universal covering group, Spin(2), is isomorphic to the real line, R, under addition. Whenever angles of arbitrary magnitude are used one is taking advantage of the convenience of the universal cover. Every 2 × 2 rotation matrix is produced by a countable infinity of angles, separated by integer multiples of 2π. Correspondingly, the fundamental group of SO(2) is isomorphic to the integers, **Z**.
-
-在平面旋转的情况下，SO(2) 在拓扑上是一个圆 S1。 它的全覆盖群 Spin(2) 在加法下与实线 R 同构。 每当使用任意大小的角度时，都会利用通用盖的便利性。 每个 2 × 2 旋转矩阵由可数的无穷多个角度产生，由 2π 的整数倍分隔。 相应地，SO(2) 的基本群同构于整数 **Z**。
-
-In the case of spatial rotations, SO(3) is topologically equivalent to three-dimensional real projective space, RP3. Its universal covering group, Spin(3), is isomorphic to the 3-sphere, S3. Every 3 × 3 rotation matrix is produced by two opposite points on the sphere. Correspondingly, the fundamental group of SO(3) is isomorphic to the two-element group, Z2.
-
-在空间旋转的情况下，SO(3) 在拓扑上等价于三维实投影空间 RP3。 它的全覆盖群 Spin(3) 与 3 球体 S3 同构。 每个 3 × 3 旋转矩阵由球体上的两个相对点产生。 相应地，SO(3) 的基本群同构于二元群 Z2。
-
-We can also describe Spin(3) as isomorphic to quaternions of unit norm under multiplication, or to certain 4 × 4 real matrices, or to 2 × 2 complex special unitary matrices, namely SU(2). The covering maps for the first and the last case are given by
-
-我们还可以将 Spin(3) 描述为乘法下单位范数的四元数，或某些 4 × 4 实矩阵，或 2 × 2 复特殊酉矩阵，即 SU(2)。 第一种和最后一种情况的覆盖图由下式给出
-
-$$
-{\displaystyle \mathbb {H} \supset \{q\in \mathbb {H} :\|q\|=1\}\ni w+\mathbf {i} x+\mathbf {j} y+\mathbf {k} z\mapsto {\begin{bmatrix}1-2y^{2}-2z^{2}&2xy-2zw&2xz+2yw\\2xy+2zw&1-2x^{2}-2z^{2}&2yz-2xw\\2xz-2yw&2yz+2xw&1-2x^{2}-2y^{2}\end{bmatrix}}\in \mathrm {SO} (3),}
-$$
-
-and 和
-
-$$
-{\displaystyle \mathrm {SU} (2)\ni {\begin{bmatrix}\alpha &\beta \\-{\overline {\beta }}&{\overline {\alpha }}\end{bmatrix}}\mapsto {\begin{bmatrix}{\frac {1}{2}}\left(\alpha ^{2}-\beta ^{2}+{\overline {\alpha ^{2}}}-{\overline {\beta ^{2}}}\right)&{\frac {i}{2}}\left(-\alpha ^{2}-\beta ^{2}+{\overline {\alpha ^{2}}}+{\overline {\beta ^{2}}}\right)&-\alpha \beta -{\overline {\alpha }}{\overline {\beta }}\\{\frac {i}{2}}\left(\alpha ^{2}-\beta ^{2}-{\overline {\alpha ^{2}}}+{\overline {\beta ^{2}}}\right)&{\frac {i}{2}}\left(\alpha ^{2}+\beta ^{2}+{\overline {\alpha ^{2}}}+{\overline {\beta ^{2}}}\right)&-i\left(+\alpha \beta -{\overline {\alpha }}{\overline {\beta }}\right)\\\alpha {\overline {\beta }}+{\overline {\alpha }}\beta &i\left(-\alpha {\overline {\beta }}+{\overline {\alpha }}\beta \right)&\alpha {\overline {\alpha }}-\beta {\overline {\beta }}\end{bmatrix}}\in \mathrm {SO} (3).}
-$$
-
-For a detailed account of the SU(2)-covering and the quaternionic covering, see spin group SO(3).
-
-有关 SU(2) 覆盖和四元离子覆盖的详细说明，请参见自旋群 SO(3)。
-
-Many features of these cases are the same for higher dimensions. The coverings are all two-to-one, with SO(n), n > 2, having fundamental group **Z2**. The natural setting for these groups is within a Clifford algebra. One type of action of the rotations is produced by a kind of "sandwich", denoted by qvq∗. More importantly in applications to physics, the corresponding spin representation of the Lie algebra sits inside the Clifford algebra. It can be exponentiated in the usual way to give rise to a 2-valued representation, also known as projective representation of the rotation group. This is the case with SO(3) and SU(2), where the 2-valued representation can be viewed as an "inverse" of the covering map. By properties of covering maps, the inverse can be chosen ono-to-one as a local section, but not globally.
-
-这些案例的许多特征对于更高的维度是相同的。 覆盖都是二对一的，SO(n)，n > 2，具有基本群 **Z2**。 这些群的自然环境在克利福德代数内。 一种类型的旋转动作是由一种“三明治”产生的，用 qvq∗ 表示。 更重要的是，在物理学应用中，李代数的相应自旋表示位于克利福德代数中。 它可以以通常的方式取幂以产生 2 值表示，也称为旋转群的投影表示。 SO(3) 和 SU(2) 就是这种情况，其中 2 值表示可以被视为覆盖图的“逆”。 通过覆盖图的属性，可以一对一地选择逆作为局部截面，但不能全局选择。
-
-## Infinitesimal rotations 无穷小旋转
-
-*Main article: Rotation group SO(3) § Infinitesimal rotations*
-
-*主条目：旋转组 SO(3) § 无穷小旋转*
-
-The matrices in the Lie algebra are not themselves rotations; the skew-symmetric matrices are derivatives, proportional differences of rotations. An actual "differential rotation", or infinitesimal rotation matrix has the form
-
-李代数中的矩阵本身不是旋转； 斜对称矩阵是导数，旋转的比例差异。 实际的“差分旋转”或无穷小旋转矩阵具有以下形式
-
-$$
-{\displaystyle I+A\,d\theta ,}
-$$
-
-where dθ is vanishingly small and A ∈ so(n), for instance with A = Lx,
-
-其中 dθ 非常小并且 A ∈ so(n)，例如 A = Lx，
-
-$$
-{\displaystyle dL_{x}={\begin{bmatrix}1&0&0\\0&1&-d\theta \\0&d\theta &1\end{bmatrix}}.}
-$$
-
-The computation rules are as usual except that infinitesimals of second order are routinely dropped. With these rules, these matrices do not satisfy all the same properties as ordinary finite rotation matrices under the usual treatment of infinitesimals.[12] It turns out that the order in which infinitesimal rotations are applied is irrelevant. To see this exemplified, consult infinitesimal rotations SO(3).
-
-计算规则与往常一样，只是通常会删除二阶无穷小。 使用这些规则，这些矩阵不满足在通常的无穷小处理下与普通有限旋转矩阵相同的所有属性。 [12] 事实证明，应用无穷小旋转的顺序是无关紧要的。 要查看此示例，请参阅无穷小旋转 SO(3)。
-
 # Conversions 转换
 
 *See also: Rotation formalisms in three dimensions § Conversion formulae between formalisms*
@@ -1557,38 +1265,6 @@ Euler angles can also be used, though not with each angle uniformly distributed 
 For the axis–angle form, the axis is uniformly distributed over the unit sphere of directions, S2, while the angle has the nonuniform distribution over [0,π] noted previously (Miles 1965).
 
 对于轴角形式，轴均匀分布在方向的单位球 S2 上，而角度在 [0,π] 上具有非均匀分布（Miles 1965）。
-
-# See also 参见
-
-Euler–Rodrigues formula  欧拉–罗德里格斯公式
-
-Euler's rotation theorem  欧拉旋转定理
-
-Rodrigues' rotation formula 罗德里格斯的旋转公式
-
-Plane of rotation  旋转平面
-
-Axis–angle representation  轴角表示
-
-Rotation group SO(3)  旋转组 SO(3)
-
-Rotation formalisms in three dimensions  三个维度的旋转形式
-
-Rotation operator (vector space)  旋转运算符（向量空间）
-
-Transformation matrix  变换矩阵
-
-Yaw-pitch-roll system  偏航俯仰滚动系统
-
-Kabsch algorithm  卡布施算法
-
-Isometry  等距
-
-Rigid transformation  刚性转换
-
-Rotations in 4-dimensional Euclidean space  4 维欧几里得空间中的旋转
-
-Trigonometric Identities  三角恒等式
 
 # Remarks 另请参阅
 
