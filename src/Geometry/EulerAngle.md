@@ -416,12 +416,6 @@ $$
 
 # 转换为其他方向表示法
 
-  *主要文章：三维旋转形式§形式之间的转换公式*
-
-欧拉角是表示方向的一种方式。还有其他方式，可以在不同方式之间进行转换。在三维欧氏空间中，通常需要三个参数来描述方向。它们可以用几种方式给出，欧拉角就是其中之一；其他信息请参见SO（3）中的图表。
-
-最常用的方向表示是旋转矩阵、轴角度和四元数，也称为Euler–Rodrigues参数，它们提供了表示三维旋转的另一种机制。这相当于特殊的酉群描述。
-
 将三维旋转表示为单位四元数而不是矩阵有一些优点：
 
 - 把旋转串联起来在计算上更快，在数值上更稳定。
@@ -512,123 +506,16 @@ The following table contains formulas for angles α, β and γ from elements of 
 
 ![](assets/3.jpg)
 
-# 属性
-> &#x2753;    
-看不懂
+# 优势与局限性
 
-  *另请参见：关于SO（3）和四元数以及空间旋转的图表*
+欧拉角表示法同样广泛应用，尤其在系统设计与控制领域。
 
-The Euler angles form a chart on all of SO(3), the special orthogonal group of rotations in 3D space. The chart is smooth except for a polar coordinate style singularity along β = 0. See charts on SO(3) for a more complete treatment.
+## 直观
 
-欧拉角在所有SO（3）上形成图表，SO（3）是三维空间中旋转的特殊正交组。除了沿β=0的极坐标式奇异点外，该图表是平滑的。有关更完整的处理方法，请参见SO（3）上的图表。
+通过三次绕坐标轴的旋转（每次旋转对应一个角度）表示任意三维旋转。
 
-The space of rotations is called in general "The Hypersphere of rotations", though this is a misnomer: the group Spin(3) is isometric to the hypersphere S3, but the rotation space SO(3) is instead isometric to the real projective space ****RP**3** which is a 2-fold quotient space of the hypersphere. This 2-to-1 ambiguity is the mathematical origin of spin in physics.
+## 局限性
 
-旋转空间通常被称为“旋转超球”，尽管这是一个误称：群自旋（3）与超球S3等距，但旋转空间SO（3）与真实射影空间**RP3**等距，后者是超球的2倍商空间。这种2:1的模糊性是物理学中自旋的数学起源。
-
-A similar three angle decomposition applies to SU(2), the special unitary group of rotations in complex 2D space, with the difference that β ranges from 0 to 2π. These are also called Euler angles.
-
-类似的三角分解适用于SU（2），复杂二维空间中特殊的酉旋转群，不同之处在于β的范围为0到2π。这些也被称为欧拉角。
-
-The Haar measure for SO(3) in Euler angles is given by the Hopf angle parametrisation of SO(3), \\(\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma }\\),[5] where \\({\displaystyle (\beta ,\alpha )}\\) parametrise \\(S^{{2}}\\), the space of rotation axes.
-
-欧拉角中SO（3）的Haar度量由SO（3）的Hopf角参数化给出，\\(\displaystyle {\textrm {d}}V\propto \sin \beta .{\textrm {d}}\alpha .{\textrm {d}}\beta .{\textrm {d}}\gamma }\\),[5] where \\({\displaystyle (\beta ,\alpha )\\) parametrise \\(S^{{2}}\\), 旋转轴的空间。
-
-For example, to generate uniformly randomized orientations, let α and γ be uniform from 0 to 2π, let z be uniform from −1 to 1, and let β = arccos(z).
-
-例如，为了生成均匀随机化的方向，假设α和γ在0到2π之间是均匀的，假设z在0到2π之间是均匀的−1到1，设β=arccos（z）。
-
-## Geometric algebra 几何代数
-
-Other properties of Euler angles and rotations in general can be found from the geometric algebra, a higher level abstraction, in which the quaternions are an even subalgebra. The principal tool in geometric algebra is the rotor \\(\displaystyle \mathbf {\mathbb {R} } =[\cos(\theta /2)-Iu\sin(\theta /2)]\\) where \\(\displaystyle \mathbf {\theta } =}angle of rotation, {\displaystyle \mathbf {(} u)=}rotation axis (unitary vector) and {\displaystyle \mathbf {(} I)=}pseudoscalar (trivector in \mathbb {R} ^{3})\\)
-
-一般来说，欧拉角和旋转的其他性质可以从几何代数中找到，这是一种更高层次的抽象，其中四元数是偶数子代数。几何代数中的主要工具是转子\\(\displaystyle \mathbf {\mathbb {R} } =[\cos(\theta /2)-Iu\sin(\theta /2)]\\) where \\(\displaystyle \mathbf {\theta } =}angle of rotation, {\displaystyle \mathbf {(} u)=}rotation axis (unitary vector) and {\displaystyle \mathbf {(} I)=}pseudoscalar (trivector in \mathbb {R} ^{3})\\)
-
-## Higher dimensions 更高维度
-
-It is possible to define parameters analogous to the Euler angles in dimensions higher than three.[6]
-
-可以定义尺寸大于三的类似于欧拉角的参数。[6]
-
-The number of degrees of freedom of a rotation matrix is always less than the dimension of the matrix squared. That is, the elements of a rotation matrix are not all completely independent. For example, the rotation matrix in dimension 2 has only one degree of freedom, since all four of its elements depend on a single angle of rotation. A rotation matrix in dimension 3 (which has nine elements) has three degrees of freedom, corresponding to each independent rotation, for example by its three Euler angles or a magnitude one (unit) quaternion.
-
-旋转矩阵的自由度总是小于矩阵平方的维数。也就是说，旋转矩阵的元素并非都是完全独立的。例如，维度2中的旋转矩阵只有一个自由度，因为其所有四个元素都依赖于单个旋转角度。维度3中的旋转矩阵（包含九个元素）具有三个自由度，对应于每个独立旋转，例如通过其三个Euler角或一个一级（单位）四元数。
-
-In SO(4) the rotation matrix is defined by two quaternions, and is therefore 6-parametric (three degrees of freedom for every quaternion). The 4×4 rotation matrices have therefore 6 independent components out of 16.
-
-在SO（4）中，旋转矩阵由两个四元数定义，因此是6参数的（每个四元数有三个自由度）。因此，4×4旋转矩阵在16个分量中有6个独立分量。
-
-Any set of 6 parameters that define the rotation matrix could be considered an extension of Euler angles to dimension 4.
-
-定义旋转矩阵的任何一组6个参数可被视为Euler角到尺寸4的延伸。
-
-In general, the number of Euler angles in dimension D is quadratic in D; since any one rotation consists of choosing two dimensions to rotate between, the total number of rotations available in dimension D is \\(\displaystyle N_{\text{rot}}={\binom {D}{2}}=D(D-1)/2}, which for D=2,3,4 yields {\displaystyle N_{\text{rot}}=1,3,6\\).
-
-一般来说，D维的欧拉角的个数是D的二次方； 因为任何一次旋转都包括选择两个维度进行旋转，所以维度 D 中可用的总旋转次数为 \\(\displaystyle N_{\text{rot}}={\binom {D}{2}}=D( D-1)/2}，对于 D=2,3,4 产生 {\displaystyle N_{\text{rot}}=1,3,6\\)。
-
-# Applications 应用程序
-
-> &#x2753;    
-没看懂
-
-## Vehicles and moving frames 车辆和移动框架
-
-*Main article: rigid body* *主要文章：刚体*
-
-*See also: axes conventions* *另请参见：轴约定*
-
-Their main advantage over other orientation descriptions is that they are directly measurable from a gimbal mounted in a vehicle. As gyroscopes keep their rotation axis constant, angles measured in a gyro frame are equivalent to angles measured in the lab frame. Therefore, gyros are used to know the actual orientation of moving spacecraft, and Euler angles are directly measurable. Intrinsic rotation angle cannot be read from a single gimbal, so there has to be more than one gimbal in a spacecraft. Normally there are at least three for redundancy. There is also a relation to the well-known gimbal lock problem of mechanical engineering[7] .
-
-与其他方向描述相比，它们的主要优点是可以直接从安装在车辆上的万向节进行测量。由于陀螺仪保持其旋转轴恒定，在陀螺仪坐标系中测量的角度与在实验室坐标系中测量的角度相等。因此，陀螺仪被用来知道移动航天器的实际方位，而欧拉角是可以直接测量的。一个航天器的内旋角度不可能超过一个框架。通常至少有三个冗余。这也与机械工程中众所周知的万向节锁问题有关[7]。
-
-When studying rigid bodies in general, one calls the xyz system space coordinates, and the XYZ system body coordinates. The space coordinates are treated as unmoving, while the body coordinates are considered embedded in the moving body. Calculations involving acceleration, angular acceleration, angular velocity, angular momentum, and kinetic energy are often easiest in body coordinates, because then the moment of inertia tensor does not change in time. If one also diagonalizes the rigid body's moment of inertia tensor (with nine components, six of which are independent), then one has a set of coordinates (called the principal axes) in which the moment of inertia tensor has only three components.
-
-在一般情况下研究刚体时，可以调用xyz系统空间坐标和XYZ系统体坐标。空间坐标被视为未移动，而身体坐标被视为嵌入在移动的身体中。在物体坐标系中，涉及加速度、角加速度、角速度、角动量和动能的计算通常是最简单的，因为惯性矩张量不会随时间变化。如果还将刚体的惯性矩张量对角化（有九个分量，其中六个分量是独立的），则有一组坐标（称为主轴），其中惯性矩张量只有三个分量。
-
-The angular velocity of a rigid body takes a simple form using Euler angles in the moving frame. Also the Euler's rigid body equations are simpler because the inertia tensor is constant in that frame.
-
-刚体的角速度采用运动框架中欧拉角的简单形式。此外，欧拉刚体方程更简单，因为惯性张量在该框架中是常数。
-
-## Crystallographic texture 晶体结构
-![](assets/MAUD-MTEX-TiAl-hasylab-2003-Liss.png)
-
-> &#x1F446; Pole figures displaying crystallographic texture of gamma-TiAl in an alpha2-gamma alloy, as measured by high energy X-rays.[8]
-极图显示了通过高能X射线测量的alpha2γ合金中γTiAl的晶体结构。[8]
-
-In materials science, crystallographic texture (or preferred orientation) can be described using Euler angles. In texture analysis, the Euler angles provide a mathematical depiction of the orientation of individual crystallites within a polycrystalline material, allowing for the quantitative description of the macroscopic material.[9] The most common definition of the angles is due to Bunge and corresponds to the ZXZ convention. It is important to note, however, that the application generally involves axis transformations of tensor quantities, i.e. passive rotations. Thus the matrix that corresponds to the Bunge Euler angles is the transpose of that shown in the table above.[10]
-
-在材料科学中，晶体织构（或优选取向）可以用欧拉角来描述。在织构分析中，欧拉角提供了多晶材料中单个微晶方向的数学描述，允许对宏观材料进行定量描述。[9] 最常见的角度定义是Bunge，与ZXZ约定相对应。然而，需要注意的是，该应用通常涉及张量的轴变换，即被动旋转。因此，对应于Bunge-Euler角的矩阵是上表所示矩阵的转置。[10]
-
-## Others 其他
-![](assets/220px-Automation_of_foundry_with_robot.jpg)
-
-> &#x1F446; Industrial robot operating in a foundry
-在铸造厂工作的工业机器人
-
-Euler angles, normally in the Tait–Bryan convention, are also used in robotics for speaking about the degrees of freedom of a wrist. They are also used in electronic stability control in a similar way.
-
-欧拉角，通常在泰特-布莱恩公约中，也用于机器人学中，用于谈论手腕的自由度。它们也以类似的方式用于电子稳定控制。
-
-Gun fire control systems require corrections to gun-order angles (bearing and elevation) to compensate for deck tilt (pitch and roll). In traditional systems, a stabilizing gyroscope with a vertical spin axis corrects for deck tilt, and stabilizes the optical sights and radar antenna. However, gun barrels point in a direction different from the line of sight to the target, to anticipate target movement and fall of the projectile due to gravity, among other factors. Gun mounts roll and pitch with the deck plane, but also require stabilization. Gun orders include angles computed from the vertical gyro data, and those computations involve Euler angles.
-
-火炮火控系统需要修正火炮顺序角（方位角和仰角），以补偿甲板倾斜（俯仰和横滚）。在传统系统中，带有垂直旋转轴的稳定陀螺仪用于校正甲板倾斜，并稳定光学瞄准具和雷达天线。然而，枪管指向与目标视线不同的方向，以预测目标移动和由于重力等因素导致的弹丸坠落。炮座随甲板平面滚动和俯仰，但也需要稳定。炮阶包括根据垂直陀螺仪数据计算的角度，这些计算涉及欧拉角。
-
-Euler angles are also used extensively in the quantum mechanics of angular momentum. In quantum mechanics, explicit descriptions of the representations of SO(3) are very important for calculations, and almost all the work has been done using Euler angles. In the early history of quantum mechanics, when physicists and chemists had a sharply negative reaction towards abstract group theoretic methods (called the Gruppenpest), reliance on Euler angles was also essential for basic theoretical work.
-
-欧拉角在角动量的量子力学中也有广泛的应用。在量子力学中，SO（3）表示的显式描述对于计算非常重要，几乎所有的工作都是用欧拉角完成的。在量子力学的早期历史上，当物理学家和化学家对抽象群论方法（称为Gruppenpest）产生强烈的负面反应时，对欧拉角的依赖也是基础理论工作的关键。
-
-Many mobile computing devices contain accelerometers which can determine these devices' Euler angles with respect to the earth's gravitational attraction. These are used in applications such as games, bubble level simulations, and kaleidoscopes.[citation needed]
-
-许多移动计算设备都包含加速计，可以确定这些设备相对于地球引力的欧拉角。这些用于游戏、气泡级模拟和万花筒等应用。[需要引用]
-
-# See also 另见
-- 3D projection 三维投影
-- Axis-angle representation 轴角表示法
-- Conversion between quaternions and Euler angles 四元数和欧拉角之间的转换
-- Davenport chained rotations 达文波特链式旋转
-- Euler's rotation theorem 欧拉旋转定理
-- Gimbal lock 万向节锁
-- Quaternion 四元数
-- Quaternions and spatial rotation 四元数与空间旋转
-- Rotation formalisms in three dimensions 三维旋转形式
-- Spherical coordinate system 球面坐标系
+1. 与定义的旋转顺序有关。在Unity引擎中的顺序为：先绕Z轴旋转 → 再绕X轴旋转 → 最后绕Y轴旋转。
+2. 特定状态下会丢失自由度：例如万向节死锁（Gimbal Lock）现象；
+3. 旋转角速度的数学定义困难。
