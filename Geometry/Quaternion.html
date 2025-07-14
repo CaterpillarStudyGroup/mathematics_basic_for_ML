@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>四元数 - mathematics_basic_for_ML</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The note of mathematics basic for ML">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/pagetoc.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 数值分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../NumericalAnalysis/NumericalIntegration.html"><strong aria-hidden="true">2.1.</strong> 数值积分</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 数论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Numbers/SpecialNumbers.html"><strong aria-hidden="true">3.1.</strong> 数论</a></li><li class="chapter-item expanded "><a href="../Numbers/GeometricProgression.html"><strong aria-hidden="true">3.2.</strong> 几何级数</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 线性代数</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../LinearAlgebra/norm.html"><strong aria-hidden="true">4.1.</strong> 范数</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/vector.html"><strong aria-hidden="true">4.2.</strong> 向量</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/matrix.html"><strong aria-hidden="true">4.3.</strong> 矩阵</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/2DTransformation.html"><strong aria-hidden="true">4.4.</strong> 2D线性变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/2DAffineTransformation.html"><strong aria-hidden="true">4.5.</strong> 2D仿射变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/Inverse.html"><strong aria-hidden="true">4.6.</strong> 逆变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/ComplexTransformation.html"><strong aria-hidden="true">4.7.</strong> 变换的合成与分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/3DTransformation.html"><strong aria-hidden="true">4.8.</strong> 3D变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/special_matrix.html"><strong aria-hidden="true">4.9.</strong> 特殊类型的矩阵和向量</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../LinearAlgebra/Hessian.html"><strong aria-hidden="true">4.9.1.</strong> Hessian矩阵</a></li></ol></li><li class="chapter-item expanded "><a href="../LinearAlgebra/orthogonal.html"><strong aria-hidden="true">4.10.</strong> 正交</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/eigendecomposition.html"><strong aria-hidden="true">4.11.</strong> 特征分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/SVD.html"><strong aria-hidden="true">4.12.</strong> 奇异值分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/trace.html"><strong aria-hidden="true">4.13.</strong> 迹运算</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/det.html"><strong aria-hidden="true">4.14.</strong> 行列式</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/IllConditioning.html"><strong aria-hidden="true">4.15.</strong> 病态矩阵</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/Conjugate.html"><strong aria-hidden="true">4.16.</strong> 共轭</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 高等数学</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Mathematics/distance.html"><strong aria-hidden="true">5.1.</strong> 距离</a></li><li class="chapter-item expanded "><a href="../Mathematics/average.html"><strong aria-hidden="true">5.2.</strong> 平均值</a></li><li class="chapter-item expanded "><a href="../Mathematics/space.html"><strong aria-hidden="true">5.3.</strong> 空间</a></li><li class="chapter-item expanded "><a href="../Mathematics/function.html"><strong aria-hidden="true">5.4.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../Mathematics/derivative.html"><strong aria-hidden="true">5.5.</strong> 导数</a></li><li class="chapter-item expanded "><a href="../Mathematics/calculus.html"><strong aria-hidden="true">5.6.</strong> 微积分</a></li><li class="chapter-item expanded "><a href="../Mathematics/Complex.html"><strong aria-hidden="true">5.7.</strong> 复数</a></li><li class="chapter-item expanded "><a href="../Mathematics/convex.html"><strong aria-hidden="true">5.8.</strong> 凸优化问题</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.9.</strong> 公式</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Mathematics/Formula/jensen.html"><strong aria-hidden="true">5.9.1.</strong> jensen不等式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/taylor.html"><strong aria-hidden="true">5.9.2.</strong> 泰勒公式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/euler.html"><strong aria-hidden="true">5.9.3.</strong> 欧拉公式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/trigonometric.html"><strong aria-hidden="true">5.9.4.</strong> 三角函数</a></li></ol></li><li class="chapter-item expanded "><a href="../Mathematics/ExponentialDecay.html"><strong aria-hidden="true">5.10.</strong> 指数衰减</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 数值计算</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../NumericalComputation/Preprocessing.html"><strong aria-hidden="true">6.1.</strong> 归一化和标准化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/Nominal.html"><strong aria-hidden="true">6.2.</strong> 分类标签数字化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/GradientDescent.html"><strong aria-hidden="true">6.3.</strong> 梯度下降法</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/Newton.html"><strong aria-hidden="true">6.4.</strong> 牛顿法</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/ConstrainedOptimization.html"><strong aria-hidden="true">6.5.</strong> 带约束的优化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/ODE_SDE.html"><strong aria-hidden="true">6.6.</strong> ODE &amp; SDE</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 概率论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Probability/norms.html"><strong aria-hidden="true">7.1.</strong> 一些术语</a></li><li class="chapter-item expanded "><a href="../Probability/probability_distribution.html"><strong aria-hidden="true">7.2.</strong> 概率分布</a></li><li class="chapter-item expanded "><a href="../Probability/expectation_variance.html"><strong aria-hidden="true">7.3.</strong> 期望和方差</a></li><li class="chapter-item expanded "><a href="../Probability/distribution.html"><strong aria-hidden="true">7.4.</strong> 常见分布</a></li><li class="chapter-item expanded "><a href="../Probability/mixture_distribution.html"><strong aria-hidden="true">7.5.</strong> 混合分布</a></li><li class="chapter-item expanded "><a href="../Probability/functions.html"><strong aria-hidden="true">7.6.</strong> 常用函数</a></li><li class="chapter-item expanded "><a href="../Probability/formulas.html"><strong aria-hidden="true">7.7.</strong> 有用的公式</a></li><li class="chapter-item expanded "><a href="../Probability/likelihood.html"><strong aria-hidden="true">7.8.</strong> 最大似然估计</a></li><li class="chapter-item expanded "><a href="../Probability/bayes.html"><strong aria-hidden="true">7.9.</strong> 贝叶斯统计</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 信息论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Information/entropy.html"><strong aria-hidden="true">8.1.</strong> 熵</a></li><li class="chapter-item expanded "><a href="../Information/Divergence.html"><strong aria-hidden="true">8.2.</strong> 散度、交叉熵</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> 几何</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Geometry/EulerAngle.html"><strong aria-hidden="true">9.1.</strong> 欧拉角</a></li><li class="chapter-item expanded "><a href="../Geometry/Quaternion.html" class="active"><strong aria-hidden="true">9.2.</strong> 四元数</a></li><li class="chapter-item expanded "><a href="../Geometry/RotationMatrix.html"><strong aria-hidden="true">9.3.</strong> 旋转矩阵</a></li><li class="chapter-item expanded "><a href="../Geometry/Gimbal lock.html"><strong aria-hidden="true">9.4.</strong> 万向节死锁</a></li><li class="chapter-item expanded "><a href="../Geometry/RiemannianManifolds.html"><strong aria-hidden="true">9.5.</strong> 黎曼流形</a></li><li class="chapter-item expanded "><a href="../Geometry/SphericalHarmonics.html"><strong aria-hidden="true">9.6.</strong> 球谐基</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">mathematics_basic_for_ML</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/CaterpillarStudyGroup/mathematics_basic_for_ML" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main><div class="sidetoc"><nav class="pagetoc"></nav></div>
+                        <h1 id="quaternion--四元数"><a class="header" href="#quaternion--四元数">Quaternion  四元数</a></h1>
+<p><img src="../assets/03-17.png" alt="" /></p>
+<p>在数学中，四元数系统扩展了复数。 四元数由爱尔兰数学家威廉·罗文·Hamilton于 1843 年[1][2] 首次描述，并应用于三维空间的力学。 Hamilton将四元数定义为三维空间中两条有向线的商，[3] 或者等效地，定义为两个向量的商。 [4] 四元数的乘法是不可交换的。</p>
+<blockquote>
+<p>📌<br />
+<strong>两个向量的商</strong>：最初引入四元数是为了定义向量的除法</p>
+</blockquote>
+<p>四元数一般用以下形式表示</p>
+<p>$$
+{\displaystyle a+b\ \mathbf {i} +c\ \mathbf {j} +d\ \mathbf {k} }
+$$</p>
+<p>其中 a、b、c 和 d 是实数； i, j, k 是基本四元数。</p>
+<p>四元数用于纯数学，但在应用数学中也有实际用途，特别是用于涉及三维旋转的计算，例如三维计算机图形学、计算机视觉和晶体纹理分析。 [5] 它们可以与其他旋转方法一起使用，例如欧拉角和旋转矩阵，或者作为它们的替代方法，具体取决于应用程序。</p>
+<h1 id="定义"><a class="header" href="#定义">定义</a></h1>
+<p>四元数的表达形式为</p>
+<p>$$
+{\displaystyle a+b,\mathbf {i} +c,\mathbf {j} +d,\mathbf {k} \ ,}
+$$</p>
+<p>其中 a、b、c、d 是实数，i、j、k 是可以解释为指向三个空间轴的单位向量的符号。 在实际应用中，如果a、b、c、d之一为0，则省略对应项； 如果a、b、c、d都为零，则该四元数是零四元数，记为0； 如果 b、c、d 中的一个等于 1，则相应的项只写为 i、j 或 k。</p>
+<p>或</p>
+<p>$$
+\mathbf{q}  = \begin{bmatrix} \mathbf{s}   &amp;\mathbf{v} \end{bmatrix}
+$$</p>
+<p>s为标量，v为向量</p>
+<h1 id="计算"><a class="header" href="#计算">计算</a></h1>
+<p>\(a\mathbf{q} =\begin{bmatrix}
+as  &amp;a\mathbf{v} 
+\end{bmatrix}\quad\) Scalar-quaternion Multiplication</p>
+<p>\(\mathbf{q} _1±\mathbf{q} _2 =\begin{bmatrix}
+\mathbf{s}_1±\mathbf{s}_2  &amp; \mathbf{v} _1 ± \mathbf{v} _2
+\end{bmatrix}\quad\quad\) Addition/Subtraction</p>
+<p>\(\mathbf{q} _1×\mathbf{q} _2= \begin{bmatrix}
+\mathbf{s} _1\mathbf{s} _2−\mathbf{v} _1\cdot \mathbf{v} _2 &amp; \mathbf{s} _1\mathbf{v} _2+\mathbf{s} _2\mathbf{v} _1+\mathbf{v} _1×\mathbf{v} _2
+\end{bmatrix}\quad\quad\) Multiplication</p>
+<p>\(||\mathbf{q} ||=\sqrt{\mathbf{s^2+v\cdot v} } \quad\quad\)Magnitude</p>
+<p>和分量标量乘法</p>
+<blockquote>
+<p>📌<br />
+分量标量乘：依次让每个分量的系数与一个标量相乘。<br />
+标量即0维数字</p>
+</blockquote>
+<p>$$
+{\displaystyle \lambda (a+b,\mathbf {i} +c,\mathbf {j} +d,\mathbf {k} )=\lambda a+(\lambda b),\mathbf {i} +(\lambda c),\mathbf {j} +(\lambda d),\mathbf {k} .}
+$$</p>
+<h2 id="性质"><a class="header" href="#性质">性质</a></h2>
+<blockquote>
+<p>不可交换：q2q1 != q1q2
+结合：(q1q2)q3 = q1(q2q3)
+满足乘法结合律和加法分配律</p>
+</blockquote>
+<p>根据Hamilton 积的定义每个非零四元数都有逆：</p>
+<p>$$
+{\displaystyle (a+b,\mathbf {i} +c,\mathbf {j} +d,\mathbf {k} )^{-1}={\frac {1}{a^{2}+b^{2}+c^{2}+d^{2}}},(a-b,\mathbf {i} -c,\mathbf {j} -d,\mathbf {k} ).}
+$$</p>
+<h1 id="用四元数表示旋转"><a class="header" href="#用四元数表示旋转">用四元数表示旋转</a></h1>
+<h2 id="角轴转四元数"><a class="header" href="#角轴转四元数">角轴转四元数</a></h2>
+<p><img src="../assets/03-19.png" alt="" /></p>
+<h2 id="四元数转旋转"><a class="header" href="#四元数转旋转">四元数转旋转</a></h2>
+<p>$$
+\mathbf{R}=\begin{bmatrix}
+s^2+x^2-y^2-z^2  &amp; 2(xy-sz) &amp; 2(xz+sy)\\
+2(xy+sz) &amp; s^2-x^2+y^2-z^2 &amp; 2(yz-sx) \\
+2(xz-sy) &amp; 2(yz+sx) &amp; s^2-x^2-y^2+z^2<br />
+\end{bmatrix}
+$$</p>
+<h1 id="优势与局限性"><a class="header" href="#优势与局限性">优势与局限性</a></h1>
+<h2 id="优势"><a class="header" href="#优势">优势</a></h2>
+<ol>
+<li>不易受到“万向节死锁”的影响。</li>
+<li>比矩阵更快、更紧凑。</li>
+<li>插值结果更稳定。</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Geometry/EulerAngle.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Geometry/RotationMatrix.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Geometry/EulerAngle.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Geometry/RotationMatrix.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../theme/pagetoc.js"></script>
+    </body>
+</html>

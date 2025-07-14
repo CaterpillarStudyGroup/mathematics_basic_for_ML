@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>万向节死锁 - mathematics_basic_for_ML</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The note of mathematics basic for ML">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/pagetoc.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 数值分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../NumericalAnalysis/NumericalIntegration.html"><strong aria-hidden="true">2.1.</strong> 数值积分</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 数论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Numbers/SpecialNumbers.html"><strong aria-hidden="true">3.1.</strong> 数论</a></li><li class="chapter-item expanded "><a href="../Numbers/GeometricProgression.html"><strong aria-hidden="true">3.2.</strong> 几何级数</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 线性代数</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../LinearAlgebra/norm.html"><strong aria-hidden="true">4.1.</strong> 范数</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/vector.html"><strong aria-hidden="true">4.2.</strong> 向量</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/matrix.html"><strong aria-hidden="true">4.3.</strong> 矩阵</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/2DTransformation.html"><strong aria-hidden="true">4.4.</strong> 2D线性变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/2DAffineTransformation.html"><strong aria-hidden="true">4.5.</strong> 2D仿射变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/Inverse.html"><strong aria-hidden="true">4.6.</strong> 逆变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/ComplexTransformation.html"><strong aria-hidden="true">4.7.</strong> 变换的合成与分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/3DTransformation.html"><strong aria-hidden="true">4.8.</strong> 3D变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/special_matrix.html"><strong aria-hidden="true">4.9.</strong> 特殊类型的矩阵和向量</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../LinearAlgebra/Hessian.html"><strong aria-hidden="true">4.9.1.</strong> Hessian矩阵</a></li></ol></li><li class="chapter-item expanded "><a href="../LinearAlgebra/orthogonal.html"><strong aria-hidden="true">4.10.</strong> 正交</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/eigendecomposition.html"><strong aria-hidden="true">4.11.</strong> 特征分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/SVD.html"><strong aria-hidden="true">4.12.</strong> 奇异值分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/trace.html"><strong aria-hidden="true">4.13.</strong> 迹运算</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/det.html"><strong aria-hidden="true">4.14.</strong> 行列式</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/IllConditioning.html"><strong aria-hidden="true">4.15.</strong> 病态矩阵</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/Conjugate.html"><strong aria-hidden="true">4.16.</strong> 共轭</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 高等数学</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Mathematics/distance.html"><strong aria-hidden="true">5.1.</strong> 距离</a></li><li class="chapter-item expanded "><a href="../Mathematics/average.html"><strong aria-hidden="true">5.2.</strong> 平均值</a></li><li class="chapter-item expanded "><a href="../Mathematics/space.html"><strong aria-hidden="true">5.3.</strong> 空间</a></li><li class="chapter-item expanded "><a href="../Mathematics/function.html"><strong aria-hidden="true">5.4.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../Mathematics/derivative.html"><strong aria-hidden="true">5.5.</strong> 导数</a></li><li class="chapter-item expanded "><a href="../Mathematics/calculus.html"><strong aria-hidden="true">5.6.</strong> 微积分</a></li><li class="chapter-item expanded "><a href="../Mathematics/Complex.html"><strong aria-hidden="true">5.7.</strong> 复数</a></li><li class="chapter-item expanded "><a href="../Mathematics/convex.html"><strong aria-hidden="true">5.8.</strong> 凸优化问题</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.9.</strong> 公式</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Mathematics/Formula/jensen.html"><strong aria-hidden="true">5.9.1.</strong> jensen不等式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/taylor.html"><strong aria-hidden="true">5.9.2.</strong> 泰勒公式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/euler.html"><strong aria-hidden="true">5.9.3.</strong> 欧拉公式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/trigonometric.html"><strong aria-hidden="true">5.9.4.</strong> 三角函数</a></li></ol></li><li class="chapter-item expanded "><a href="../Mathematics/ExponentialDecay.html"><strong aria-hidden="true">5.10.</strong> 指数衰减</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 数值计算</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../NumericalComputation/Preprocessing.html"><strong aria-hidden="true">6.1.</strong> 归一化和标准化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/Nominal.html"><strong aria-hidden="true">6.2.</strong> 分类标签数字化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/GradientDescent.html"><strong aria-hidden="true">6.3.</strong> 梯度下降法</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/Newton.html"><strong aria-hidden="true">6.4.</strong> 牛顿法</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/ConstrainedOptimization.html"><strong aria-hidden="true">6.5.</strong> 带约束的优化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/ODE_SDE.html"><strong aria-hidden="true">6.6.</strong> ODE &amp; SDE</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 概率论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Probability/norms.html"><strong aria-hidden="true">7.1.</strong> 一些术语</a></li><li class="chapter-item expanded "><a href="../Probability/probability_distribution.html"><strong aria-hidden="true">7.2.</strong> 概率分布</a></li><li class="chapter-item expanded "><a href="../Probability/expectation_variance.html"><strong aria-hidden="true">7.3.</strong> 期望和方差</a></li><li class="chapter-item expanded "><a href="../Probability/distribution.html"><strong aria-hidden="true">7.4.</strong> 常见分布</a></li><li class="chapter-item expanded "><a href="../Probability/mixture_distribution.html"><strong aria-hidden="true">7.5.</strong> 混合分布</a></li><li class="chapter-item expanded "><a href="../Probability/functions.html"><strong aria-hidden="true">7.6.</strong> 常用函数</a></li><li class="chapter-item expanded "><a href="../Probability/formulas.html"><strong aria-hidden="true">7.7.</strong> 有用的公式</a></li><li class="chapter-item expanded "><a href="../Probability/likelihood.html"><strong aria-hidden="true">7.8.</strong> 最大似然估计</a></li><li class="chapter-item expanded "><a href="../Probability/bayes.html"><strong aria-hidden="true">7.9.</strong> 贝叶斯统计</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 信息论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Information/entropy.html"><strong aria-hidden="true">8.1.</strong> 熵</a></li><li class="chapter-item expanded "><a href="../Information/Divergence.html"><strong aria-hidden="true">8.2.</strong> 散度、交叉熵</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> 几何</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Geometry/EulerAngle.html"><strong aria-hidden="true">9.1.</strong> 欧拉角</a></li><li class="chapter-item expanded "><a href="../Geometry/Quaternion.html"><strong aria-hidden="true">9.2.</strong> 四元数</a></li><li class="chapter-item expanded "><a href="../Geometry/RotationMatrix.html"><strong aria-hidden="true">9.3.</strong> 旋转矩阵</a></li><li class="chapter-item expanded "><a href="../Geometry/Gimbal lock.html" class="active"><strong aria-hidden="true">9.4.</strong> 万向节死锁</a></li><li class="chapter-item expanded "><a href="../Geometry/RiemannianManifolds.html"><strong aria-hidden="true">9.5.</strong> 黎曼流形</a></li><li class="chapter-item expanded "><a href="../Geometry/SphericalHarmonics.html"><strong aria-hidden="true">9.6.</strong> 球谐基</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">mathematics_basic_for_ML</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/CaterpillarStudyGroup/mathematics_basic_for_ML" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main><div class="sidetoc"><nav class="pagetoc"></nav></div>
+                        <h1 id="gimbal-lock-万向节死锁"><a class="header" href="#gimbal-lock-万向节死锁">Gimbal lock 万向节死锁</a></h1>
+<p>万向节死锁是三维、三个万向节机构中<strong>一个自由度的损失</strong>，当三个万向节中的两个的轴被驱动成平行配置时，就会发生这种情况，将系统“死锁”成退化的两轴旋转维空间。</p>
+<h2 id="gimbals-万向节"><a class="header" href="#gimbals-万向节">Gimbals 万向节</a></h2>
+<p>万向节是一个悬挂的环，因此它可以绕轴旋转。 万向节通常嵌套在另一个中，以适应围绕多个轴的旋转。</p>
+<p>数学中的一些坐标系表现得好像有用于测量角度的真实万向节，特别是欧拉角。</p>
+<p>对于三个或更少的嵌套万向节的情况，由于覆盖空间的特性（如下所述），在系统中的某些点不可避免地会发生万向节死锁。</p>
+<p><img src="assets/23.gif" alt="" /></p>
+<p>具有 3 个旋转轴的万向节。 一组三个安装在一起的万向节允许三个自由度：滚动、俯仰和偏航。 当两个万向节绕同一轴旋转时，系统失去一个自由度。</p>
+<p><img src="assets/24.png" alt="" /></p>
+<blockquote>
+<ul>
+<li>Normal situation: the three gimbals are independent<br />
+正常情况：三个万向节独立</li>
+</ul>
+</blockquote>
+<p><img src="assets/25.png" alt="" /></p>
+<blockquote>
+<ul>
+<li>Gimbal lock: two out of the three gimbals are in the same plane, one degree of freedom is lost<br />
+万向节死锁：三个万向节中有两个在同一平面，失去一个自由度</li>
+</ul>
+</blockquote>
+<h2 id="solutions-解决方案"><a class="header" href="#solutions-解决方案">Solutions 解决方案</a></h2>
+<p>这个问题可以通过使用第四个万向节来克服，或者完全避免使用万向节，使用四元数方法代替。</p>
+<p><img src="assets/26.jpg" alt="" /></p>
+<blockquote>
+<ul>
+<li>Industrial robot operating in a foundry.<br />
+在铸造厂工作的工业机器人。</li>
+</ul>
+</blockquote>
+<p>In robotics, gimbal lock is commonly referred to as &quot;wrist flip&quot;, due to the use of a &quot;triple-roll wrist&quot; in robotic arms, where three axes of the wrist, controlling yaw, pitch, and roll, all pass through a common point.</p>
+<p>在机器人技术中，万向节死锁通常被称为“手腕翻转”，因为在机械臂中使用了“三滚腕”，其中手腕的三个轴，控制偏航，俯仰和滚动，都通过一个共同点。</p>
+<p>An example of a wrist flip, also called a wrist singularity, is when the path through which the robot is traveling causes the first and third axes of the robot's wrist to line up. The second wrist axis then attempts to spin 180° in zero time to maintain the orientation of the end effector. The result of a singularity can be quite dramatic and can have adverse effects on the robot arm, the end effector, and the process.</p>
+<p>手腕翻转的一个例子，也称为手腕奇点，是当机器人行进的路径导致机器人手腕的第一轴和第三轴对齐时。 然后，第二腕轴尝试在零时间内旋转 180°，以保持末端执行器的方向。 奇点的结果可能非常显着，并且可能对机器人手臂、末端执行器和过程产生不利影响。</p>
+<p>The importance of avoiding singularities in robotics has led the American National Standard for Industrial Robots and Robot Systems – Safety Requirements to define it as &quot;a condition caused by the collinear alignment of two or more robot axes resulting in unpredictable robot motion and velocities&quot;.[7]</p>
+<p>避免机器人技术中的奇异性的重要性导致美国工业机器人和机器人系统国家标准 - 安全要求将其定义为“由两个或多个机器人轴共线对齐导致的机器人运动和速度不可预测的情况”。 7]</p>
+<p>A rotation in 3D space can be represented numerically with matrices in several ways. One of these representations is:</p>
+<p>3D 空间中的旋转可以通过多种方式用矩阵数字表示。 这些表示之一是：</p>
+<p>$$
+{\displaystyle {\begin{aligned}R&amp;={\begin{bmatrix}1&amp;0&amp;0\0&amp;\cos \alpha &amp;-\sin \alpha \0&amp;\sin \alpha &amp;\cos \alpha \end{bmatrix}}{\begin{bmatrix}\cos \beta &amp;0&amp;\sin \beta \0&amp;1&amp;0\-\sin \beta &amp;0&amp;\cos \beta \end{bmatrix}}{\begin{bmatrix}\cos \gamma &amp;-\sin \gamma &amp;0\\sin \gamma &amp;\cos \gamma &amp;0\0&amp;0&amp;1\end{bmatrix}}\end{aligned}}}
+$$</p>
+<p>An example worth examining happens when ${\displaystyle \beta ={\tfrac {\pi }{2}}}$. Knowing that ${\displaystyle \cos {\tfrac {\pi }{2}}=0}$and ${\displaystyle \sin {\tfrac {\pi }{2}}=1}$, the above expression becomes equal to:</p>
+<p>一个值得研究的例子发生在 ${\displaystyle \beta ={\tfrac {\pi }{2}}}$。 知道${\displaystyle \cos {\tfrac {\pi }{2}}=0}$和${\displaystyle \sin {\tfrac {\pi }{2}}=1}$，上述表达式变为 等于：</p>
+<p>$$
+{\displaystyle {\begin{aligned}R&amp;={\begin{bmatrix}1&amp;0&amp;0\0&amp;\cos \alpha &amp;-\sin \alpha \0&amp;\sin \alpha &amp;\cos \alpha \end{bmatrix}}{\begin{bmatrix}0&amp;0&amp;1\0&amp;1&amp;0\-1&amp;0&amp;0\end{bmatrix}}{\begin{bmatrix}\cos \gamma &amp;-\sin \gamma &amp;0\\sin \gamma &amp;\cos \gamma &amp;0\0&amp;0&amp;1\end{bmatrix}}\end{aligned}}}
+$$</p>
+<p>Carrying out matrix multiplication:</p>
+<p>执行矩阵乘法：</p>
+<p>$$
+{\displaystyle {\begin{aligned}R&amp;={\begin{bmatrix}0&amp;0&amp;1\\sin \alpha &amp;\cos \alpha &amp;0\-\cos \alpha &amp;\sin \alpha &amp;0\end{bmatrix}}{\begin{bmatrix}\cos \gamma &amp;-\sin \gamma &amp;0\\sin \gamma &amp;\cos \gamma &amp;0\0&amp;0&amp;1\end{bmatrix}}&amp;={\begin{bmatrix}0&amp;0&amp;1\\sin \alpha \cos \gamma +\cos \alpha \sin \gamma &amp;-\sin \alpha \sin \gamma +\cos \alpha \cos \gamma &amp;0\-\cos \alpha \cos \gamma +\sin \alpha \sin \gamma &amp;\cos \alpha \sin \gamma +\sin \alpha \cos \gamma &amp;0\end{bmatrix}}\end{aligned}}}
+$$</p>
+<p>And finally using the trigonometry formulas:</p>
+<p>最后使用三角公式：</p>
+<p>$$
+{\displaystyle {\begin{aligned}R&amp;={\begin{bmatrix}0&amp;0&amp;1\\sin(\alpha +\gamma )&amp;\cos(\alpha +\gamma )&amp;0\-\cos(\alpha +\gamma )&amp;\sin(\alpha +\gamma )&amp;0\end{bmatrix}}\end{aligned}}}
+$$</p>
+<p>Changing the values of ${\displaystyle \alpha }$ and ${\displaystyle \gamma }$  in the above matrix has the same effects: the rotation angle ${\displaystyle \alpha +\gamma }$  changes, but the rotation axis remains in the ${\displaystyle Z}$ direction: the last column and the first row in the matrix won't change. The only solution for ${\displaystyle \alpha }$  and ${\displaystyle \gamma }$ to recover different roles is to change ${\displaystyle \beta }$ .</p>
+<p>改变上述矩阵中${\displaystyle \alpha }$和${\displaystyle \gamma }$的值具有相同的效果：旋转角度${\displaystyle \alpha +\gamma }$改变了，但是旋转轴 保持在 ${\displaystyle Z}$ 方向：矩阵中的最后一列和第一行不会改变。 ${\displaystyle \alpha }$ 和 ${\displaystyle \gamma }$ 恢复不同角色的唯一解决方案是更改 ${\displaystyle \beta }$ 。</p>
+<p>It is possible to imagine an airplane rotated by the above-mentioned Euler angles using the X-Y-Z convention. In this case, the first angle - ${\displaystyle \alpha }$  is the pitch. Yaw is then set to ${\displaystyle {\tfrac {\pi }{2}}}$ and the final rotation - by ${\displaystyle \gamma }$  - is again the airplane's pitch. Because of gimbal lock, it has lost one of the degrees of freedom - in this case the ability to roll.</p>
+<p>可以想象一架飞机使用 X-Y-Z 约定以上述欧拉角旋转。 在这种情况下，第一个角度 - ${\displaystyle \alpha }$ 是音高。 然后将偏航设置为 ${\displaystyle {\tfrac {\pi }{2}}}$，最后的旋转 - 通过 ${\displaystyle \gamma }$ - 再次是飞机的俯仰角。 由于万向节死锁，它失去了一个自由度——在这种情况下，它失去了滚动的能力。</p>
+<p>It is also possible to choose another convention for representing a rotation with a matrix using Euler angles than the X-Y-Z convention above, and also choose other variation intervals for the angles, but in the end there is always at least one value for which a degree of freedom is lost.</p>
+<p>除了上面的 X-Y-Z 约定，还可以选择使用欧拉角的矩阵表示旋转的另一种约定，也可以为角度选择其他变化区间，但最终总是至少有一个值的度数失去了自由。</p>
+<p>The gimbal lock problem does not make Euler angles &quot;invalid&quot; (they always serve as a well-defined coordinate system), but it makes them unsuited for some practical applications.</p>
+<p>万向节死锁问题不会使欧拉角“无效”（它们始终用作定义明确的坐标系），但它使它们不适合某些实际应用。</p>
+<p>The cause of gimbal lock is the representation of orientation in calculations as three axial rotations based on Euler angles. A potential solution therefore is to represent the orientation in some other way. This could be as a rotation matrix, a quaternion (see quaternions and spatial rotation), or a similar orientation representation that treats the orientation as a value rather than three separate and related values. Given such a representation, the user stores the orientation as a value. To quantify angular changes produced by a transformation, the orientation change is expressed as a delta angle/axis rotation. The resulting orientation must be re-normalized to prevent the accumulation of floating-point error in successive transformations. For matrices, re-normalizing the result requires converting the matrix into its nearest orthonormal representation. For quaternions, re-normalization requires performing quaternion normalization.</p>
+<p>万向节死锁的原因是计算中的方向表示为基于欧拉角的三个轴向旋转。 因此，一个潜在的解决方案是以其他方式表示方向。 这可以是旋转矩阵、四元数（参见四元数和空间旋转）或类似的方向表示，将方向视为一个值，而不是三个单独的相关值。 给定这样的表示，用户将方向存储为一个值。 为了量化变换产生的角度变化，方向变化表示为增量角度/轴旋转。 生成的方向必须重新归一化，以防止在连续转换中累积浮点误差。 对于矩阵，重新归一化结果需要将矩阵转换为其最接近的正交表示。 对于四元数，重新归一化需要执行四元数归一化。</p>
+<p>Charts on SO(3)</p>
+<p>Flight dynamics</p>
+<p>Grid north (equivalent navigational problem on polar expeditions)</p>
+<p>Inertial navigation system</p>
+<p>Motion planning</p>
+<p>Quaternions and spatial rotation</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Geometry/RotationMatrix.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Geometry/RiemannianManifolds.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Geometry/RotationMatrix.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Geometry/RiemannianManifolds.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../theme/pagetoc.js"></script>
+    </body>
+</html>
