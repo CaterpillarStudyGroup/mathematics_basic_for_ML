@@ -1,0 +1,668 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>欧拉角 - mathematics_basic_for_ML</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="The note of mathematics basic for ML">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/pagetoc.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 数值分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../NumericalAnalysis/NumericalIntegration.html"><strong aria-hidden="true">2.1.</strong> 数值积分</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 数论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Numbers/SpecialNumbers.html"><strong aria-hidden="true">3.1.</strong> 数论</a></li><li class="chapter-item expanded "><a href="../Numbers/GeometricProgression.html"><strong aria-hidden="true">3.2.</strong> 几何级数</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 线性代数</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../LinearAlgebra/norm.html"><strong aria-hidden="true">4.1.</strong> 范数</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/vector.html"><strong aria-hidden="true">4.2.</strong> 向量</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/matrix.html"><strong aria-hidden="true">4.3.</strong> 矩阵</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/2DTransformation.html"><strong aria-hidden="true">4.4.</strong> 2D线性变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/2DAffineTransformation.html"><strong aria-hidden="true">4.5.</strong> 2D仿射变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/Inverse.html"><strong aria-hidden="true">4.6.</strong> 逆变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/ComplexTransformation.html"><strong aria-hidden="true">4.7.</strong> 变换的合成与分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/3DTransformation.html"><strong aria-hidden="true">4.8.</strong> 3D变换</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/special_matrix.html"><strong aria-hidden="true">4.9.</strong> 特殊类型的矩阵和向量</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../LinearAlgebra/Hessian.html"><strong aria-hidden="true">4.9.1.</strong> Hessian矩阵</a></li></ol></li><li class="chapter-item expanded "><a href="../LinearAlgebra/orthogonal.html"><strong aria-hidden="true">4.10.</strong> 正交</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/eigendecomposition.html"><strong aria-hidden="true">4.11.</strong> 特征分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/SVD.html"><strong aria-hidden="true">4.12.</strong> 奇异值分解</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/trace.html"><strong aria-hidden="true">4.13.</strong> 迹运算</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/det.html"><strong aria-hidden="true">4.14.</strong> 行列式</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/IllConditioning.html"><strong aria-hidden="true">4.15.</strong> 病态矩阵</a></li><li class="chapter-item expanded "><a href="../LinearAlgebra/Conjugate.html"><strong aria-hidden="true">4.16.</strong> 共轭</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 高等数学</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Mathematics/distance.html"><strong aria-hidden="true">5.1.</strong> 距离</a></li><li class="chapter-item expanded "><a href="../Mathematics/average.html"><strong aria-hidden="true">5.2.</strong> 平均值</a></li><li class="chapter-item expanded "><a href="../Mathematics/space.html"><strong aria-hidden="true">5.3.</strong> 空间</a></li><li class="chapter-item expanded "><a href="../Mathematics/function.html"><strong aria-hidden="true">5.4.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../Mathematics/derivative.html"><strong aria-hidden="true">5.5.</strong> 导数</a></li><li class="chapter-item expanded "><a href="../Mathematics/calculus.html"><strong aria-hidden="true">5.6.</strong> 微积分</a></li><li class="chapter-item expanded "><a href="../Mathematics/Complex.html"><strong aria-hidden="true">5.7.</strong> 复数</a></li><li class="chapter-item expanded "><a href="../Mathematics/convex.html"><strong aria-hidden="true">5.8.</strong> 凸优化问题</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.9.</strong> 公式</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Mathematics/Formula/jensen.html"><strong aria-hidden="true">5.9.1.</strong> jensen不等式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/taylor.html"><strong aria-hidden="true">5.9.2.</strong> 泰勒公式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/euler.html"><strong aria-hidden="true">5.9.3.</strong> 欧拉公式</a></li><li class="chapter-item expanded "><a href="../Mathematics/Formula/trigonometric.html"><strong aria-hidden="true">5.9.4.</strong> 三角函数</a></li></ol></li><li class="chapter-item expanded "><a href="../Mathematics/ExponentialDecay.html"><strong aria-hidden="true">5.10.</strong> 指数衰减</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 数值计算</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../NumericalComputation/Preprocessing.html"><strong aria-hidden="true">6.1.</strong> 归一化和标准化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/Nominal.html"><strong aria-hidden="true">6.2.</strong> 分类标签数字化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/GradientDescent.html"><strong aria-hidden="true">6.3.</strong> 梯度下降法</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/Newton.html"><strong aria-hidden="true">6.4.</strong> 牛顿法</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/ConstrainedOptimization.html"><strong aria-hidden="true">6.5.</strong> 带约束的优化</a></li><li class="chapter-item expanded "><a href="../NumericalComputation/ODE_SDE.html"><strong aria-hidden="true">6.6.</strong> ODE &amp; SDE</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 概率论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Probability/norms.html"><strong aria-hidden="true">7.1.</strong> 一些术语</a></li><li class="chapter-item expanded "><a href="../Probability/probability_distribution.html"><strong aria-hidden="true">7.2.</strong> 概率分布</a></li><li class="chapter-item expanded "><a href="../Probability/expectation_variance.html"><strong aria-hidden="true">7.3.</strong> 期望和方差</a></li><li class="chapter-item expanded "><a href="../Probability/distribution.html"><strong aria-hidden="true">7.4.</strong> 常见分布</a></li><li class="chapter-item expanded "><a href="../Probability/mixture_distribution.html"><strong aria-hidden="true">7.5.</strong> 混合分布</a></li><li class="chapter-item expanded "><a href="../Probability/functions.html"><strong aria-hidden="true">7.6.</strong> 常用函数</a></li><li class="chapter-item expanded "><a href="../Probability/formulas.html"><strong aria-hidden="true">7.7.</strong> 有用的公式</a></li><li class="chapter-item expanded "><a href="../Probability/likelihood.html"><strong aria-hidden="true">7.8.</strong> 最大似然估计</a></li><li class="chapter-item expanded "><a href="../Probability/bayes.html"><strong aria-hidden="true">7.9.</strong> 贝叶斯统计</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 信息论</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Information/entropy.html"><strong aria-hidden="true">8.1.</strong> 熵</a></li><li class="chapter-item expanded "><a href="../Information/Divergence.html"><strong aria-hidden="true">8.2.</strong> 散度、交叉熵</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> 几何</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../Geometry/EulerAngle.html" class="active"><strong aria-hidden="true">9.1.</strong> 欧拉角</a></li><li class="chapter-item expanded "><a href="../Geometry/Quaternion.html"><strong aria-hidden="true">9.2.</strong> 四元数</a></li><li class="chapter-item expanded "><a href="../Geometry/RotationMatrix.html"><strong aria-hidden="true">9.3.</strong> 旋转矩阵</a></li><li class="chapter-item expanded "><a href="../Geometry/Gimbal lock.html"><strong aria-hidden="true">9.4.</strong> 万向节死锁</a></li><li class="chapter-item expanded "><a href="../Geometry/RiemannianManifolds.html"><strong aria-hidden="true">9.5.</strong> 黎曼流形</a></li><li class="chapter-item expanded "><a href="../Geometry/SphericalHarmonics.html"><strong aria-hidden="true">9.6.</strong> 球谐基</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">mathematics_basic_for_ML</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/CaterpillarStudyGroup/mathematics_basic_for_ML" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main><div class="sidetoc"><nav class="pagetoc"></nav></div>
+                        <h1 id="euler-angles欧拉角"><a class="header" href="#euler-angles欧拉角"><strong>Euler angles</strong>欧拉角</a></h1>
+<p><strong>欧拉角</strong>是Leonhard Euler引入的三个角，用于描述刚体相对于固定坐标系的方向。[1]</p>
+<p>它们还可以表示物理学中移动参考系的方向，或三维线性代数中一般基的方向。后来，彼得·古思里·泰特（Peter Guthrie Tait）和乔治·H·布莱恩（George H.Bryan）引入了另一种形式，用于航空和工程领域。</p>
+<blockquote>
+<p>🔎<br />
+frame of reference：参考坐标系<br />
+basis：基</p>
+</blockquote>
+<h1 id="chained-rotations-equivalence-链式旋转等效"><a class="header" href="#chained-rotations-equivalence-链式旋转等效">Chained rotations equivalence 链式旋转等效</a></h1>
+<p><img src="assets/170px-Euler2a.gif" alt="" />
+<img src="assets/150px-Intermediateframes.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 从已知参考方向开始，使用特定的内旋序列，可以达到任何目标方向，其大小为目标方向的欧拉角。本例使用z-x′-z〃序列。</p>
+</blockquote>
+<p>欧拉角可以通过基本几何或旋转组合来定义。几何定义表明，三个组合元素旋转（围绕坐标系的轴旋转）足以到达任何目标坐标系。</p>
+<blockquote>
+<p>❓ 基本几何定义和组合旋转定义有什么区别？</p>
+</blockquote>
+<p>三个元素旋转可以是外旋（围绕原始坐标系的轴xyz旋转，假设其保持不变），也可以是内旋（围绕旋转坐标系的轴XYZ旋转，与运动物体保持一致，在每次元素旋转后改变其方向）。</p>
+<blockquote>
+<p>🔎<br />
+extrinsic rotations：外旋<br />
+intrinsic rotations：内旋</p>
+</blockquote>
+<p>欧拉角通常表示为α、β、γ或ψ、θ、φ。不同的作者可以使用不同的旋转轴集来定义Euler角度，或者为相同的角度使用不同的名称。因此，任何使用欧拉角的讨论都应在其定义之后进行。</p>
+<p>假设不会同时用两种不同约定来定义旋转轴（内旋或外旋），存在十二种可能的旋转轴序列，分为两组：</p>
+<ul>
+<li><strong>Proper欧拉角</strong>（z-x-z，x-y-x，y-z-y，z-y-z，x-z-x，y-x-y）</li>
+<li><strong>Tait–Bryan角</strong>（x-y-z，y-z-x，z-x-y，x-z-y，z-y-x，y-x-z）。</li>
+</ul>
+<p>Tait–Bryan角也称为<strong>卡丹角</strong>、<strong>航海角</strong>、<strong>行进方向，高度，边坡</strong>、或<strong>偏航，俯仰，和横滚</strong>。有时，这两种序列都被称为“欧拉角”。在这种情况下，第一组的序列称为proper欧拉角或经典欧拉角。</p>
+<h1 id="proper-euler-angles--proper欧拉角"><a class="header" href="#proper-euler-angles--proper欧拉角">Proper Euler angles  Proper欧拉角</a></h1>
+<p><img src="assets/Eulerangles.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 Proper欧拉角几何定义：固定坐标系（x、y、z）、旋转坐标系（X、Y、Z）、交点线（N）</p>
+</blockquote>
+<p><img src="assets/Gimbaleuler.svg.png" alt="" />
+<img src="assets/160px-Gimbaleuler2.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 <strong>左</strong>：万向节组，显示z-x-z旋转序列。底座为外部坐标第。内部轴为红色。<strong>右图</strong>：一个简单的图，在图显示相似的欧拉角。</p>
+</blockquote>
+<blockquote>
+<p>📌 以下内容全部假设旋转顺序为z-x-z</p>
+</blockquote>
+<h2 id="几何定义"><a class="header" href="#几何定义">几何定义</a></h2>
+<p>The axes of the original frame are denoted as x, y, z and the axes of the rotated frame as X, Y, Z. The <strong>geometrical</strong> <strong>definition</strong> (sometimes referred to as static) begins by defining the line of nodes (N) as the intersection of the planes xy and XY (it can also be defined as the common perpendicular to the axes z and Z and then written as the vector product N = z \times  Z). Using it, the three <strong>Euler angles</strong> can be defined as follows:</p>
+<p>原始坐标系的轴表示为x，y，z，旋转框架的轴表示为X，Y，Z.<strong>几何定义</strong>（有时称为静态）首先将交点线（N）定义为平面xy和XY的相交的线（也可以定义为同时与轴z轴和Z轴垂直的线，因此写为向量积 \(N=z \times Z\)）。使用它，三个<strong>欧拉角</strong>可以定义如下：</p>
+<blockquote>
+<p>✅ line of nodes：交点线</p>
+</blockquote>
+<ul>
+<li>\(\alpha\)（或\(\varphi\)）是x轴和N轴之间的有符号角度（x约定–也可以在y和N之间定义，称为y约定）。</li>
+</ul>
+<blockquote>
+<p>📌<br />
+A轴与B轴之间的夹角，另一种表达方式是，以\(A\times B\)为轴，从A到B的旋转角度<br />
+N在xy平面上，因此x与N的夹角可以看作是以z为轴在xy平面上的转动</p>
+</blockquote>
+<ul>
+<li>\(\beta\)（或\(\theta\)）是z轴和Z轴之间的角度。</li>
+</ul>
+<blockquote>
+<p>📌<br />
+只有第二次旋转会导致z-&gt;Z</p>
+</blockquote>
+<ul>
+<li>\(\gamma\)（或\(\psi\)）是N轴和X轴之间的有符号角度（X约定）。</li>
+</ul>
+<blockquote>
+<p>📌<br />
+N在XY平面上，因此N与X的夹角可以看作是以Z为轴在XY平面上的转动</p>
+</blockquote>
+<p>仅当两个参照系具有相同的惯用手时，才定义两个参照系之间的欧拉角。</p>
+<h2 id="内旋"><a class="header" href="#内旋">内旋</a></h2>
+<p>内旋是围绕附着到移动物体的坐标系XYZ的轴发生的基本旋转。因此，它们在每次元素旋转后都会改变方向。XYZ系统会旋转，而xyz是固定的。三个内旋组合可使XYZ达到任何目标方向。</p>
+<blockquote>
+<p>📌<br />
+初始时，XYZ和xyz重叠</p>
+</blockquote>
+<p>Euler angles can be defined by intrinsic rotations. The rotated frame XYZ may be imagined to be initially aligned with xyz, before undergoing the three elemental rotations represented by Euler angles. Its successive orientations may be denoted as follows:</p>
+<p>欧拉角可以通过内旋序列来定义。旋转的后的XYZ坐标系可以想象为先让XYZ与xyz对齐，然后经历由欧拉角表示的三个元素旋转。其连续方向可表示如下：</p>
+<ul>
+<li>x-y-z, or x0-y0-z0 （初始值）</li>
+<li>x′-y′-z′, or x1-y1-z1 （第一次旋转后）</li>
+<li>x″-y″-z″, or x2-y2-z2 （第二轮后）</li>
+<li>X-Y-Z, or x3-y3-z3 （最终）</li>
+</ul>
+<blockquote>
+<p>📌<br />
+以哪个为轴旋转，那个轴旋转前后不变，因此，z=z',z''=Z,x'=x''</p>
+</blockquote>
+<p>For the above-listed sequence of rotations, the line of nodes N can be simply defined as the orientation of X after the first elemental rotation. Hence, N can be simply denoted x′. Moreover, since the third elemental rotation occurs about Z, it does not change the orientation of Z. Hence Z coincides with z″. This allows us to simplify the definition of the Euler angles as follows:</p>
+<p>对于上面列出的旋转序列，交点线N可以简单地定义为第一个元素旋转后X的方向。因此，N可以简单地表示为x′。此外，由于第三次元素旋转发生在Z附近，因此不会改变Z的方向。因此，Z与z〃重合。这使我们可以简化欧拉角的定义，如下所示：</p>
+<blockquote>
+<p>📌<br />
+<strong>N可以简单地表示为x′</strong>:
+<img src="assets/IMG_20220204_182724.jpg" alt="" /></p>
+</blockquote>
+<ul>
+<li>α（或\(\varphi\)）表示绕z轴旋转，</li>
+</ul>
+<blockquote>
+<p>📌<br />
+<img src="assets/IMG_20220204_182743.jpg" alt="" /></p>
+</blockquote>
+<ul>
+<li>
+<p>β（或\(\theta\)）表示绕x′轴旋转，</p>
+</li>
+<li>
+<p>γ（或\(\psi\)）表示绕z〃轴旋转。</p>
+</li>
+</ul>
+<blockquote>
+<p>📌<br />
+同理，z是γ的旋转轴，Z=z''</p>
+</blockquote>
+<h2 id="外旋"><a class="header" href="#外旋">外旋</a></h2>
+<p>Extrinsic rotations are elemental rotations that occur about the axes of the fixed coordinate system xyz. The XYZ system rotates, while xyz is fixed. Starting with XYZ overlapping xyz, a composition of three extrinsic rotations can be used to reach any target orientation for XYZ. The Euler or Tait–Bryan angles (α, β, γ) are the amplitudes of these elemental rotations. For instance, the target orientation can be reached as follows (note the reversed order of Euler angle application):</p>
+<p>外旋是围绕固定坐标系xyz的轴发生的基本旋转。XYZ系统会旋转，而xyz是固定的。从XYZ重叠xyz开始，三个外旋的组合可使XYZ达到任何目标方向。Euler角或Tait–Bryan角（α、β、γ）是这些元素旋转的幅度。例如，目标方向可按如下方式实现（注意应用Euler角的相反顺序）：</p>
+<blockquote>
+<p>📌<br />
+<strong>注意应用Euler角的相反顺序</strong>：<br />
+内旋和外旋的顺序不一样<br />
+内旋：α-&gt;β-&gt;γ<br />
+外旋：γ-&gt;β-&gt;α</p>
+</blockquote>
+<ul>
+<li>
+<p>XYZ系统绕z轴旋转γ。X轴现在与x轴成角度γ。</p>
+</li>
+<li>
+<p>XYZ系统再次旋转，但这次绕x轴旋转β。Z轴现在与z轴成角度β。</p>
+</li>
+<li>
+<p>XYZ系统第三次绕z轴旋转角度α。</p>
+</li>
+</ul>
+<p>总之，三个元素的旋转发生在z、x和z附近。事实上，这个序列通常表示为z-x-z（或3-1-3）。与Proper Euler角和Tait–Bryan角关联的旋转轴集通常使用此符号命名（有关详细信息，请参见上文）。</p>
+<h2 id="符号范围和约定"><a class="header" href="#符号范围和约定">符号、范围和约定</a></h2>
+<p>通常根据右手法则定义角度。也就是说，当它们从轴的正方向上看显示顺时针时，它们具有正值；当旋转显示为逆时针时，它们具有负值。相反的惯例（左手法则）很少被采用。</p>
+<p>关于范围（使用区间表示法）：</p>
+<ul>
+<li>
+<p>对于α和γ，范围定义为模2π弧度。例如，有效范围可以是[−π, π].</p>
+</li>
+<li>
+<p>对于β，范围包括π弧度（但不能说是模π）。例如，它可以是[0， π] 或[−π/2, π/2].</p>
+</li>
+</ul>
+<blockquote>
+<p>❓<br />
+<strong>但不能说是模π</strong>:?</p>
+</blockquote>
+<p>The angles α, β and γ are uniquely determined except for the singular case that the xy and the XY planes are identical, i.e. when the z axis and the Z axis have the same or opposite directions. Indeed, if the z axis and the Z axis are the same, β = 0 and only (α + γ) is uniquely defined (not the individual values), and, similarly, if the z axis and the Z axis are opposite, β = π and only (α − γ) is uniquely defined (not the individual values). These ambiguities are known as gimbal lock in applications.</p>
+<p>角度α、β和γ是唯一确定的，但xy和XY平面相同的奇异情况除外，即z轴和Z轴方向相同或相反。事实上，如果z轴和Z轴相同，则β=0且只有（α+γ）是唯一定义的（不是单个值），并且，类似地，如果z轴和Z轴相反，则β=π且只有（α）− γ） 是唯一定义的（不是单个值）。这些歧义在应用程序中称为万向节锁。</p>
+<blockquote>
+<p>📌<br />
+<strong>角度α、β和γ是唯一确定的</strong>：α、β、γ是独立的<br />
+<strong>（α）− γ） 是唯一定义的</strong>：β为定值，α和γ不独立，这种情况称为万向节死锁</p>
+</blockquote>
+<p>Proper欧拉角的旋转轴有六种可能的序列。在所有这些轴中，第一和第三旋转轴相同。六种可能的顺序是：</p>
+<ol>
+<li>
+<p>z1-x′-z2″ (内旋) or z2-x-z1 (外旋)</p>
+</li>
+<li>
+<p>x1-y′-x2″ (内旋) or x2-y-x1 (外旋)</p>
+</li>
+<li>
+<p>y1-z′-y2″ (内旋) or y2-z-y1 (外旋)</p>
+</li>
+<li>
+<p>z1-y′-z2″ (内旋) or z2-y-z1 (外旋)</p>
+</li>
+<li>
+<p>x1-z′-x2″ (内旋) or x2-z-x1 (外旋)</p>
+</li>
+<li>
+<p>y1-x′-y2″ (内旋) or y2-x-y1 (外旋)</p>
+</li>
+</ol>
+<h2 id="进动章动和内旋"><a class="header" href="#进动章动和内旋">进动、章动和内旋</a></h2>
+<p><img src="assets/170px-Praezession.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 Euler basic motions of the Earth. Intrinsic (green), Precession (blue) and Nutation (red)
+地球的基本运动。内旋（绿色）、进动（蓝色）和章动（红色）</p>
+</blockquote>
+<p>Precession, nutation, and intrinsic rotation (spin) are defined as the movements obtained by changing one of the Euler angles while leaving the other two constant. These motions are not expressed in terms of the external frame, or in terms of the co-moving rotated body frame, but in a mixture. They constitute a <strong>mixed axes of rotation</strong> system, where the first angle moves the line of nodes around the external axis z, the second rotates around the line of nodes N and the third one is an intrinsic rotation around Z, an axis fixed in the body that moves.</p>
+<p>进动、章动和内旋（自旋）被定义为改变其中一个欧拉角而保持另两个不变的运动。这些运动不是用外部框架表示的，也不是用共同运动的旋转体框架表示的，而是用一种混合物表示的。它们构成<strong>混合旋转轴</strong>系统，其中第一个角度围绕外部轴z移动交点线，第二个角度围绕交点线N旋转，第三个角度围绕Z旋转，Z轴固定在移动的主体中。</p>
+<p>静态定义意味着：</p>
+<ul>
+<li>
+<p>α（进动）表示绕z轴旋转，</p>
+</li>
+<li>
+<p>β（章动）表示绕N或x′轴旋转，</p>
+</li>
+<li>
+<p>γ（内旋）表示绕Z轴或z〃轴的旋转。</p>
+</li>
+</ul>
+<p>如果β为零，则不存在关于N的旋转。因此，Z与z重合，α和γ表示围绕同一轴（z）的旋转，且最终方向可通过围绕z的单个旋转获得，旋转角度等于α+γ。</p>
+<p>作为一个例子，考虑顶部。顶部围绕其自身的对称轴旋转；这与它的内旋相对应。它也围绕其枢轴旋转，其质心围绕枢轴旋转；这种旋转是进动。最后，顶部可以上下摆动；倾角就是章动角。地球的运动也可以看到同样的例子。</p>
+<p>虽然这三种运动都可以在某一坐标系中用系数恒定的旋转算子来表示，但它们不能同时用这些算子来表示。给定一个参考系，其中最多有一个是无系数的。一般来说，只有进动可以表示为空间基上的矩阵，而不依赖于其他角度。</p>
+<p>These movements also behave as a gimbal set. If we suppose a set of frames, able to move each with respect to the former according to just one angle, like a gimbal, there will exist an external fixed frame, one final frame and two frames in the middle, which are called &quot;intermediate frames&quot;. The two in the middle work as two gimbal rings that allow the last frame to reach any orientation in space.</p>
+<p>这些运动还表现为万向节装置。如果我们假设一组框架能够像一个万向节一样根据一个角度来移动前者，则将存在一个外部固定框架、一个最终框架和中间两个框架，这被称为“中间框架”。中间的两个工作为两个万向环，允许最后一个框架在空间中到达任何方位。</p>
+<h1 id="泰特-布赖恩角"><a class="header" href="#泰特-布赖恩角">泰特-布赖恩角</a></h1>
+<p>另见：飞机主轴</p>
+<p><img src="assets/200px-Taitbrianzyx.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 泰特-布莱恩角。z-y′-x〃序列（内旋；N与y′重合）。角度旋转序列为ψ，θ，φ。注意，在这种情况下，ψ&gt;90°，θ为负角度。</p>
+</blockquote>
+<p>第二种形式被称为<strong>泰特-布莱恩角</strong>，以Peter Guthrie Tait 和George H. Bryan命名。这是通常用于航空航天应用的惯例，因此零度仰角表示水平姿态。Tait–Bryan角表示飞机相对于世界坐标系的方向。在处理其他车辆时，可以使用不同的轴约定。</p>
+<h2 id="定义"><a class="header" href="#定义">定义</a></h2>
+<p><img src="assets/325px-Taitbrianangles.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 泰特-布莱恩角。z-x′-y〃序列（内旋；N与x′重合）</p>
+</blockquote>
+<p>Tait–Bryan角使用的定义和符号与上述适用于Euler角的定义和符号类似（几何定义、内旋定义、外旋定义）。唯一的区别是，Tait–Bryan角表示围绕三个不同轴（例如x-y-z或x-y′-z〃）的旋转，而Proper Euler角对第一个和第三个元素旋转（例如z-x-z或z-x′-z〃）使用相同的轴。</p>
+<p>这意味着几何构造中交点线的定义不同。在Proper欧拉角情况下，它被定义为两个同源笛卡尔平面之间的交线（当欧拉角为零时平行；例如xy和XY）。在Tait–Bryan角的情况下，它被定义为两个非同源平面的交点（当Euler角为零时垂直；例如xy和YZ）。</p>
+<blockquote>
+<p>❓<br />
+笛卡尔平面？<br />
+为什么旋转轴不同会导致line of nodes的定义不同？<br />
+为什么要定义line of nodes?</p>
+</blockquote>
+<h2 id="约定"><a class="header" href="#约定">约定</a></h2>
+<p><img src="assets/100px-Plane_with_ENU_embedded_axes.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 飞机的机载和地面跟踪站的机载ENS轴的Heading, elevation and bank（Z-Y′-X〃）。固定参考坐标系x-y-z表示跟踪站。机载轴Y和Z未显示。X以绿色显示。此图不符合RHS规则：y轴必须反转为正角度符合RHS。</p>
+</blockquote>
+<blockquote>
+<p>📌<br />
+RHS:右手坐标系法则</p>
+</blockquote>
+<p>三个元素旋转可以围绕原始坐标系的轴发生，该坐标系保持不变（外旋），或者围绕旋转坐标系的轴发生，旋转坐标系的轴在每个元素旋转后改变其方向（内旋）。</p>
+<p>Tait–Bryan角度的旋转轴序列有六种选择。六种可能的顺序是：</p>
+<ul>
+<li>
+<p>x-y′-z″ (内旋) or z-y-x (外旋)</p>
+</li>
+<li>
+<p>y-z′-x″ (内旋) or x-z-y (外旋)</p>
+</li>
+<li>
+<p>z-x′-y″ (内旋) or y-x-z (外旋)</p>
+</li>
+<li>
+<p>x-z′-y″ (内旋) or y-z-x (外旋)</p>
+</li>
+<li>
+<p>z-y′-x″ (内旋) or x-y-z (外旋): the intrinsic rotations are known as: yaw, pitch and roll 内在旋转被称为：yaw, pitch 和 roll</p>
+</li>
+<li>
+<p>y-x′-z″ (内旋) or z-x-y (外旋)</p>
+</li>
+</ul>
+<blockquote>
+<p>📌<br />
+内旋和外旋的顺序是反的</p>
+</blockquote>
+<h2 id="符号和范围"><a class="header" href="#符号和范围">符号和范围</a></h2>
+<p><img src="assets/Yaw_Axis_Corrected.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 根据航空标准DIN 9300定义的飞机主轴。请注意，零度角时，固定坐标系和移动坐标系必须重合。因此，该规范还将强制定义了参考系统中的兼容轴约定</p>
+</blockquote>
+<p>泰特-布莱恩公约广泛应用于工程中，有着不同的目的。在选择移动轴和固定轴的应用中，有几种轴约定，这些约定决定了角度的符号。因此，必须仔细研究每种情况下的角度符号。</p>
+<blockquote>
+<p>📌<br />
+轴约定：特定的旋转轴顺序</p>
+</blockquote>
+<p>角度ψ和φ的范围是2π弧度。对于θ，范围是π弧度。</p>
+<h2 id="备选名称"><a class="header" href="#备选名称">备选名称</a></h2>
+<p>These angles are normally taken as one in the external reference frame (heading, bearing), one in the intrinsic moving frame (bank) and one in a middle frame, representing an elevation or inclination with respect to the horizontal plane, which is equivalent to the line of nodes for this purpose.</p>
+<p>这些角度通常在外部参考坐标系（航向、方位）中取一个，在内部移动坐标系（bank）中取一个，在中间框架中取一个，表示相对于水平面的高程或倾角，相当于用于此目的的交点线。</p>
+<blockquote>
+<p>❓<br />
+这一段没看懂</p>
+</blockquote>
+<p><img src="assets/Roll_pitch_yaw_mnemonic.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 记住角度名称的助记符</p>
+</blockquote>
+<p>对于飞机来说，如果按照正确的顺序绕其主轴旋转三次就可以得到特定角度的坐标系。偏航将获得轴承，俯仰将产生仰角，滚转将产生倾斜角度。因此，在航空航天中，它们有时被称为<strong>偏航、俯仰和滚转</strong>。请注意，如果以任何其他顺序旋转，或者旋转前飞机轴处于不与参考坐标系相等的其它任何位置，则这套名称不适用。</p>
+<p>Tait–Bryan angles, following z-y′-x″ (intrinsic rotations) convention, are also known as <strong>nautical angles</strong>, because they can be used to describe the orientation of a ship or aircraft, or <strong>Cardan angles</strong>, after the Italian mathematician and physicist Gerolamo Cardano, who first described in detail the Cardan suspension and the Cardan joint.</p>
+<p>Tait–Bryan角，遵循z-y′-x〃（内旋）惯例，也被称为<strong>海角</strong>，因为它们可以用来描述船只或飞机的方向，或者<strong>卡丹角</strong>，以意大利数学家和物理学家Gerolamo Cardano的名字命名，他首先详细描述了Cardan suspension和Cardan joint。</p>
+<h1 id="给定坐标系的角度"><a class="header" href="#给定坐标系的角度">给定坐标系的角度</a></h1>
+<p>A common problem is to find the Euler angles of a given frame. The fastest way to get them is to write the three given vectors as columns of a matrix and compare it with the expression of the theoretical matrix (see later table of matrices). Hence the three Euler Angles can be calculated. Nevertheless, the same result can be reached avoiding matrix algebra and using only elemental geometry. Here we present the results for the two most commonly used conventions: ZXZ for proper Euler angles and ZYX for Tait–Bryan. Notice that any other convention can be obtained just changing the name of the axes.</p>
+<p>一个常见的问题是求给定坐标系的欧拉角。获取它们的最快方法是将三个给定向量写成矩阵的列，并将其与理论矩阵的表达式进行比较（见后面的矩阵表）。因此，可以计算三个欧拉角。然而，避免使用矩阵代数和仅使用元素几何也可以得到相同的结果。这里我们给出了两种最常用的约定的结果：ZXZ表示适当的欧拉角，ZYX表示Tait–Bryan。请注意，只要更改轴的名称，就可以获得任何其他约定。</p>
+<blockquote>
+<p>📌<br />
+<strong>三个给定向量</strong>：XYZ在xyz坐标系中的坐标向量<br />
+<img src="assets/20220210210956.jpg" alt="" /><br />
+<strong>理论矩阵</strong>：见6.1节</p>
+</blockquote>
+<h2 id="proper欧拉角"><a class="header" href="#proper欧拉角">Proper欧拉角</a></h2>
+<p><img src="assets/200px-EulerProjections.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 Z向量的投影</p>
+</blockquote>
+<p><img src="assets/200px-EulerProjections2.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 Y向量的投影</p>
+</blockquote>
+<p>假设一个坐标系的单位向量（X，Y，Z）由其坐标给出，如主图所示，可以看出：</p>
+<p>$$
+\cos(\beta )=Z_{3}.
+$$</p>
+<p>又由于</p>
+<p>$$
+\sin ^{2}x=1-\cos ^{2}x,
+$$</p>
+<p>定义\(\displaystyle 0&lt;x&lt;\pi \)  我们得出</p>
+<p>$$
+\sin(\beta )={\sqrt {1-Z_{3}^{2}}}.
+$$</p>
+<p>As \(Z_{2}\) is the double projection of a unitary vector,</p>
+<p>因为\(Z_{2}\)是酉向量的双重投影，</p>
+<blockquote>
+<p>❓<br />
+酉向量？</p>
+</blockquote>
+<p>$$
+\cos(\alpha) \cdot \sin(\beta) = -Z_2,
+\cos(\alpha) = -Z_2 / \sqrt{1 - Z_3^2}.
+$$</p>
+<p><img src="assets/IMG_20220204_174235.jpg" alt="" /></p>
+<p>There is a similar construction for \(Y_{3}\), projecting it first over the plane defined by the axis z and the line of nodes. As the angle between the planes is \(\pi /2-\beta\)  and \(\cos(\pi /2-\beta )=\sin(\beta )\), this leads to:</p>
+<p>\(Y_{3}\)也有类似的构造，首先将其投影到由z轴和交点线定义的平面上。由于平面之间的角度为\(\pi/2-\beta\)，又\(\cos（\pi/2-\beta）=\sin（\beta）\)，得出：</p>
+<p>$$
+\sin(\beta )\cdot \cos(\gamma )=Y_{3},
+\cos(\gamma )=Y_{3}/{\sqrt {1-Z_{3}^{2}}}
+$$</p>
+<p>最后，使用反余弦函数，</p>
+<p>$$
+{\displaystyle \alpha =\arccos \left(-Z_{2}/{\sqrt {1-Z_{3}^{2}}}\right),}
+{\displaystyle \beta =\arccos \left(Z_{3}\right),}
+{\displaystyle \gamma =\arccos \left(Y_{3}/{\sqrt {1-Z_{3}^{2}}}\right).}
+$$</p>
+<h2 id="泰特-布赖恩角-1"><a class="header" href="#泰特-布赖恩角-1">泰特-布赖恩角</a></h2>
+<p><img src="assets/Projections_of_Tait-Bryan_angles.svg.png" alt="" /></p>
+<blockquote>
+<p>👆 三次泰特-布莱恩旋转后的x轴投影。请注意，θ是绕y′轴的负旋转。</p>
+</blockquote>
+<p><img src="assets/IMG_20220204_174331.jpg" alt="" /></p>
+<p>假设一个坐标系的单位向量（X，Y，Z）由其坐标给出，如下图所示（注意角度θ为负），可以看出：</p>
+<p>$$
+{\displaystyle \sin(\theta )=-X_{3}}
+$$</p>
+<p>和前面一样</p>
+<p>$$
+{\displaystyle \cos ^{2}x=1-\sin ^{2}x,}
+$$</p>
+<p>定义</p>
+<p>$$
+{\displaystyle -\pi /2&lt;x&lt;\pi /2}
+$$</p>
+<p>我们得出</p>
+<p>$$
+{\displaystyle \cos(\theta )={\sqrt {1-X_{3}^{2}}}.}
+$$</p>
+<p>以与前一种类似的方式表达：</p>
+<p>$$
+{\displaystyle \sin(\psi )=X_{2}/{\sqrt {1-X_{3}^{2}}}.}
+{\displaystyle \sin(\phi )=Y_{3}/{\sqrt {1-X_{3}^{2}}}.}
+$$</p>
+<p>另一种与前一个类似的表达式：</p>
+<p>$$
+{\displaystyle \psi =\arcsin \left(X_{2}/{\sqrt {1-X_{3}^{2}}}\right),}
+{\displaystyle \theta =\arcsin(-X_{3}),}
+{\displaystyle \phi =\arcsin \left(Y_{3}/{\sqrt {1-X_{3}^{2}}}\right).}
+$$</p>
+<h2 id="结语"><a class="header" href="#结语">结语</a></h2>
+<p>请注意，反正弦和余弦函数对同一参数会生成两个可能的值。在当前几何描述中，只有一个解是有效的。当欧拉角定义为一系列旋转时，所有解都有效，但在角度范围内只有一个解。这是因为如果之前未定义范围，则到达目标坐标系的旋转序列不是唯一的。[2]</p>
+<p>出于计算目的，使用atan2（y，x）表示角度可能很有用。例如，在Proper欧拉角情况下：</p>
+<p>$$
+\alpha = \operatorname{atan2}(Z_1 , -Z_2),</p>
+<p>\gamma =\operatorname {atan2} (X_{3},Y_{3}).
+$$</p>
+<blockquote>
+<p>❓<br />
+使用atan2表达角度能简化哪方面计算？<br />
+什么是atan2？</p>
+</blockquote>
+<h1 id="转换为其他方向表示法"><a class="header" href="#转换为其他方向表示法">转换为其他方向表示法</a></h1>
+<p>将三维旋转表示为单位四元数而不是矩阵有一些优点：</p>
+<ul>
+<li>把旋转串联起来在计算上更快，在数值上更稳定。</li>
+</ul>
+<blockquote>
+<p>❓<br />
+<strong>在数值上更稳定</strong>：为什么四元比旋转矩阵更稳定？</p>
+</blockquote>
+<ul>
+<li>
+<p>提取角度和旋转轴更简单。</p>
+</li>
+<li>
+<p>插值更直接。参见示例slerp。</p>
+</li>
+</ul>
+<blockquote>
+<p>📌<br />
+<strong>插值更直接</strong>：四元数可以直接插值，旋转矩阵直接插值得到的不一定是旋转矩阵</p>
+</blockquote>
+<ul>
+<li>四元数不像欧拉角那样受到万向节锁的影响。</li>
+</ul>
+<p>无论如何，旋转矩阵计算是获得其他两种表示的第一步。</p>
+<h2 id="rotation-matrix-旋转矩阵"><a class="header" href="#rotation-matrix-旋转矩阵">Rotation matrix 旋转矩阵</a></h2>
+<p>从一个已知的标准方向开始，通过三个元素旋转组合可以达到任何一个方向。等价地，任何旋转矩阵R都可以分解为三个元素旋转矩阵的乘积。例如：</p>
+<p>$$
+R=X(\alpha )Y(\beta )Z(\gamma )
+$$</p>
+<p>是一个旋转矩阵，可用于表示绕z、y、x轴（按该顺序）的外旋组合，或绕x-y′-z〃轴（按该顺序）的内部旋转组合。然而，元素旋转矩阵X、Y、Z的定义及其乘法顺序取决于用户对旋转矩阵和欧拉角的定义所做的选择（例如，请参见旋转矩阵定义中的歧义）。不幸的是，用户在不同的上下文中采用了不同的约定集。下表是根据这组约定建立的：</p>
+<blockquote>
+<p>📌<br />
+<strong>绕z、y、x轴（按该顺序）</strong>：每一次外旋用矩阵左乘表示，所以看上去顺序是反的<br />
+<strong>绕x-y′-z〃轴（按该顺序）</strong>：内旋用矩阵右乘表示</p>
+</blockquote>
+<ol>
+<li>每个矩阵都要通过左乘列向量\(\textstyle{\begin{bmatrix}x\y\z\end{bmatrix}}}\)进行操作（请参见旋转矩阵定义中的歧义）</li>
+</ol>
+<blockquote>
+<p>📌<br />
+<img src="assets/1.jpg" alt="" /></p>
+</blockquote>
+<ol start="2">
+<li>Each matrix is meant to represent an active rotation (the composing and composed matrices are supposed to act on the coordinates of vectors defined in the initial fixed reference frame and give as a result the coordinates of a rotated vector defined in the same reference frame).</li>
+</ol>
+<p>每个矩阵表示一次旋转（等式左边的矩阵和右边的矩阵都可以应用于初始固定参考坐标系中定义的向量坐标，并给出相同参考坐标系中定义的旋转后的向量坐标）。</p>
+<ol start="3">
+<li>Each matrix is meant to represent, primarily, a composition of intrinsic rotations (around the axes of the rotating reference frame) and, secondarily, the composition of three extrinsic rotations (which corresponds to the constructive evaluation of the R matrix by the multiplication of three truly elemental matrices, in reverse order).</li>
+</ol>
+<p>每个矩阵可以表示内在旋转的组合（围绕旋转参考坐标系的轴），也可以表示三个外在旋转的组合（对应地通过将三个元素矩阵以相反顺序相乘构造出R矩阵的值）。</p>
+<ol start="4">
+<li>Right handed reference frames are adopted, and the right hand rule is used to determine the sign of the angles α, β, γ.</li>
+</ol>
+<p>采用右手坐标系，用右手法则确定角度α、β、γ的符号。</p>
+<p>For the sake of simplicity, the following table of matrix products uses the following nomenclature:</p>
+<p>为了简单起见，下表中的矩阵乘积使用了以下术语：</p>
+<ol>
+<li>1, 2, 3 represent the angles α, β and γ, i.e. the angles corresponding to the first, second and third elemental rotations respectively.</li>
+</ol>
+<p>1、2、3表示角度α、β和γ，即分别对应于第一、第二和第三元素旋转的角度。</p>
+<ol start="2">
+<li>X, Y, Z are the matrices representing the elemental rotations about the axes x, y, z of the fixed frame (e.g., X1 represents a rotation about x by an angle α).</li>
+</ol>
+<p>X、 Y，Z是表示关于固定坐标系的轴x，y，z的基本旋转的矩阵（例如，X1表示关于x的角度α的旋转）。</p>
+<ol start="3">
+<li>s and c represent sine and cosine (e.g., s1 represents the sine of α).</li>
+</ol>
+<p>s和c表示正弦和余弦（例如，s1表示α的正弦）。</p>
+<p><img src="assets/2.jpg" alt="" /></p>
+<p>These tabular results are available in numerous textbooks.[3] For each column the last row constitutes the most commonly used convention.</p>
+<p>这些表格结果在许多教科书中都有。[3] 对于每一列，最后一行构成最常用的约定。</p>
+<p>要更改被动旋转的公式（或查找反向主动旋转），对矩阵做转置（这样每个矩阵将向量的初始坐标变换为基在旋转参考系中的表达；相同的旋转轴，相同的角度，但现在坐标系旋转，而不是向量）。</p>
+<blockquote>
+<p>📌<br />
+<strong>被动旋转</strong>：坐标系发生旋转，向量不变，则它在坐标系中的方向发生了改变<br />
+<strong>主动旋转</strong>：在一个固定坐标系中，方向发生旋转。</p>
+</blockquote>
+<blockquote>
+<p>❓<br />
+passive rotations?<br />
+reverse active rotation?</p>
+</blockquote>
+<blockquote>
+<p>📌<br />
+<strong>现在坐标系旋转，而不是向量</strong>：前者是xyz在XYZ中的表达，后者是XYZ在xyz中的表达</p>
+</blockquote>
+<p>The following table contains formulas for angles α, β and γ from elements of a rotation matrix R.[4]</p>
+<p>下表包含旋转矩阵R关于角度α、β和γ的元素的公式[4]</p>
+<p><img src="assets/3.jpg" alt="" /></p>
+<h1 id="优势与局限性"><a class="header" href="#优势与局限性">优势与局限性</a></h1>
+<p>欧拉角表示法同样广泛应用，尤其在系统设计与控制领域。</p>
+<h2 id="直观"><a class="header" href="#直观">直观</a></h2>
+<p>通过三次绕坐标轴的旋转（每次旋转对应一个角度）表示任意三维旋转。</p>
+<h2 id="局限性"><a class="header" href="#局限性">局限性</a></h2>
+<ol>
+<li>与定义的旋转顺序有关。在Unity引擎中的顺序为：先绕Z轴旋转 → 再绕X轴旋转 → 最后绕Y轴旋转。</li>
+<li>特定状态下会丢失自由度：例如万向节死锁（Gimbal Lock）现象；</li>
+<li>旋转角速度的数学定义困难。</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Information/Divergence.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../Geometry/Quaternion.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Information/Divergence.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../Geometry/Quaternion.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../theme/pagetoc.js"></script>
+    </body>
+</html>
